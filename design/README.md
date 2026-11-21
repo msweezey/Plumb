@@ -1,6 +1,6 @@
 # Plumb — brand and product UI
 
-Brand and UI design work for **Plumb**, the AI-native analyst firm. Tagline: *Know what good looks like.*
+Brand and UI design work for **Plumb**, AI marketing evals for AI martech. Tagline: *Know what good looks like.*
 
 Exported from the Claude design artifacts on 2026-11-20.
 

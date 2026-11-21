@@ -1,6 +1,8 @@
 # Plumb brand guide
 
-**Plumb** is an AI-native analyst firm. It measures how brands show up where shopping is going (AI answers, search, media and agent checkout) and publishes the results as the **Plumb Index**.
+**Plumb** is the standard for AI-native marketing work: AI marketing evals for AI martech. It runs agents against marketing platforms through their MCP servers, scores every run, and publishes the results as the **Plumb Index**, with a forkable playbook (a **Plumb Line**) behind each result. Business idea: [`../docs/business-idea.md`](../docs/business-idea.md).
+
+> Note: some examples below (beauty brands, "Bought vs earned", agentic commerce) come from a retired direction. The visual system still applies; the current website mockup is [`../site/index.html`](../site/index.html).
 
 > **Know what good looks like.**
 
@@ -13,10 +15,10 @@ This guide covers the current *hybrid* direction: the editorial warmth of Option
 | | |
 |---|---|
 | Company | Plumb |
-| Product | The Plumb Index (category editions, e.g. *The Agentic Commerce Index · Beauty*) |
+| Products | The Plumb Index · Plumb Lines · Plumbed certification · Enterprise · Labs licensing · Monthly report |
 | Tagline | Know what good looks like. |
-| Hero line | Know where you stand. |
-| Primary CTA | Get your brand's rank · Measure me → |
+| Supporting lines | Proof, not promises. · Scores can't be bought. |
+| Primary CTA | Browse the Index · Get Plumbed |
 
 **Why "Plumb":** a plumb line shows true vertical. To *plumb* something is to measure its depth. The brand is the measurement, not the opinion.
 
