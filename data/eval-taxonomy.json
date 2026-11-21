@@ -1,0 +1,192 @@
+{
+  "version": "0.1",
+  "updated": "2026-11-21",
+  "description": "Plumb eval taxonomy. The unit is the task: a workflow that crosses several tools. Every task sits at Function > Sub-function > Task, and runs across Vertical x Level x Model. Each step records the tool used.",
+  "levels": [
+    {
+      "id": "HIL",
+      "slug": "in-the-loop",
+      "name": "Human in the loop",
+      "setup": "Human using the SaaS tool with its built-in AI"
+    },
+    {
+      "id": "HOL",
+      "slug": "on-the-loop",
+      "name": "Human on the loop",
+      "setup": "Human operating from an IDE or assistant through MCP connections"
+    },
+    {
+      "id": "HOOL",
+      "slug": "out-of-the-loop",
+      "name": "Human out of the loop",
+      "setup": "Agents given the task to run on their own"
+    }
+  ],
+  "verticals": [
+    {
+      "id": "RET",
+      "slug": "retail-ecommerce",
+      "name": "Retail & E-Commerce"
+    },
+    {
+      "id": "HLS",
+      "slug": "healthcare-life-sciences",
+      "name": "Healthcare & Life Sciences"
+    },
+    {
+      "id": "FSI",
+      "slug": "financial-services-insurance",
+      "name": "Financial Services & Insurance"
+    },
+    {
+      "id": "HOS",
+      "slug": "hospitality-travel",
+      "name": "Hospitality & Travel"
+    },
+    {
+      "id": "B2B",
+      "slug": "b2b-industrial-manufacturing",
+      "name": "B2B & Industrial/Manufacturing"
+    }
+  ],
+  "functions": [
+    {
+      "id": "ADV",
+      "slug": "advertising-promotion",
+      "name": "Advertising & Promotion",
+      "aka": "Media strategy",
+      "sub_functions": [
+        {
+          "id": "ADV.PLAN",
+          "slug": "media-planning-audience-targeting",
+          "name": "Media Planning & Audience Targeting"
+        },
+        {
+          "id": "ADV.BUY",
+          "slug": "programmatic-paid-media-buying",
+          "name": "Programmatic & Paid Media Buying",
+          "includes": "Search, social, display, retail media"
+        },
+        {
+          "id": "ADV.OPT",
+          "slug": "campaign-execution-bid-optimization",
+          "name": "Campaign Execution & Bid Optimization"
+        },
+        {
+          "id": "ADV.DCO",
+          "slug": "creative-ad-production-dynamic-creative-optimization-dco",
+          "name": "Creative Ad Production & Dynamic Creative Optimization (DCO)"
+        }
+      ]
+    },
+    {
+      "id": "CNX",
+      "slug": "content-experience",
+      "name": "Content & Experience",
+      "sub_functions": [
+        {
+          "id": "CNX.CSTRAT",
+          "slug": "creative-strategy",
+          "name": "Creative Strategy"
+        },
+        {
+          "id": "CNX.CREATE",
+          "slug": "content-creation",
+          "name": "Content Creation"
+        },
+        {
+          "id": "CNX.SCALE",
+          "slug": "scaled-content-creation",
+          "name": "Scaled Content Creation"
+        },
+        {
+          "id": "CNX.CMS",
+          "slug": "web-content-management-cms-landing-page-optimization",
+          "name": "Web Content Management (CMS) & Landing Page Optimization"
+        },
+        {
+          "id": "CNX.EMAIL",
+          "slug": "email-marketing-marketing-automation",
+          "name": "Email Marketing & Marketing Automation"
+        },
+        {
+          "id": "CNX.PERS",
+          "slug": "website-personalization-seo",
+          "name": "Website Personalization & SEO"
+        }
+      ]
+    },
+    {
+      "id": "SOC",
+      "slug": "social-relationships",
+      "name": "Social & Relationships",
+      "sub_functions": [
+        {
+          "id": "SOC.PUB",
+          "slug": "social-media-publishing-listening",
+          "name": "Social Media Publishing & Listening"
+        },
+        {
+          "id": "SOC.INF",
+          "slug": "influencer-creator-marketing",
+          "name": "Influencer & Creator Marketing"
+        }
+      ]
+    },
+    {
+      "id": "COM",
+      "slug": "commerce-sales",
+      "name": "Commerce & Sales",
+      "sub_functions": [
+        {
+          "id": "COM.LEAD",
+          "slug": "lead-capture-scoring-routing",
+          "name": "Lead Capture, Scoring & Routing"
+        },
+        {
+          "id": "COM.ABM",
+          "slug": "account-based-marketing-abm",
+          "name": "Account-Based Marketing (ABM)"
+        },
+        {
+          "id": "COM.CRO",
+          "slug": "e-commerce-merchandising-conversion-rate-optimization-cro",
+          "name": "E-Commerce Merchandising & Conversion Rate Optimization (CRO)"
+        },
+        {
+          "id": "COM.LOY",
+          "slug": "loyalty-referral-programs",
+          "name": "Loyalty & Referral Programs"
+        }
+      ]
+    }
+  ],
+  "scoring": {
+    "headline_per_level": [
+      "time",
+      "cost",
+      "impact"
+    ],
+    "also_recorded": [
+      "task_success",
+      "accuracy",
+      "tool_calls",
+      "human_time",
+      "human_interventions",
+      "read_write_coverage",
+      "safety"
+    ],
+    "per_step": [
+      "time",
+      "cost",
+      "review_rounds",
+      "tool",
+      "actor"
+    ],
+    "best_way": "lowest-cost level whose impact meets the board standard (proposal)"
+  },
+  "id_format": {
+    "eval": "PLB-{function}.{sub_function}-{nnn}  e.g. PLB-CNX.EMAIL-014",
+    "run": "{eval}/{vertical}/{level}/{model}/{run_n}  e.g. PLB-CNX.EMAIL-014/RET/HOL/model-2/r1"
+  }
+}
