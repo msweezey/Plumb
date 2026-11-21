@@ -1,0 +1,71 @@
+{
+ "v": 3,
+ "layout": "files",
+ "createdOnFiles": {
+  "at": "2026-11-21T02:05:59.419Z",
+  "v": 1
+ },
+ "title": "Plumb — Option 1",
+ "namespace": "Plumb",
+ "libraries": [],
+ "sections": {},
+ "groups": [
+  "Logos"
+ ],
+ "assetGroups": {
+  "Logos": {
+   "name": "Logos",
+   "tile": "l",
+   "order": [
+    "plumb-lockup.svg",
+    "plumb-wordmark.svg",
+    "plumb-wordmark-reversed.svg",
+    "plumb-mark.svg",
+    "plumbed-badge.svg"
+   ],
+   "files": {
+    "plumb-lockup.svg": {
+     "name": "plumb-lockup.svg",
+     "blob": "1715178aef98b6e4adcfab726f36fe67",
+     "size": 659,
+     "type": "image/svg+xml"
+    },
+    "plumb-wordmark.svg": {
+     "name": "plumb-wordmark.svg",
+     "blob": "80d549e21453865875feb006cf7f49be",
+     "size": 460,
+     "type": "image/svg+xml"
+    },
+    "plumb-wordmark-reversed.svg": {
+     "name": "plumb-wordmark-reversed.svg",
+     "blob": "191634b29d6c96db719b895b89787429",
+     "size": 460,
+     "type": "image/svg+xml"
+    },
+    "plumb-mark.svg": {
+     "name": "plumb-mark.svg",
+     "blob": "af8be1aee03ecd423b975fb65a5aad2c",
+     "size": 227,
+     "type": "image/svg+xml"
+    },
+    "plumbed-badge.svg": {
+     "name": "plumbed-badge.svg",
+     "blob": "45ea8b7b0ac24478f2e9d660e53f679d",
+     "size": 761,
+     "type": "image/svg+xml"
+    }
+   }
+  }
+ },
+ "blobs": {},
+ "docs": {
+  "readme": "project/README.md",
+  "sections": []
+ },
+ "lastChange": {
+  "by": "Mathew Sweezey",
+  "at": "2026-11-21T02:31:48Z",
+  "via": "Claude chat",
+  "note": "Purple theme, softer radii"
+ }
+}

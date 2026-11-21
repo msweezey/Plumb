@@ -1,0 +1,46 @@
+<!-- @dsCard height=300 -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700;800&family=Geist+Mono:wght@500;600&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--paper); position: relative; width: 960px; height: 300px; overflow: hidden; font-family: var(--font-sans); }
+  svg { position: absolute; left: 0; top: 0; }
+  .chalk { fill: var(--chalk); }
+  .ink { fill: var(--ink); }
+  .line, .line2 { fill: var(--line); }
+  .lav { fill: var(--lavender); }
+  .soft { fill: var(--line-soft); }
+  .rule-ink { stroke: var(--ink); stroke-width: 2; }
+  .rule-paper { stroke: var(--paper); stroke-width: 2; }
+  .blk { rx: var(--radius-lg); }
+  .name { position: absolute; left: 40px; bottom: 40px; max-width: 440px; }
+  .name h1 { margin: 0; font-family: var(--font-serif); font-weight: 400; font-size: 128px; line-height: .92; letter-spacing: -0.02em; color: var(--ink); }
+  .name p { margin: 16px 0 0; font-size: 14px; line-height: 18px; color: var(--lead); }
+</style>
+</head>
+<body>
+<svg width="960" height="300" viewBox="0 0 960 300" aria-hidden="true">
+  <!--
+    blocks: chalk 160x300 (tint), line purple 200x216 (brand), lavender 200x84 (selected tint), line-soft 120x300 (bob) — sides are space-10 multiples, corners radius-0
+    arrangement: flush modular strip of unequal bands bleeding off top, bottom and right edge, like stacked survey stakes
+    pattern: literal motif — the plumb line and bob; "One strong vertical. Pages hang from a single left edge" (README) chose vertical rules plus one bob silhouette built from a circle and its tangents
+    scales: rules 2px at 40px (space-10) pitch inside the ink block; bob radius 20 hangs on a line from the top; all blocks radius-0
+  -->
+  <rect class="chalk blk" x="480" y="0" width="160" height="300"/>
+  <rect class="line2 blk" x="640" y="0" width="200" height="216"/>
+  <rect class="lav blk" x="640" y="216" width="200" height="84"/>
+  <rect class="soft blk" x="840" y="0" width="120" height="300"/>
+  <line class="rule-ink" x1="560" y1="0" x2="560" y2="150"/>
+  <path class="soft" d="M560 214L542.18 179.09A20 20 0 1 1 577.82 179.09Z"/>
+  <line class="rule-paper" x1="720" y1="0" x2="720" y2="216"/>
+  <line class="rule-paper" x1="760" y1="0" x2="760" y2="216"/>
+</svg>
+<div class="name">
+  <h1>Plumb</h1>
+  <p>Know what good looks like.</p>
+</div>
+</body>
+</html>

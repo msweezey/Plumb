@@ -1,0 +1,81 @@
+{
+  "manifestVersion": 3,
+  "name": "Plumb",
+  "namespace": "Plumb",
+  "files": [
+    "assets/Logos/README.md",
+    "tokens.css"
+  ],
+  "libraries": [],
+  "components": [],
+  "assetGroups": [
+    {
+      "name": "Logos",
+      "tile": "l",
+      "order": [
+        "plumb-lockup.svg",
+        "plumb-wordmark.svg",
+        "plumb-wordmark-reversed.svg",
+        "plumb-mark.svg",
+        "plumbed-badge.svg"
+      ],
+      "files": [
+        {
+          "path": "assets/Logos/plumb-lockup.svg",
+          "id": "01230db7d5598eded7ed20f2fb285233"
+        },
+        {
+          "path": "assets/Logos/plumb-wordmark.svg",
+          "id": "cf731f407429664277e2428ed5dd05a7"
+        },
+        {
+          "path": "assets/Logos/plumb-wordmark-reversed.svg",
+          "id": "1569e486740e51d80a93c92690736c23"
+        },
+        {
+          "path": "assets/Logos/plumb-mark.svg",
+          "id": "b0dc3fe29f2a70e148e669070ba01378"
+        },
+        {
+          "path": "assets/Logos/plumbed-badge.svg",
+          "id": "09e38dbcf2b9b2619be5409ea5a9a0a6"
+        }
+      ]
+    }
+  ],
+  "storage": {
+    "files": {
+      "assets/Logos/plumb-lockup.svg": {
+        "store": "blob",
+        "id": "01230db7d5598eded7ed20f2fb285233",
+        "bytes": 658,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/plumb-mark.svg": {
+        "store": "blob",
+        "id": "b0dc3fe29f2a70e148e669070ba01378",
+        "bytes": 227,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/plumb-wordmark-reversed.svg": {
+        "store": "blob",
+        "id": "1569e486740e51d80a93c92690736c23",
+        "bytes": 481,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/plumb-wordmark.svg": {
+        "store": "blob",
+        "id": "cf731f407429664277e2428ed5dd05a7",
+        "bytes": 481,
+        "type": "image/svg+xml"
+      },
+      "assets/Logos/plumbed-badge.svg": {
+        "store": "blob",
+        "id": "09e38dbcf2b9b2619be5409ea5a9a0a6",
+        "bytes": 761,
+        "type": "image/svg+xml"
+      }
+    },
+    "blobBytesUsed": 2608
+  }
+}

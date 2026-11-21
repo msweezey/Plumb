@@ -1,0 +1,39 @@
+<!-- @dsCard height=300 -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&family=Inter:wght@400&display=swap">
+<style>
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--white); position: relative; width: 960px; height: 300px; overflow: hidden; font-family: var(--font-sans); }
+  svg { position: absolute; left: 0; top: 0; }
+  .ink { fill: var(--ink); } .lvl { fill: var(--level); } .tint { fill: var(--level-tint); } .surf { fill: var(--surface); }
+  .tk { stroke: var(--tick); stroke-width: 2; } .tk-ink { stroke: var(--ink); stroke-width: 2; }
+  .cap { fill: none; stroke: var(--ink); stroke-width: 4; }
+  .r14 { rx: var(--radius-md); }
+  .name { position: absolute; left: 40px; bottom: 40px; max-width: 440px; }
+  .name h1 { margin: 0; font-family: var(--font-display); font-weight: 600; font-size: 112px; line-height: .95; letter-spacing: -0.05em; color: var(--ink); }
+  .name p { margin: 14px 0 0; font-size: 14px; line-height: 18px; color: var(--lead); }
+</style>
+</head>
+<body>
+<svg width="960" height="300" viewBox="0 0 960 300" aria-hidden="true">
+  <!--
+    blocks: surface 400x200 (instrument face), level-tint 160x80 (good zone), level disc r24 (the bubble), ink capsule stroke — sides from space-10 multiples, corners radius-md
+    arrangement: one wide instrument panel right of 480 holding a spirit level, with a good-zone band behind the bubble
+    pattern: literal motif, "every visual element is a reading, a scale or a rule" (README): a ruler of ticks at 8px pitch, every fifth one long
+    scales: ticks 8px pitch (space-2), radius-md on the panel, pill capsule
+  -->
+  <rect class="surf r14" x="520" y="40" width="400" height="200"/>
+  <rect class="tint" x="640" y="100" width="160" height="80" rx="40"/>
+  <rect class="cap" x="580" y="110" width="280" height="60" rx="30"/>
+  <line class="tk-ink" x1="690" y1="122" x2="690" y2="158"/><line class="tk-ink" x1="750" y1="122" x2="750" y2="158"/>
+  <circle class="lvl" cx="720" cy="140" r="20"/>
+  <g>
+    <line class="tk" x1="540" y1="210" x2="540" y2="226"/><line class="tk" x1="580" y1="216" x2="580" y2="226"/><line class="tk" x1="620" y1="216" x2="620" y2="226"/><line class="tk" x1="660" y1="216" x2="660" y2="226"/><line class="tk" x1="700" y1="216" x2="700" y2="226"/><line class="tk-ink" x1="720" y1="206" x2="720" y2="226"/><line class="tk" x1="740" y1="216" x2="740" y2="226"/><line class="tk" x1="780" y1="216" x2="780" y2="226"/><line class="tk" x1="820" y1="216" x2="820" y2="226"/><line class="tk" x1="860" y1="216" x2="860" y2="226"/><line class="tk" x1="900" y1="210" x2="900" y2="226"/>
+  </g>
+</svg>
+<div class="name"><h1>Plumb</h1><p>Option 3 · Instrument · Know what good looks like.</p></div>
+</body>
+</html>

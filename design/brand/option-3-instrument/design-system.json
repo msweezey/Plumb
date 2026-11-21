@@ -1,0 +1,64 @@
+{
+ "v": 3,
+ "layout": "files",
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-21T03:51:49Z"
+ },
+ "title": "Plumb \u2014 Option 3",
+ "namespace": "Plumb3",
+ "libraries": [],
+ "sections": {},
+ "groups": [
+  "Logos"
+ ],
+ "assetGroups": {
+  "Logos": {
+   "name": "Logos",
+   "tile": "l",
+   "order": [
+    "plumb3-lockup.svg",
+    "plumb3-wordmark.svg",
+    "plumb3-mark.svg",
+    "plumb3-seal.svg"
+   ],
+   "files": {
+    "plumb3-lockup.svg": {
+     "name": "plumb3-lockup.svg",
+     "blob": "beef01110993a31074a30e8bae03b654",
+     "size": 803,
+     "type": "image/svg+xml"
+    },
+    "plumb3-wordmark.svg": {
+     "name": "plumb3-wordmark.svg",
+     "blob": "e0f84a61a0a750393b109cc06bf9d9d9",
+     "size": 501,
+     "type": "image/svg+xml"
+    },
+    "plumb3-mark.svg": {
+     "name": "plumb3-mark.svg",
+     "blob": "fa66fd81856fba8a5744712c9ed3313c",
+     "size": 428,
+     "type": "image/svg+xml"
+    },
+    "plumb3-seal.svg": {
+     "name": "plumb3-seal.svg",
+     "blob": "16417d5ea926512852b3d88e6b238449",
+     "size": 7476,
+     "type": "image/svg+xml"
+    }
+   }
+  }
+ },
+ "blobs": {},
+ "docs": {
+  "readme": "project/README.md",
+  "sections": []
+ },
+ "lastChange": {
+  "by": "Mathew Sweezey",
+  "at": "2026-11-21T03:51:49Z",
+  "via": "Claude chat",
+  "note": "Option 3: Instrument, on white"
+ }
+}

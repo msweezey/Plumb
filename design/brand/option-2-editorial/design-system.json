@@ -1,0 +1,64 @@
+{
+ "v": 3,
+ "layout": "files",
+ "createdOnFiles": {
+  "v": 1,
+  "at": "2026-11-21T03:41:55Z"
+ },
+ "title": "Plumb \u2014 Option 2",
+ "namespace": "Plumb2",
+ "libraries": [],
+ "sections": {},
+ "groups": [
+  "Logos"
+ ],
+ "assetGroups": {
+  "Logos": {
+   "name": "Logos",
+   "tile": "l",
+   "order": [
+    "plumb2-wordmark.svg",
+    "plumb2-wordmark-reversed.svg",
+    "plumb2-mark.svg",
+    "plumb2-seal.svg"
+   ],
+   "files": {
+    "plumb2-wordmark.svg": {
+     "name": "plumb2-wordmark.svg",
+     "blob": "9e42bf01609833f59e4505b6b509e903",
+     "size": 1206,
+     "type": "image/svg+xml"
+    },
+    "plumb2-wordmark-reversed.svg": {
+     "name": "plumb2-wordmark-reversed.svg",
+     "blob": "cece1b58ec4290b8896850991abcea7f",
+     "size": 1206,
+     "type": "image/svg+xml"
+    },
+    "plumb2-mark.svg": {
+     "name": "plumb2-mark.svg",
+     "blob": "1d3d07e7104b93dec39c210ed51956f4",
+     "size": 272,
+     "type": "image/svg+xml"
+    },
+    "plumb2-seal.svg": {
+     "name": "plumb2-seal.svg",
+     "blob": "6e108c834432cd58afbf7fe7216a1fbf",
+     "size": 714,
+     "type": "image/svg+xml"
+    }
+   }
+  }
+ },
+ "blobs": {},
+ "docs": {
+  "readme": "project/README.md",
+  "sections": []
+ },
+ "lastChange": {
+  "by": "Mathew Sweezey",
+  "at": "2026-11-21T03:41:55Z",
+  "via": "Claude chat",
+  "note": "Option 2: editorial black and white"
+ }
+}

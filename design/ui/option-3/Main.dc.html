@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Plumb Index — Option 3</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#00754A}a:hover{color:#0F1411}
+.lbl{font-family:"JetBrains Mono",Menlo,monospace;font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#5A625D}
+.nav a{color:#0F1411;text-decoration:none;font-size:15px;font-weight:500}
+.nav a:hover{color:#00754A}
+.btn{font-family:Inter,Arial,sans-serif;font-size:15px;font-weight:600;padding:11px 18px;border-radius:10px;border:1px solid #E3E5E1;background:#FFFFFF;color:#0F1411;cursor:pointer;min-height:44px;display:inline-flex;align-items:center;gap:8px}
+.btn.ink{background:#0F1411;border-color:#0F1411;color:#FFFFFF}
+.ruler{height:14px;background-image:repeating-linear-gradient(90deg,#C9CEC9 0 1px,transparent 1px 8px),repeating-linear-gradient(90deg,#0F1411 0 1px,transparent 1px 40px);background-size:100% 7px,100% 14px;background-repeat:repeat-x;background-position:bottom,bottom}
+.seg{display:inline-flex;gap:4px;padding:4px;border-radius:999px;background:#F6F7F5;border:1px solid #E3E5E1;flex-wrap:wrap}
+.seg a{padding:9px 18px;border-radius:999px;font-size:15px;font-weight:500;color:#5A625D;text-decoration:none}
+.seg a.on{background:#FFFFFF;color:#0F1411;font-weight:600;box-shadow:0 0 0 1px #E3E5E1}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:500;padding:4px 10px;border-radius:999px;border:1px solid #E3E5E1;color:#0F1411;background:#FFFFFF}
+.flt{display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:500;padding:8px 12px 8px 14px;border-radius:8px;border:1px solid #E3E5E1;background:#FFFFFF;color:#0F1411;min-height:40px;font-family:Inter,sans-serif;cursor:pointer}
+.flt span{font-family:"JetBrains Mono",monospace;font-size:10px;letter-spacing:.1em;color:#5A625D}
+.flt.on{background:#E8F8EF;border-color:#BCE9D0}
+.tbl{width:100%;border-collapse:collapse;min-width:1100px}
+.tbl th{text-align:left;padding:14px 18px;background:#F6F7F5;border-bottom:1px solid #E3E5E1;white-space:nowrap}
+.tbl td{padding:20px 18px;border-bottom:1px solid #E3E5E1;vertical-align:top}
+.tbl tr.you td{background:#E8F8EF}
+.tbl tr.you td:first-child{box-shadow:inset 3px 0 0 #00B862}
+.gauge{position:relative;width:150px;height:18px;margin-top:8px;border-radius:999px;background:#F6F7F5;border:1px solid #E3E5E1;overflow:hidden}
+.gauge::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,#C9CEC9 0 1px,transparent 1px 15px);background-size:100% 6px;background-repeat:no-repeat;background-position:bottom}
+.gauge .zone{position:absolute;right:0;top:0;bottom:0;width:30%;background:#E8F8EF;border-left:1px dashed #BCE9D0}
+.gauge .mk{position:absolute;top:0;bottom:0;width:0}
+.gauge .mk b{position:absolute;top:3px;left:-6px;width:12px;height:12px;border-radius:999px;box-shadow:0 0 0 2px #FFFFFF}
+.lv{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-width:54px;height:30px;border-radius:999px;border:2px solid #0F1411;font-family:"JetBrains Mono",monospace;font-weight:500;font-size:14px;color:#0F1411}
+.lv.a{background:#00B862;border-color:#0F1411}
+.lnk{font-size:14px;font-weight:600;text-decoration:none;color:#00754A}
+.card{border:1px solid #E3E5E1;border-radius:14px;background:#FFFFFF}
+@media (max-width:1000px){.two{grid-template-columns:1fr !important}.hero h1{font-size:52px !important}.nav{display:none !important}}
+</style>
+</helmet>
+<div style="min-height: 100%; background: #FFFFFF; color: #0F1411; font-family: Inter, 'Helvetica Neue', Arial, sans-serif;">
+
+<header style="border-bottom: 1px solid #E3E5E1;">
+<div style="max-width: 1360px; margin: 0 auto; padding: 18px 40px; display: flex; align-items: center; gap: 40px;">
+<a href="#" aria-label="Plumb home"><img src="/_blob/75aa3002a720596abe38380267f53790" alt="Plumb" style="height: 34px; display: block;"></a>
+<nav class="nav" aria-label="Main" style="display: flex; gap: 30px;">
+<a href="#" style="color: #00754A; font-weight: 600;">Index</a><a href="#">Playbooks</a><a href="#">Evals</a><a href="#">Research</a><a href="#">Pricing</a>
+</nav>
+<div style="margin-left: auto; display: flex; gap: 10px; align-items: center;">
+<a href="#" style="color: #0F1411; text-decoration: none; font-weight: 500; font-size: 15px; padding: 0 8px;">Sign in</a>
+<button class="btn ink" type="button">Start free</button>
+</div>
+</div>
+</header>
+
+<section class="hero" style="max-width: 1360px; margin: 0 auto; padding: 64px 40px 56px;">
+<div class="two" style="display: grid; grid-template-columns: 1.05fr 1fr; gap: 56px; align-items: center;">
+<div>
+<p class="lbl" style="margin: 0 0 18px; display: flex; align-items: center; gap: 10px;"><span style="width: 8px; height: 8px; border-radius: 999px; background: #00B862; display: inline-block;"></span>Plumb Index · EVAL-014 · Updated Nov 20</p>
+<h1 style="margin: 0; font-family: 'Inter Tight', sans-serif; font-size: 80px; line-height: .98; font-weight: 600; letter-spacing: -0.045em;">Know what good<br>looks like.</h1>
+<p style="margin: 22px 0 0; font-size: 20px; line-height: 30px; color: #5A625D; max-width: 520px;">Every AI marketing workflow, measured on the same brief. Cost, speed, review rounds and quality, read off one instrument.</p>
+<div style="display: flex; gap: 10px; margin-top: 28px; flex-wrap: wrap;"><button class="btn ink" type="button">Benchmark your brand</button><button class="btn" type="button">Browse the Index</button></div>
+</div>
+<div class="card" style="padding: 28px; background: #FFFFFF; box-shadow: 0 1px 0 #E3E5E1, 0 24px 48px -24px rgba(15,20,17,.12);">
+<div style="display: flex; justify-content: space-between; align-items: center;"><p class="lbl" style="margin: 0;">Reading · #1 transcreation</p><span class="lv a">A</span></div>
+<p style="margin: 10px 0 0; font-family: 'Inter Tight', sans-serif; font-size: 24px; font-weight: 600; letter-spacing: -0.02em;">Relay · Transcreation flow v3</p>
+<div style="display: flex; flex-direction: column; gap: 22px; margin-top: 24px;">
+<div><div style="display: flex; justify-content: space-between; align-items: baseline;"><span style="font-size: 14px; font-weight: 500;">Cost per asset</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 26px; font-weight: 500;">$3.10</span></div><div class="gauge" style="width: 100%; height: 22px;"><i class="zone"></i><i class="mk" style="left: 94%;"><b style="background: #00B862; top: 4px;"></b></i></div><div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #5A625D; margin-top: 6px;"><span>$48 baseline</span><span>$0</span></div></div>
+<div><div style="display: flex; justify-content: space-between; align-items: baseline;"><span style="font-size: 14px; font-weight: 500;">Review rounds</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 26px; font-weight: 500;">1.2</span></div><div class="gauge" style="width: 100%; height: 22px;"><i class="zone"></i><i class="mk" style="left: 74%;"><b style="background: #00B862; top: 4px;"></b></i></div><div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #5A625D; margin-top: 6px;"><span>4.1 baseline</span><span>0</span></div></div>
+<div><div style="display: flex; justify-content: space-between; align-items: baseline;"><span style="font-size: 14px; font-weight: 500;">Panel quality</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 26px; font-weight: 500;">94</span></div><div class="gauge" style="width: 100%; height: 22px;"><i class="zone"></i><i class="mk" style="left: 94%;"><b style="background: #00B862; top: 4px;"></b></i></div><div style="display: flex; justify-content: space-between; font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #5A625D; margin-top: 6px;"><span>0</span><span>100</span></div></div>
+</div>
+<p class="lbl" style="margin: 22px 0 0;">N=240 assets · blind panel · illustrative data</p>
+</div>
+</div>
+</section>
+
+<div style="max-width: 1360px; margin: 0 auto; padding: 0 40px;"><div class="ruler" aria-hidden="true"></div></div>
+
+<section aria-labelledby="lb-h" style="max-width: 1360px; margin: 0 auto; padding: 48px 40px 0;">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap;">
+<h2 id="lb-h" style="margin: 0; font-family: 'Inter Tight', sans-serif; font-size: 40px; font-weight: 600; letter-spacing: -0.03em;">The leaderboard</h2>
+<nav class="seg" aria-label="Index views"><a href="#">Verticals</a><a href="#">Media</a><a href="#">Creative</a><a href="#" class="on" aria-current="page">Workflows</a><a href="#">Playbooks</a></nav>
+</div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 22px; align-items: center;">
+<label for="q3" style="position: absolute; left: -9999px;">Search the index</label>
+<div style="flex: 1 1 280px; display: flex; align-items: center; gap: 10px; border: 1px solid #E3E5E1; border-radius: 8px; padding: 0 12px; min-height: 40px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5A625D" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M20 20l-3.5-3.5"></path></svg><input id="q3" type="text" placeholder="Search workflows, models, agencies…" style="border: 0; outline: none; font: inherit; font-size: 14px; width: 100%; background: transparent; color: #0F1411;"></div>
+<button class="flt on" type="button"><span>VERTICAL</span>Retail</button>
+<button class="flt on" type="button"><span>GOAL</span>Direct response</button>
+<button class="flt on" type="button"><span>MEDIA</span>Social, Performance</button>
+<button class="flt on" type="button"><span>CHANNEL</span>Meta, TikTok</button>
+<button class="flt" type="button"><span>STAGE</span>Any</button>
+<button class="flt" type="button"><span>AI ROLE</span>Any</button>
+<button class="flt" type="button"><span>BUDGET</span>≤ $12</button>
+</div>
+<div class="card" style="overflow-x: auto; margin-top: 18px;">
+<table class="tbl">
+<caption style="position: absolute; left: -9999px;">Plumb Index EVAL-014 leaderboard; cost in USD per asset; quality is a 0–100 blind panel score; gauges read right-is-better with the green zone marking the standard.</caption>
+<thead><tr><th scope="col" class="lbl">#</th><th scope="col" class="lbl">Workflow</th><th scope="col" class="lbl">Cost / asset</th><th scope="col" class="lbl">Review rounds</th><th scope="col" class="lbl">Panel quality</th><th scope="col" class="lbl">Grade</th><th scope="col"><span style="position: absolute; left: -9999px;">Actions</span></th></tr></thead>
+<tbody>
+<tr>
+<td style="font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 500; color: #00754A; width: 56px;">01</td>
+<td><div style="font-family: 'Inter Tight', sans-serif; font-size: 18px; font-weight: 600; letter-spacing: -0.01em;">Relay · Transcreation flow v3</div><div style="font-size: 13px; color: #5A625D; margin-top: 4px;">Northline Studio · Agency · Meta, TikTok</div><div style="margin-top: 8px;"><span class="chip">Human approves</span></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">$3.10</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 94%;"><b style="background: #00B862;"></b></i></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">1.2</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 74%;"><b style="background: #00B862;"></b></i></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">94</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 94%;"><b style="background: #00B862;"></b></i></div></td>
+<td><span class="lv a">A</span></td>
+<td style="text-align: right;"><a href="#" class="lnk">Fork →</a></td>
+</tr>
+<tr>
+<td style="font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 500; color: #0F1411; width: 56px;">02</td>
+<td><div style="font-family: 'Inter Tight', sans-serif; font-size: 18px; font-weight: 600; letter-spacing: -0.01em;">Fieldnote · Market adapt kit</div><div style="font-size: 13px; color: #5A625D; margin-top: 4px;">Fieldnote · In-house · Meta, Email</div><div style="margin-top: 8px;"><span class="chip">Human approves</span></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">$4.40</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 91%;"><b style="background: #00B862;"></b></i></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">1.5</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 67%;"><b style="background: #A35400;"></b></i></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">91</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 91%;"><b style="background: #00B862;"></b></i></div></td>
+<td><span class="lv a">A</span></td>
+<td style="text-align: right;"><a href="#" class="lnk">Fork →</a></td>
+</tr>
+<tr>
+<td style="font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 500; color: #0F1411; width: 56px;">03</td>
+<td><div style="font-family: 'Inter Tight', sans-serif; font-size: 18px; font-weight: 600; letter-spacing: -0.01em;">Tessel · Resize engine 2</div><div style="font-size: 13px; color: #5A625D; margin-top: 4px;">Tessel · Tool · Google Ads, Meta</div><div style="margin-top: 8px;"><span class="chip">Fully automated</span></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">$0.60</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 99%;"><b style="background: #00B862;"></b></i></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">0.4</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 91%;"><b style="background: #00B862;"></b></i></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">86</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 86%;"><b style="background: #00B862;"></b></i></div></td>
+<td><span class="lv a">A</span></td>
+<td style="text-align: right;"><a href="#" class="lnk">Fork →</a></td>
+</tr>
+<tr>
+<td style="font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 500; color: #0F1411; width: 56px;">04</td>
+<td><div style="font-family: 'Inter Tight', sans-serif; font-size: 18px; font-weight: 600; letter-spacing: -0.01em;">Hybrid studio pod</div><div style="font-size: 13px; color: #5A625D; margin-top: 4px;">Marrow &amp; Co · Agency · YouTube, TikTok</div><div style="margin-top: 8px;"><span class="chip">Human approves</span></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">$11.20</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 77%;"><b style="background: #00B862;"></b></i></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">2.8</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 39%;"><b style="background: #A35400;"></b></i></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">90</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 90%;"><b style="background: #00B862;"></b></i></div></td>
+<td><span class="lv ">B</span></td>
+<td style="text-align: right;"><a href="#" class="lnk">Fork →</a></td>
+</tr>
+<tr>
+<td style="font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 500; color: #0F1411; width: 56px;">05</td>
+<td><div style="font-family: 'Inter Tight', sans-serif; font-size: 18px; font-weight: 600; letter-spacing: -0.01em;">Brand-safe localizer</div><div style="font-size: 13px; color: #5A625D; margin-top: 4px;">Okto · Agency · Meta, Email</div><div style="margin-top: 8px;"><span class="chip">Human approves</span></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">$7.90</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 84%;"><b style="background: #00B862;"></b></i></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">2.3</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 50%;"><b style="background: #A35400;"></b></i></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">88</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 88%;"><b style="background: #00B862;"></b></i></div></td>
+<td><span class="lv ">B</span></td>
+<td style="text-align: right;"><a href="#" class="lnk">Fork →</a></td>
+</tr>
+<tr class="you">
+<td style="font-family: 'JetBrains Mono', monospace; font-size: 18px; font-weight: 500; color: #0F1411; width: 56px;">38</td>
+<td><div style="font-family: 'Inter Tight', sans-serif; font-size: 18px; font-weight: 600; letter-spacing: -0.01em;">You · [Your brand] current process</div><div style="font-size: 13px; color: #5A625D; margin-top: 4px;">Your data · gap to #1: $19.30 and 2.2 rounds</div><div style="margin-top: 8px;"><span class="chip">Human approves</span></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">$22.40</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 53%;"><b style="background: #A35400;"></b></i></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">3.4</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 26%;"><b style="background: #A35400;"></b></i></div></td>
+<td><div style="font-family: 'JetBrains Mono', monospace; font-size: 17px; font-weight: 500;">82</div><div class="gauge" aria-hidden="true"><i class="zone"></i><i class="mk" style="left: 82%;"><b style="background: #00B862;"></b></i></div></td>
+<td><span class="lv ">B</span></td>
+<td style="text-align: right;"><a href="#" class="lnk">Get playbook →</a></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p style="margin: 12px 0 0; font-size: 13px; color: #5A625D;">Gauges read right-is-better; the green zone is the Plumb standard. Baseline: traditional agency, $48.00/asset, 4.1 rounds, quality 89. Illustrative data.</p>
+</section>
+
+<section aria-labelledby="bm-h" style="max-width: 1360px; margin: 0 auto; padding: 80px 40px 0;">
+<div class="card two" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0; overflow: hidden;">
+<div style="padding: 44px;">
+<p class="lbl" style="margin: 0;">Private benchmark · free</p>
+<h2 id="bm-h" style="margin: 14px 0 0; font-family: 'Inter Tight', sans-serif; font-size: 44px; line-height: 1.02; font-weight: 600; letter-spacing: -0.035em;">Put your brand on the level.</h2>
+<p style="margin: 14px 0 0; font-size: 17px; line-height: 26px; color: #5A625D;">Upload how your team works today. We take the same readings and show you exactly how far off level you are.</p>
+<div style="display: flex; gap: 18px; margin-top: 24px; flex-wrap: wrap; font-size: 14px; font-weight: 500;"><span>① Upload</span><span>② We measure</span><span>③ See your gap and playbook</span></div>
+</div>
+<div style="padding: 32px; background: #F6F7F5; border-left: 1px solid #E3E5E1;">
+<div style="height: 100%; box-sizing: border-box; border: 1.5px dashed #C9CEC9; border-radius: 12px; background: #FFFFFF; padding: 32px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 12px;">
+<span aria-hidden="true" style="width: 52px; height: 52px; border-radius: 14px; background: #E8F8EF; color: #00754A; display: inline-flex; align-items: center; justify-content: center;"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4M7 9l5-5 5 5M4 16v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"></path></svg></span>
+<p style="margin: 0; font-size: 17px; font-weight: 600;">Drop your workflow</p>
+<p style="margin: 0; font-size: 14px; line-height: 20px; color: #5A625D; max-width: 340px;">Process map, brief and assets, or a cost and timing sheet. PDF, Figma, CSV, XLSX, ZIP.</p>
+<div style="display: flex; gap: 8px; flex-wrap: wrap; justify-content: center; margin-top: 6px;"><label for="f3" class="btn ink" style="cursor: pointer;">Browse files</label><input id="f3" type="file" style="position: absolute; left: -9999px;"><button class="btn" type="button">Connect Figma</button></div>
+<p class="lbl" style="margin: 6px 0 0;">Private to your team</p>
+</div>
+</div>
+</div>
+</section>
+
+<section aria-labelledby="pl-h" style="max-width: 1360px; margin: 0 auto; padding: 80px 40px 0;">
+<div class="ruler" aria-hidden="true"></div>
+<h2 id="pl-h" style="margin: 32px 0 0; font-family: 'Inter Tight', sans-serif; font-size: 40px; font-weight: 600; letter-spacing: -0.03em;">Start free. Calibrate when you're ready.</h2>
+<div class="two" style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 24px;">
+<div class="card" style="padding: 32px;">
+<p class="lbl" style="margin: 0;">Benchmark</p>
+<p style="margin: 10px 0 0; font-family: 'Inter Tight', sans-serif; font-size: 52px; font-weight: 600; letter-spacing: -0.04em;">Free</p>
+<ul style="margin: 18px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; line-height: 22px;">
+<li>✓ Readings on cost, speed and review rounds</li><li>✓ Your rank and gap to #1</li><li>✓ The public Index and playbooks</li></ul>
+<button class="btn" type="button" style="margin-top: 24px;">Benchmark free</button>
+</div>
+<div class="card" style="padding: 32px; background: #0F1411; border-color: #0F1411; color: #FFFFFF;">
+<div style="display: flex; justify-content: space-between; align-items: center;"><p class="lbl" style="margin: 0; color: #A3ABA5;">Membership</p><span class="lv a" style="border-color: #FFFFFF; color: #0F1411;">Full</span></div>
+<p style="margin: 10px 0 0; font-family: 'Inter Tight', sans-serif; font-size: 52px; font-weight: 600; letter-spacing: -0.04em;">$500<span style="font-size: 20px; color: #A3ABA5; font-weight: 500;"> / month</span></p>
+<ul style="margin: 18px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; line-height: 22px; color: #E6E9E6;">
+<li>✓ Full analysis on every vector: vertical, brand vs DR, media, channel, stage, AI role</li><li>✓ Market scan: narrative, brand, CX and AI commerce rank in your vertical</li><li>✓ Your agencies benchmarked against peers</li><li>✓ A forkable playbook to close your gap</li></ul>
+<button class="btn" type="button" style="margin-top: 24px; background: #00B862; border-color: #00B862; color: #0F1411;">Become a member</button>
+</div>
+</div>
+</section>
+
+<footer style="max-width: 1360px; margin: 0 auto; padding: 72px 40px 48px; display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; border-top: 1px solid #E3E5E1; margin-top: 80px;">
+<img src="/_blob/75aa3002a720596abe38380267f53790" alt="Plumb" style="height: 28px; display: block;">
+<span class="lbl">Know what good looks like · rankings can't be bought</span>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2900}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

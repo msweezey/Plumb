@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Plumb Playbooks — repository</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=Geist+Mono:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;family=Inter+Tight:wght@600&amp;display=swap">
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#6A2BE0;text-decoration:none}a:hover{color:#17131F}
+.lbl{font-family:"Geist Mono",Menlo,monospace;font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#625C70}
+.mono{font-family:"Geist Mono",Menlo,monospace}
+.btn{font-family:Geist,Arial,sans-serif;font-size:14px;font-weight:600;padding:8px 14px;border-radius:10px;border:1px solid #E7E3F0;background:#FFFFFF;color:#17131F;cursor:pointer;min-height:40px;display:inline-flex;align-items:center;gap:8px}
+.btn .ct{font-family:"Geist Mono",monospace;font-size:12px;font-weight:500;padding:2px 8px;border-radius:999px;background:#F4F1FA;color:#17131F}
+.btn.pri{background:#6A2BE0;border-color:#6A2BE0;color:#FFFFFF}
+.btn.pri .ct{background:#8B57EC;color:#FFFFFF}
+.tabs{display:flex;gap:4px;border-bottom:1px solid #EFECF5;flex-wrap:wrap}
+.tabs a{display:inline-flex;align-items:center;gap:8px;padding:12px 14px;font-size:14px;font-weight:500;color:#625C70;border-bottom:2px solid transparent;margin-bottom:-1px}
+.tabs a.on{color:#17131F;font-weight:600;border-bottom-color:#6A2BE0}
+.tabs a span{font-family:"Geist Mono",monospace;font-size:11px;padding:1px 7px;border-radius:999px;background:#F4F1FA;color:#625C70}
+.box{border:1px solid #EFECF5;border-radius:14px;background:#FFFFFF;overflow:hidden}
+.file{display:grid;grid-template-columns:22px 1fr 1.4fr 90px;gap:12px;align-items:center;padding:11px 16px;border-top:1px solid #EFECF5;font-size:14px}
+.file:first-child{border-top:0}
+.file .msg{color:#625C70;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.file .when{color:#625C70;text-align:right;font-size:13px}
+.sec h3{margin:0;font-family:'Instrument Serif',Georgia,serif;font-size:30px;font-weight:400;line-height:1.1}
+.step{display:flex;flex-direction:column;gap:6px;padding:14px;border:1px solid #EFECF5;border-radius:12px;background:#FFFFFF;min-width:0}
+.step b{font-size:14px}
+.step span{font-size:12px;color:#625C70}
+.role{display:grid;grid-template-columns:1fr 1.3fr 90px;gap:12px;padding:11px 0;border-top:1px solid #EFECF5;font-size:14px;align-items:center}
+.tag{display:inline-flex;font-size:12px;font-weight:500;padding:3px 9px;border-radius:999px;background:#F4F1FA;color:#17131F}
+.tag.p{background:#ECE4FF;color:#6A2BE0}
+.gauge{position:relative;height:10px;border-radius:999px;background:#F7F5FB;border:1px solid #EFECF5;overflow:hidden;margin-top:6px}
+.gauge i{position:absolute;right:0;top:0;bottom:0;width:30%;background:#F4EFFF}
+.gauge b{position:absolute;top:1px;width:8px;height:8px;border-radius:999px;background:#6A2BE0;margin-left:-4px}
+.fork{display:grid;grid-template-columns:1.4fr 1fr 70px 70px 64px 62px;gap:10px;align-items:center;padding:12px 16px;border-top:1px solid #EFECF5;font-size:14px}
+.up{color:#1B7047;font-weight:600}.dn{color:#A35400;font-weight:600}
+@media (max-width:1000px){.cols{grid-template-columns:1fr !important}.flow{grid-template-columns:1fr 1fr !important}}
+</style>
+</helmet>
+<div style="min-height: 100%; background: #FFFFFF; color: #17131F; font-family: Geist, 'Helvetica Neue', Arial, sans-serif;">
+
+<header style="border-bottom: 1px solid #EFECF5;">
+<div style="max-width: 1360px; margin: 0 auto; padding: 18px 40px; display: flex; align-items: center; gap: 36px;">
+<span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 36px; line-height: 1; letter-spacing: -0.02em;">Plumb<span aria-hidden="true" style="display: inline-block; width: 7px; height: 7px; border-radius: 999px; background: #6A2BE0; margin-left: 2px;"></span></span>
+<nav aria-label="Main" style="display: flex; gap: 28px; font-size: 15px; font-weight: 500;"><a href="#" style="color: #17131F;">Index</a><a href="#" style="color: #6A2BE0; font-weight: 600;">Playbooks</a><a href="#" style="color: #17131F;">Evals</a><a href="#" style="color: #17131F;">Research</a></nav>
+<label for="pq" style="position: absolute; left: -9999px;">Search playbooks</label>
+<input id="pq" type="text" placeholder="Search playbooks, workflows, stacks…" style="margin-left: auto; width: 320px; font: inherit; font-size: 14px; padding: 9px 14px; border: 1px solid #E7E3F0; border-radius: 10px; outline: none; color: #17131F;">
+</div>
+</header>
+
+<div style="max-width: 1360px; margin: 0 auto; padding: 28px 40px 0;">
+<p style="margin: 0; font-size: 14px; color: #625C70;"><a href="#">Playbooks</a> / <a href="#">Retail</a> / <a href="#">Adaptation &amp; scale</a></p>
+<div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 20px; flex-wrap: wrap; margin-top: 14px;">
+<div>
+<h1 style="margin: 0; font-size: 26px; font-weight: 500; letter-spacing: -0.01em;"><span style="color: #625C70;">northline /</span> <b style="font-weight: 700;">transcreation-paid-social</b> <span class="tag p" style="vertical-align: middle; margin-left: 6px;">Grade A</span> <span class="tag" style="vertical-align: middle;">Public</span></h1>
+<p style="margin: 8px 0 0; font-size: 15px; color: #625C70; max-width: 720px;">How a 6-person team turns one hero campaign into on-brand paid social for 3 markets, with one human approval pass.</p>
+</div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap;">
+<button class="btn" type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12z"></path><circle cx="12" cy="12" r="3"></circle></svg>Watch <span class="ct">212</span></button>
+<button class="btn" type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 3l2.6 5.6 6.1.6-4.6 4.1 1.3 6-5.4-3.2-5.4 3.2 1.3-6L3.3 9.2l6.1-.6z"></path></svg>Star <span class="ct">1.4k</span></button>
+<button class="btn pri" type="button"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="6" cy="5" r="2"></circle><circle cx="18" cy="5" r="2"></circle><circle cx="12" cy="19" r="2"></circle><path d="M6 7v2a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V7M12 12v5"></path></svg>Fork <span class="ct">86</span></button>
+</div>
+</div>
+<nav class="tabs" aria-label="Playbook sections" style="margin-top: 20px;">
+<a href="#" class="on" aria-current="page">Overview</a><a href="#">Workflow</a><a href="#">Team</a><a href="#">Oversight</a><a href="#">Stack</a><a href="#">Outcomes <span>4</span></a><a href="#">Forks <span>86</span></a><a href="#">Discussions <span>23</span></a>
+</nav>
+</div>
+
+<div class="cols" style="max-width: 1360px; margin: 0 auto; padding: 24px 40px 64px; display: grid; grid-template-columns: 1fr 340px; gap: 28px; align-items: start;">
+
+<main style="min-width: 0; display: flex; flex-direction: column; gap: 22px;">
+
+<div class="box">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 12px 16px; background: #F7F5FB; border-bottom: 1px solid #EFECF5; font-size: 13px; flex-wrap: wrap;">
+<span style="display: flex; align-items: center; gap: 10px;"><button class="btn" type="button" style="min-height: 32px; padding: 4px 10px; font-size: 13px;">main ▾</button><b>v3.2</b> <span style="color: #625C70;">Moved brand QA into the agent step · 6 days ago</span></span>
+<span class="mono" style="color: #625C70;">48 commits · 6 contributors</span>
+</div>
+<div class="file"><span aria-hidden="true">▤</span><b>workflow.yaml</b><span class="msg">Steps, models, prompts and review gates</span><span class="when">6 days ago</span></div>
+<div class="file"><span aria-hidden="true">▤</span><b>team.md</b><span class="msg">Roles, headcount, hours per campaign</span><span class="when">3 wks ago</span></div>
+<div class="file"><span aria-hidden="true">▤</span><b>oversight.md</b><span class="msg">Who approves what, when humans step in</span><span class="when">6 days ago</span></div>
+<div class="file"><span aria-hidden="true">▤</span><b>stack.json</b><span class="msg">Tools, models, integrations and costs</span><span class="when">2 wks ago</span></div>
+<div class="file"><span aria-hidden="true">▣</span><b>prompts/</b><span class="msg">12 prompt templates, per market</span><span class="when">6 days ago</span></div>
+<div class="file"><span aria-hidden="true">▣</span><b>evals/</b><span class="msg">Plumb EVAL-014 results, N=240</span><span class="when">Nov 14</span></div>
+</div>
+
+<section class="sec box" style="padding: 24px;" aria-labelledby="wf">
+<div style="display: flex; justify-content: space-between; align-items: baseline;"><h3 id="wf">Workflow</h3><span class="lbl">workflow.yaml</span></div>
+<div class="flow" style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 16px;">
+<div class="step"><span class="lbl">1 · Agent</span><b>Ingest hero + brief</b><span>Claude Sonnet · 2 min</span></div>
+<div class="step"><span class="lbl">2 · Agent</span><b>Transcreate copy</b><span>Gemini 2.5 Pro · DE, FR, JA</span></div>
+<div class="step"><span class="lbl">3 · Agent</span><b>Adapt + resize</b><span>Figma API · 24 placements</span></div>
+<div class="step"><span class="lbl">4 · Agent</span><b>Brand QA</b><span>Checks voice, legal, layout</span></div>
+<div class="step" style="border-color: #6A2BE0; background: #FBF9FF;"><span class="lbl" style="color: #6A2BE0;">5 · Human</span><b>One approval pass</b><span>Market lead signs off</span></div>
+</div>
+</section>
+
+<div class="cols" style="display: grid; grid-template-columns: 1fr 1fr; gap: 22px;">
+<section class="sec box" style="padding: 24px;" aria-labelledby="tm">
+<div style="display: flex; justify-content: space-between; align-items: baseline;"><h3 id="tm">Team structure</h3><span class="lbl">team.md</span></div>
+<div style="margin-top: 12px;">
+<div class="role"><b>AI producer</b><span style="color: #625C70;">Runs the flow, tunes prompts</span><span class="mono" style="text-align: right;">1 · 40%</span></div>
+<div class="role"><b>Creative lead</b><span style="color: #625C70;">Owns the hero and voice</span><span class="mono" style="text-align: right;">1 · 15%</span></div>
+<div class="role"><b>Market leads</b><span style="color: #625C70;">Approve per market</span><span class="mono" style="text-align: right;">3 · 5%</span></div>
+<div class="role"><b>Media ops</b><span style="color: #625C70;">Ships to Meta and TikTok</span><span class="mono" style="text-align: right;">1 · 10%</span></div>
+</div>
+</section>
+<section class="sec box" style="padding: 24px;" aria-labelledby="ov">
+<div style="display: flex; justify-content: space-between; align-items: baseline;"><h3 id="ov">Oversight</h3><span class="lbl">oversight.md</span></div>
+<div style="margin-top: 12px;">
+<div class="role"><b>AI role</b><span>AI does it, human approves</span><span></span></div>
+<div class="role"><b>Review gates</b><span>1 human, 1 agent QA</span><span></span></div>
+<div class="role"><b>Escalation</b><span>Legal flags go to brand counsel</span><span></span></div>
+<div class="role"><b>Audit trail</b><span>Every output logged with prompt + model</span><span></span></div>
+</div>
+</section>
+</div>
+
+<section class="sec box" style="padding: 24px;" aria-labelledby="st">
+<div style="display: flex; justify-content: space-between; align-items: baseline;"><h3 id="st">Tech stack</h3><span class="lbl">stack.json · $410 / month</span></div>
+<div style="display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px;">
+<span class="tag">Gemini 2.5 Pro</span><span class="tag">Claude Sonnet</span><span class="tag">Figma API</span><span class="tag">Frame.io</span><span class="tag">Meta Ads</span><span class="tag">TikTok Ads</span><span class="tag">Slack approvals</span><span class="tag">Google Drive</span>
+</div>
+</section>
+
+<section class="box" aria-labelledby="fk">
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 18px 16px 12px; gap: 12px; flex-wrap: wrap;">
+<div><h3 id="fk" style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 30px; font-weight: 400;">Forks and their outcomes</h3><p style="margin: 4px 0 0; font-size: 14px; color: #625C70;">Every fork is re-measured by Plumb, so you can see what worked when others ran it.</p></div>
+<span class="lbl">86 forks · 31 measured</span>
+</div>
+<div class="fork lbl" style="padding-top: 8px; padding-bottom: 8px; background: #F7F5FB;"><span>Fork</span><span>What they changed</span><span>Cost</span><span>Rounds</span><span>Quality</span><span>Grade</span></div>
+<div class="fork"><span><b>[Brand A]</b> / transcreation-paid-social</span><span style="color: #625C70;">Added Klaviyo email step</span><span class="mono">$2.80 <span class="up">▼</span></span><span class="mono">1.1</span><span class="mono">95</span><span><span class="tag p">A</span></span></div>
+<div class="fork"><span><b>[Agency B]</b> / tps-latam</span><span style="color: #625C70;">Spanish + Portuguese markets</span><span class="mono">$3.40 <span class="dn">▲</span></span><span class="mono">1.4</span><span class="mono">92</span><span><span class="tag p">A</span></span></div>
+<div class="fork"><span><b>[Brand C]</b> / tps-no-agent-qa</span><span style="color: #625C70;">Removed agent QA step</span><span class="mono">$2.20 <span class="up">▼</span></span><span class="mono">2.9 <span class="dn">▲</span></span><span class="mono">84</span><span><span class="tag">B</span></span></div>
+<div class="fork"><span style="display: inline-flex; gap: 8px; align-items: center;"><b style="color: #6A2BE0;">You</b> / tps-retail</span><span style="color: #625C70;">Forked 3 days ago · run it to get measured</span><span class="mono">—</span><span class="mono">—</span><span class="mono">—</span><span><a href="#" style="font-size: 13px; font-weight: 600;">Submit run →</a></span></div>
+</section>
+</main>
+
+<aside style="display: flex; flex-direction: column; gap: 18px;" aria-label="About this playbook">
+<div class="box" style="padding: 22px;">
+<div style="display: flex; justify-content: space-between; align-items: center;"><p class="lbl" style="margin: 0;">Measured outcome</p><span class="tag p">Plumb verified</span></div>
+<div style="margin-top: 14px; display: flex; flex-direction: column; gap: 14px;">
+<div><div style="display: flex; justify-content: space-between; font-size: 14px;"><span>Cost / asset</span><b class="mono">$3.10</b></div><div class="gauge"><i></i><b style="left: 94%;"></b></div></div>
+<div><div style="display: flex; justify-content: space-between; font-size: 14px;"><span>Review rounds</span><b class="mono">1.2</b></div><div class="gauge"><i></i><b style="left: 74%;"></b></div></div>
+<div><div style="display: flex; justify-content: space-between; font-size: 14px;"><span>Time / asset</span><b class="mono">4.2h</b></div><div class="gauge"><i></i><b style="left: 88%;"></b></div></div>
+<div><div style="display: flex; justify-content: space-between; font-size: 14px;"><span>Panel quality</span><b class="mono">94</b></div><div class="gauge"><i></i><b style="left: 94%;"></b></div></div>
+</div>
+<p class="lbl" style="margin: 14px 0 0;">EVAL-014 · N=240 · vs agency baseline $48</p>
+</div>
+<div class="box" style="padding: 22px;">
+<p class="lbl" style="margin: 0;">About</p>
+<p style="margin: 10px 0 0; font-size: 14px; line-height: 21px;">Paid-social transcreation for retail. Best for teams of 4–8 shipping weekly across 3+ markets.</p>
+<div style="display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px;"><span class="tag">Retail</span><span class="tag">Direct response</span><span class="tag">Social</span><span class="tag">Meta</span><span class="tag">TikTok</span></div>
+<div style="margin-top: 14px; font-size: 14px; display: flex; flex-direction: column; gap: 8px;"><span>Maintained by <b>Northline Studio</b></span><span>License: <b>Plumb Open Playbook</b></span><span>Setup time: <b>~2 weeks</b></span></div>
+</div>
+<div class="box" style="padding: 22px; background: #1E1238; border-color: #1E1238; color: #FFFFFF;">
+<p style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 26px; line-height: 1.1;">Want help setting it up?</p>
+<p style="margin: 8px 0 14px; font-size: 14px; line-height: 21px; color: #CFC6E6;">A forward-deployed Plumb creative can stand up this team, stack and oversight with you.</p>
+<button class="btn" type="button" style="background: #9B6BFF; border-color: #9B6BFF; color: #1E1238;">Talk to an implementer</button>
+</div>
+</aside>
+</div>
+<p style="max-width: 1360px; margin: 0 auto; padding: 0 40px 40px; font-size: 12px; color: #625C70;">Illustrative data.</p>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1900}}'>
+class Component extends DCLogic {
+renderVals() {
+return {};
+}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+/* Plumb — generated from tokens.json */
+:root, [data-theme="light"] {
+  --paper: #f3f1ea; /* Page background. The default ground for everything. */
+  --paper-raised: #fbfaf6; /* Cards, tables and panels that sit on paper. Separate with hairline, never a shadow. */
+  --chalk: #e4e0d4; /* Tint fields: table headers, callouts, quiet section bands. Body text on chalk uses ink or lead only. */
+  --hairline: #cfcab9; /* 1px rules and dividers. Decorative only; control borders use ink. */
+  --ink: #121212; /* Primary text, wordmark, control borders, the plumb line. 16.6:1 on paper. */
+  --lead: #5e6368; /* Secondary text, captions, metadata. Named for plumbum, the lead in a plumb bob. 5.4:1 on paper, 4.6:1 on chalk. */
+  --line: #f5431a; /* Signal orange, the brand color. The bob, the one thing on a page that must be seen, big numbers and fills. Not for body text on paper (3.3:1); ink text on a line fill is 5.1:1. */
+  --line-ink: #b8330c; /* Orange when it has to be text: links, inline emphasis, a figure in a sentence. 4.5:1+ on paper and chalk. */
+  --plum: #4b1d3f; /* Secondary brand color, the quiet nod to the name. Large fields, report covers, the editorial serif on paper. Paper text on plum is 12:1. */
+  --level: #1b7047; /* Meets the standard. Pass states and grade A. Always paired with a word or glyph, never color alone. */
+}
+[data-theme="dark"] {
+  --paper: #0f0f0e;
+  --paper-raised: #1a1a18;
+  --chalk: #2a2926;
+  --hairline: #34332f;
+  --ink: #f3f1ea;
+  --lead: #a3a8ad;
+  --line: #ff5a2e;
+  --line-ink: #ff7a55;
+  --plum: #c58bb3;
+  --level: #4cc38a;
+}
+:root {
+  --space-1: 4px; /* Icon to label, tight inline gaps. */
+  --space-2: 8px; /* Label to field, chip padding. */
+  --space-4: 16px; /* Card padding, gaps between list rows. */
+  --space-6: 24px; /* Gaps between cards. */
+  --space-10: 40px; /* Page margins, cover insets. */
+  --space-16: 64px; /* Between page sections. */
+  --radius-0: 0px; /* Default. Blocks, cards, images, tables: Plumb is square. */
+  --radius-sm: 4px; /* Inputs and buttons only. */
+  --radius-pill: 999px; /* Grade chips and the Plumbed seal. */
+  --font-sans: "Geist", "Helvetica Neue", Arial, sans-serif;
+  --font-serif: "Instrument Serif", Georgia, serif;
+  --font-mono: "Geist Mono", Menlo, Consolas, monospace;
+  --text-display: 700 96px/0.92 var(--font-serif); /* One per page. Covers, report titles, the event stage. */
+  --text-headline: 700 48px/52px var(--font-sans); /* Section openers and big claims. */
+  --text-title: 700 28px/34px var(--font-sans); /* Card and playbook titles. */
+  --text-aside: italic 400 32px/38px var(--font-serif); /* The human voice: pull quotes, the turn in a headline. Never more than a line or two. */
+  --text-body: 400 16px/24px var(--font-sans); /* Running text. */
+  --text-small: 400 13px/18px var(--font-sans); /* Captions, footnotes, metadata in lead. */
+  --text-figure: 600 40px/44px var(--font-mono); /* The number that proves the claim. */
+  --text-label: 500 11px/14px var(--font-mono); /* Eval IDs, tags, table headers. Set in capitals. */
+}
+.display {
+  font-family: var(--font-serif);
+  font-size: 96px;
+  line-height: 0.92;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+.headline {
+  font-family: var(--font-sans);
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+.title {
+  font-family: var(--font-sans);
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.aside {
+  font-family: var(--font-serif);
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 400;
+  letter-spacing: 0;
+  font-style: italic;
+}
+.body {
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.small {
+  font-family: var(--font-sans);
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+.figure {
+  font-family: var(--font-mono);
+  font-size: 40px;
+  line-height: 44px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+}
