@@ -31,7 +31,7 @@ This guide covers the current *hybrid* direction: the editorial warmth of Option
 
 ![Plumb wordmark](brand/hybrid/logos/plumb-wordmark.svg)
 
-**Name mark.** "Plumb" set in **Instrument Serif**, regular, tracking −2%, ink `#17131F`, followed by a small **purple dot** (`#6A2BE0`) on the baseline. The dot is the plumb bob: the point the line settles on.
+**Name mark.** "Plumb" set in **Instrument Serif**, regular, tracking −2%, ink `#17131F`, followed by a small **purple dot** (`#6A2BE0`) on the baseline. (In the SVG files the dot is a purple full stop, so it lands correctly whatever the rendered width.) The dot is the plumb bob: the point the line settles on.
 
 - Dot diameter ≈ 18% of cap height (8px at 40px type, 7px at 34px). Keep it small. It is a full stop, not a bullet.
 - Dot gap: 2px at 40px.
