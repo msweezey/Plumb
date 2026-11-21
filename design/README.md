@@ -4,6 +4,8 @@ Brand and UI design work for **Plumb**, the AI-native analyst firm. Tagline: *Kn
 
 Exported from the Claude design artifacts on 2026-11-20.
 
+**Brand guide: [BRAND.md](BRAND.md)** (current hybrid direction, with tokens and logos in `brand/hybrid/`).
+
 ## Layout
 
 | Folder | What it is | Source artifact |
@@ -12,6 +14,7 @@ Exported from the Claude design artifacts on 2026-11-20.
 | `ui/option-1/` | Purple UI: Index, Dashboard and Onboarding. | [Option 1 UI](https://claude.ai/artifact/2crw1zXH2SJzzGe8thwQWb) |
 | `ui/option-2/` | Editorial black-and-white UI. | [Option 2 UI](https://claude.ai/artifact/Ya4FXCN6gGQVS6EjAkWVZ3) |
 | `ui/option-3/` | "Instrument" UI: white, level green, spirit-level mark. | [Option 3 UI](https://claude.ai/artifact/B2Fp13FuDwapdVNmUf3C6b) |
+| `brand/hybrid/` | **Current brand.** Tokens (`tokens.css`) and logo SVGs for the hybrid direction. Guide: `BRAND.md`. | — |
 | `brand/option-1-purple/` | Design system: tokens (JSON and CSS), README, logos. | [Option 1](https://claude.ai/artifact/DkN3k9WLVsYWZodmoWPjUE) |
 | `brand/option-2-editorial/` | Design system for option 2. | [Option 2](https://claude.ai/artifact/EWbNbuobGipRJFVo4r1kMM) |
 | `brand/option-3-instrument/` | Design system for option 3. | [Option 3](https://claude.ai/artifact/LquwSZKpz2oeusf7X8hG9Y) |

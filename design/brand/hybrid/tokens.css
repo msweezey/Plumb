@@ -1,0 +1,41 @@
+/* Plumb brand tokens (hybrid direction). Source of truth: design/BRAND.md */
+:root {
+  /* Brand */
+  --plumb-purple: #6A2BE0;        /* brand accent: dot, links, active states, primary CTA */
+  --plumb-purple-light: #9B6BFF;  /* accent on dark surfaces */
+  --plumb-lavender: #ECE4FF;      /* active nav fill */
+  --plumb-lavender-soft: #F4EFFF; /* "you" row, target zone */
+  --plumb-night: #1E1238;         /* dark CTA panels */
+
+  /* Signal (from the Instrument direction) */
+  --level-green: #00B862;         /* fills only: bars, gauges. Never text */
+  --level-ink: #00754A;           /* green text: #1, "Earned", Pass */
+  --level-wash: #E8F8EF;
+  --amber: #A35400;               /* warning text: "Bought", Fail */
+  --amber-wash: #FBEFE3;
+
+  /* Neutrals */
+  --ink: #17131F;                 /* primary text */
+  --ink-cool: #0F1411;            /* data and table text */
+  --lead: #625C70;                /* secondary text, labels */
+  --lead-cool: #5A625D;
+  --hairline: #EFECF5;            /* borders */
+  --hairline-cool: #E3E5E1;
+  --tick: #D9D3E6;                /* ruler and gauge ticks */
+  --mist: #F7F5FB;                /* table header, segmented control */
+  --paper: #FFFFFF;               /* page background: always white */
+
+  /* Type */
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-head: 'Inter Tight', 'Inter', sans-serif;
+  --font-body: 'Geist', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+  --font-label: 'Geist Mono', Menlo, monospace;
+  --font-data: 'JetBrains Mono', Menlo, monospace;
+
+  /* Shape */
+  --radius-sm: 8px;   /* filters, inputs */
+  --radius-md: 12px;  /* buttons in CTAs, nav items */
+  --radius-lg: 16px;  /* cards */
+  --radius-xl: 24px;  /* section panels */
+  --radius-pill: 999px;
+}
