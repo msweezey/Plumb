@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Plumb Website Mockup</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@500&family=Instrument+Serif:ital@0;1&family=Inter+Tight:wght@600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: white instrument page, max 1240px. Two views do the work: the Index (a list of tasks) and one task broken down by level.
+   Hybrid UI (1+3). Single light look by design: the brand is always on a white page. */
+:root{
+  --purple:#6A2BE0; --purple-light:#9B6BFF; --lav:#ECE4FF; --lav-soft:#F4EFFF; --night:#1E1238;
+  --live:#00B862; --pass:#00754A; --pass-wash:#E8F8EF; --amber:#A35400; --amber-wash:#FBEFE3;
+  --ink:#17131F; --ink-cool:#0F1411; --lead:#625C70; --hair:#EFECF5; --tick:#D9D3E6; --mist:#F7F5FB; --paper:#FFFFFF;
+  --f-display:'Instrument Serif',Georgia,serif; --f-head:'Inter Tight','Helvetica Neue',Arial,sans-serif;
+  --f-body:'Geist','Helvetica Neue',Arial,sans-serif; --f-label:'Geist Mono',Menlo,monospace; --f-data:'JetBrains Mono',Menlo,monospace;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--purple)} a:hover{color:var(--ink)}
+:focus-visible{outline:2px solid var(--purple);outline-offset:2px;border-radius:6px}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+@media(min-width:900px){.wrap{padding-left:max(40px,env(safe-area-inset-left,0px));padding-right:max(40px,env(safe-area-inset-right,0px))}}
+.lbl{font-family:var(--f-label);font-size:11px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--lead);margin:0}
+.num{font-family:var(--f-data);font-weight:500;font-variant-numeric:tabular-nums}
+.dot{display:inline-block;width:8px;height:8px;border-radius:999px;background:var(--live);flex:none}
+.ruler{height:14px;background-image:repeating-linear-gradient(90deg,var(--tick) 0 1px,transparent 1px 8px),repeating-linear-gradient(90deg,var(--ink) 0 1px,transparent 1px 40px);background-size:100% 7px,100% 14px;background-repeat:repeat-x;background-position:bottom,bottom}
+h2.sec{font-family:var(--f-display);font-weight:400;font-size:clamp(34px,4.6vw,52px);line-height:1.02;letter-spacing:-.02em;margin:14px 0 0;text-wrap:balance}
+h2.sec em{color:var(--purple)}
+section.block{padding-block:64px 0}
+.btn{font-family:var(--f-body);font-size:15px;font-weight:600;padding:11px 18px;border-radius:10px;border:1px solid var(--hair);background:var(--paper);color:var(--ink);cursor:pointer;min-height:44px;display:inline-flex;align-items:center;gap:8px;text-decoration:none}
+.btn:hover{border-color:var(--tick);color:var(--ink)}
+.btn.ink{background:var(--ink);border-color:var(--ink);color:#fff}
+.btn.ink:hover{background:#2a2433;color:#fff}
+.card{border:1px solid var(--hair);border-radius:16px;background:var(--paper)}
+.seg{display:inline-flex;gap:4px;padding:4px;border-radius:999px;background:var(--mist);border:1px solid var(--hair);flex-wrap:wrap}
+.seg button{font:inherit;font-size:14px;padding:8px 16px;border-radius:999px;border:0;background:transparent;color:var(--lead);font-weight:500;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--paper);color:var(--ink);font-weight:600;box-shadow:0 0 0 1px var(--hair)}
+.flt{display:inline-flex;align-items:center;gap:8px;font:inherit;font-size:13.5px;font-weight:500;padding:6px 12px;border-radius:8px;border:1px solid var(--hair);background:var(--paper);color:var(--ink);cursor:pointer;min-height:36px}
+.flt span{font-family:var(--f-label);font-size:10px;letter-spacing:.1em;color:var(--lead);text-transform:uppercase}
+.flt[aria-pressed="true"]{border:1.5px solid var(--purple);color:var(--purple)}
+.flt[aria-pressed="true"] span{color:var(--purple)}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:500;padding:4px 10px;border-radius:999px;border:1px solid var(--hair);background:var(--paper);white-space:nowrap}
+.chip b{font-family:var(--f-label);font-size:10px;font-weight:500;letter-spacing:.08em;color:var(--lead);text-transform:uppercase}
+.grade{display:inline-flex;align-items:center;justify-content:center;min-width:34px;height:24px;padding:0 8px;border-radius:999px;border:2px solid var(--ink);font-family:var(--f-label);font-weight:500;font-size:12px;color:var(--ink)}
+.grade.a{background:var(--purple);border-color:var(--purple);color:#fff}
+.badge{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;white-space:nowrap}
+.badge.pass{background:var(--pass-wash);color:var(--pass)}
+.badge.fail{background:var(--amber-wash);color:var(--amber)}
+.badge.best{background:var(--purple);color:#fff}
+.gauge{position:relative;width:100%;height:18px;border-radius:999px;background:var(--mist);border:1px solid var(--hair);overflow:hidden}
+.gauge::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(90deg,var(--tick) 0 1px,transparent 1px 10%);background-size:100% 5px;background-repeat:no-repeat;background-position:bottom}
+.gauge .zone{position:absolute;left:80%;right:0;top:0;bottom:0;background:var(--lav-soft);border-left:1px dashed #CDB8FF}
+.gauge .mk{position:absolute;top:3px;width:10px;height:10px;margin-left:-5px;border-radius:999px;background:var(--ink);box-shadow:0 0 0 2px #fff}
+
+/* header */
+header.top{border-bottom:1px solid var(--hair)}
+header.top .wrap{display:flex;align-items:center;gap:36px;padding-block:16px}
+.brand{display:flex;align-items:baseline;gap:14px;text-decoration:none;color:var(--ink)}
+.brand:hover{color:var(--ink)}
+.wordmark{font-family:var(--f-display);font-size:36px;line-height:1;letter-spacing:-.02em}
+.wordmark i{display:inline-block;width:7px;height:7px;border-radius:999px;background:var(--purple);margin-left:2px}
+.brand small{font-size:13px;color:var(--lead)}
+nav.main{display:flex;gap:26px}
+nav.main a{color:var(--ink);text-decoration:none;font-size:15px;font-weight:500}
+nav.main a:hover,nav.main a.on{color:var(--purple)}
+header.top .act{margin-left:auto}
+@media(max-width:900px){nav.main,.brand small{display:none}}
+
+/* hero */
+.hero{padding-block:64px 8px;max-width:860px}
+.hero h1{font-family:var(--f-head);font-weight:600;font-size:clamp(42px,6vw,76px);line-height:1;letter-spacing:-.045em;margin:16px 0 0;text-wrap:balance}
+.hero h1 span{color:var(--purple)}
+.hero p.sub{font-size:19px;line-height:1.55;color:var(--lead);max-width:640px;margin:20px 0 0}
+.levels-key{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
+.levels-key div{display:flex;flex-direction:column;gap:2px;padding:12px 16px;border:1px solid var(--hair);border-radius:12px;min-width:0;flex:1 1 200px}
+.levels-key b{font-family:var(--f-head);font-weight:600;font-size:16px;letter-spacing:-.02em}
+.levels-key span{font-size:13.5px;color:var(--lead)}
+
+/* index */
+.controls{display:flex;flex-direction:column;gap:12px;margin-top:26px}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.tablebox{margin-top:16px;border:1px solid var(--hair);border-radius:16px;overflow-x:auto}
+table.idx{width:100%;border-collapse:collapse;min-width:900px}
+table.idx caption{text-align:left;padding:12px 18px;font-size:13px;color:var(--lead);caption-side:bottom;border-top:1px solid var(--hair)}
+table.idx th{text-align:left;padding:11px 16px;background:var(--mist);border-bottom:1px solid var(--hair);white-space:nowrap;font-family:var(--f-label);font-size:10.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--lead)}
+table.idx th.lv{border-left:1px solid var(--hair)}
+table.idx td{padding:14px 16px;border-bottom:1px solid var(--hair);vertical-align:middle}
+table.idx td.lv{border-left:1px solid var(--hair);white-space:nowrap}
+table.idx tbody tr{cursor:pointer}
+table.idx tbody tr:hover td{background:var(--mist)}
+table.idx tbody tr[aria-selected="true"] td{background:var(--lav-soft)}
+table.idx tbody tr[aria-selected="true"] td:first-child{box-shadow:inset 3px 0 0 var(--purple)}
+table.idx tr:last-child td{border-bottom:0}
+.tname{font-family:var(--f-head);font-weight:600;font-size:16px;letter-spacing:-.02em;display:block}
+.tsub{font-size:12.5px;color:var(--lead)}
+.tsub code{font-family:var(--f-label);font-size:11px}
+.cell{display:flex;align-items:center;gap:10px}
+.cell .num{font-size:13px;color:var(--ink-cool);line-height:1.35}
+.cell .num em{font-style:normal;color:var(--lead)}
+td.lv.best{box-shadow:inset 0 -3px 0 var(--purple)}
+.legend{display:flex;gap:18px;flex-wrap:wrap;margin-top:12px;font-size:13px;color:var(--lead)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:18px;height:3px;background:var(--purple);border-radius:2px}
+
+/* task breakdown */
+.task-head{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:flex-end}
+.task-head h3{font-family:var(--f-head);font-weight:600;font-size:clamp(28px,3.4vw,40px);letter-spacing:-.04em;line-height:1.05;margin:10px 0 0;text-wrap:balance}
+.stack{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:16px}
+.lvcols{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:24px}
+.lvcard{padding:22px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.lvcard.best{border:1.5px solid var(--purple)}
+.lvcard .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.lvcard h4{font-family:var(--f-head);font-weight:600;font-size:20px;letter-spacing:-.03em;margin:4px 0 0}
+.big3{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--hair);border-bottom:1px solid var(--hair)}
+.big3 div{padding:12px 0}
+.big3 div + div{padding-left:12px;border-left:1px solid var(--hair)}
+.big3 .num{display:block;font-size:22px;line-height:1.1;color:var(--ink-cool)}
+.big3 .lbl{font-size:10px;margin-top:4px}
+.imp .row{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:6px;font-size:14px;font-weight:500}
+.imp .scale{position:relative;height:14px;margin-top:4px}
+.imp .scale span{position:absolute;font-family:var(--f-label);font-size:10px;color:var(--lead);white-space:nowrap}
+.minor{display:flex;flex-direction:column;gap:6px;font-size:14px}
+.minor div{display:flex;justify-content:space-between;gap:10px}
+.minor span:first-child{color:var(--lead)}
+.minor .num{font-size:13.5px}
+.stepbox{margin-top:16px;overflow-x:auto}
+table.stp{width:100%;border-collapse:collapse;min-width:640px}
+table.stp caption{text-align:left;caption-side:top;padding:0 0 8px}
+table.stp th{text-align:left;font-family:var(--f-label);font-size:10.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--lead);padding:10px 12px;border-bottom:1px solid var(--hair);background:var(--mist);white-space:nowrap}
+table.stp td{padding:11px 12px;border-bottom:1px solid var(--hair);font-size:14.5px}
+table.stp td.num{font-size:13px;color:var(--ink-cool);white-space:nowrap}
+table.stp td small{color:var(--lead);font-size:12.5px}
+table.stp tr.tot td{font-weight:600;border-bottom:0}
+.task-foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center;margin-top:18px;padding:18px 20px;border-radius:14px;background:var(--lav-soft);border:1px solid var(--lav)}
+.task-foot p{margin:0;font-family:var(--f-display);font-size:20px;line-height:1.3;max-width:680px}
+.task-foot small{display:block;font-family:var(--f-body);font-size:13px;color:var(--lead);margin-top:4px}
+@media(max-width:980px){.lvcols{grid-template-columns:1fr}}
+
+/* method + who */
+.method{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:24px;align-items:start}
+.method p{margin:0;color:var(--lead);font-size:17px;max-width:560px}
+.who{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:28px;border-top:1px solid var(--hair)}
+.who div{padding:18px 18px 0 0;min-width:0}
+.who div + div{padding-left:18px;border-left:1px solid var(--hair)}
+.who h4{margin:6px 0 6px;font-family:var(--f-head);font-weight:600;font-size:18px;letter-spacing:-.02em}
+.who p{margin:0;font-size:14.5px;color:var(--lead)}
+.who .num{display:block;margin-top:10px;font-size:14px}
+@media(max-width:900px){.method{grid-template-columns:1fr}.who{grid-template-columns:1fr 1fr}.who div:nth-child(3){padding-left:0;border-left:0}}
+@media(max-width:520px){.who{grid-template-columns:1fr}.who div + div{padding-left:0;border-left:0}}
+
+footer{margin-top:72px;border-top:1px solid var(--hair)}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:28px;font-size:13px;color:var(--lead);align-items:baseline}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Plumb home"><span class="wordmark">Plumb<i aria-hidden="true"></i></span><small>Know what good looks like.</small></a>
+    <nav class="main" aria-label="Main"><a href="#index" class="on">Index</a><a href="#task">Plumb Lines</a><a href="#method">Method</a><a href="#who">Pricing</a></nav>
+    <div class="act"><a class="btn ink" href="#index">Browse the Index</a></div>
+  </div>
+</header>
+
+<main id="top">
+<div class="wrap">
+
+<section class="hero" aria-labelledby="hero-h">
+  <p class="lbl" style="display:flex;align-items:center;gap:10px"><span class="dot"></span>The Plumb Index · Nov 2026 · Sample data</p>
+  <h1 id="hero-h">Every marketing task, <span>run three ways.</span></h1>
+  <p class="sub">We run real marketing workflows, across all the tools they touch, three ways. Then we show what each way costs, how long it takes and how good the result is. Graded by people who do the job.</p>
+  <div class="levels-key">
+    <div><p class="lbl">HIL</p><b>Human in the loop</b><span>A marketer in the tools, using their built-in AI</span></div>
+    <div><p class="lbl">HOL</p><b>Human on the loop</b><span>A marketer directing agents through MCP</span></div>
+    <div><p class="lbl">HOOL</p><b>Human out of the loop</b><span>Agents run the whole task on their own</span></div>
+  </div>
+</section>
+
+<!-- INDEX: a list of tasks -->
+<section class="block" id="index" aria-labelledby="idx-h">
+  <div class="ruler"></div>
+  <p class="lbl" style="margin-top:18px">The Plumb Index</p>
+  <h2 class="sec" id="idx-h">Pick a task. <em>See what good looks like.</em></h2>
+  <div class="controls">
+    <div class="seg" role="group" aria-label="Function" id="seg-fn"></div>
+    <div class="filters" role="group" aria-label="Vertical" id="verts"></div>
+  </div>
+  <div class="tablebox">
+    <table class="idx">
+      <caption id="idx-cap">Sample data.</caption>
+      <thead><tr>
+        <th scope="col">Task</th><th scope="col">Tools</th>
+        <th scope="col" class="lv">HIL · impact / time / cost</th><th scope="col" class="lv">HOL · impact / time / cost</th><th scope="col" class="lv">HOOL · impact / time / cost</th>
+      </tr></thead>
+      <tbody id="idx-body"></tbody>
+    </table>
+  </div>
+  <div class="legend"><span><i></i>Best way: meets the standard at the lowest cost</span><span>Impact: outcome graded 0–100 by practitioners. A = 85+</span><span>Select a task to see the breakdown</span></div>
+</section>
+
+<!-- ONE TASK, BROKEN DOWN -->
+<section class="block" id="task" aria-labelledby="task-h" aria-live="polite">
+  <div class="ruler"></div>
+  <div class="task-head">
+    <div>
+      <p class="lbl" style="margin-top:18px" id="task-meta">Task</p>
+      <h3 id="task-h">Task</h3>
+    </div>
+    <a class="btn ink" href="#task">Fork this Plumb Line</a>
+  </div>
+  <div class="stack" id="task-stack"></div>
+  <div class="lvcols" id="task-levels"></div>
+  <div class="stepbox">
+    <table class="stp">
+      <caption class="lbl">Time by step · median of 12 runs per level</caption>
+      <thead><tr><th scope="col">Step</th><th scope="col">Tool</th><th scope="col">HIL</th><th scope="col">HOL</th><th scope="col">HOOL</th></tr></thead>
+      <tbody id="task-steps"></tbody>
+    </table>
+  </div>
+  <div class="task-foot">
+    <p>[Board take: one or two lines from the board on how a team should run this task.]<small>[Board member name], [Title] · <span id="task-board">Board</span></small></p>
+    <a class="btn" href="#task">Read the full Plumb Line</a>
+  </div>
+</section>
+
+<!-- METHOD + WHO -->
+<section class="block" id="method" aria-labelledby="m-h">
+  <div class="ruler"></div>
+  <p class="lbl" style="margin-top:18px">Method</p>
+  <h2 class="sec" id="m-h">Proof, not promises. <em>Scores can't be bought.</em></h2>
+  <div class="method">
+    <p>Each task is a real workflow that crosses several tools. We run it in sandbox accounts, at each level, with several AI models, in each vertical. Every run records time, cost, tool calls, human interventions and safety. Practitioner boards choose the tasks and grade the final outcome.</p>
+    <p>The winning run becomes a Plumb Line: a playbook your team or your agents can follow, fork and grade. Tools show up inside the workflows they serve, so vendors see exactly where they help and where they break.</p>
+  </div>
+  <div class="who" id="who">
+    <div><p class="lbl">Everyone</p><h4>The Index and Plumb Lines</h4><p>Every task, every level, every playbook.</p><span class="num">Free</span></div>
+    <div><p class="lbl">Marketing teams</p><h4>Enterprise</h4><p>Playbooks, team design, roles, JDs, stack and benchmarks for your vertical.</p><span class="num">[Price]</span></div>
+    <div><p class="lbl">Martech vendors</p><h4>Plumbed</h4><p>How your tool performs inside each workflow, a fix list, and certification.</p><span class="num">[Price]</span></div>
+    <div><p class="lbl">AI labs</p><h4>Labs licensing</h4><p>Expert-graded task suites, rubrics and sandboxes.</p><span class="num">[Price]</span></div>
+  </div>
+</section>
+
+</div>
+</main>
+
+<footer><div class="wrap"><span class="wordmark" style="font-size:26px">Plumb<i aria-hidden="true"></i></span><span>All figures are sample data. Tools are anonymized. People, quotes and prices are placeholders.</span></div></footer>
+
+<script>
+(function(){
+  var FN={ADV:'Advertising & Promotion',CNX:'Content & Experience',SOC:'Social & Relationships',COM:'Commerce & Sales'};
+  var VERTS=[['RET','Retail & E-Commerce'],['HLS','Healthcare & Life Sciences'],['FSI','Financial Services & Insurance'],['HOS','Hospitality & Travel'],['B2B','B2B & Industrial']];
+  // Each task: id, name, sub-function, steps as [step, tool type]
+  var TASKS=[
+    ['PLB-CNX.EMAIL-014','Clone and localize a live campaign','Email marketing & automation',[['Pull source campaign and assets','Email platform'],['Translate and adapt copy','Translation'],['Swap localized images','DAM'],['Rebuild the audience','CDP'],['Schedule as draft for approval','Email platform']]],
+    ['PLB-CNX.EMAIL-003','Build a 3-email nurture','Email marketing & automation',[['Draft the sequence from a brief','AI writer'],['Build emails from templates','Email platform'],['Set entry and exit rules','Automation'],['QA links and rendering','QA tool']]],
+    ['PLB-ADV.BUY-007','Pull last month\'s results and pause losers','Programmatic & paid buying',[['Pull results across channels','Ad platforms'],['Join with revenue','Analytics'],['Rank ad sets','Spreadsheet'],['Pause the losers','Ad platforms']]],
+    ['PLB-ADV.PLAN-002','Build a quarterly media plan from a brief','Media planning & targeting',[['Read the brief and budget','Docs'],['Size audiences','Audience tool'],['Allocate budget by channel','Planning tool'],['Write the plan','Docs']]],
+    ['PLB-ADV.DCO-005','Produce ad variants for three audiences','Ad production & DCO',[['Write variant copy','AI writer'],['Resize and render creative','Design tool'],['Load into DCO','Ad platform'],['Set up the test','Ad platform']]],
+    ['PLB-CNX.SCALE-011','Write 200 product descriptions to brand rules','Scaled content creation',[['Pull product data','PIM'],['Generate descriptions','AI writer'],['Check brand and claims','Brand checker'],['Publish to catalog','PIM']]],
+    ['PLB-CNX.CMS-004','Build a landing page and launch an A/B test','CMS & landing pages',[['Build the page','CMS'],['Write the variant','AI writer'],['Set up the test','Testing tool'],['Publish and QA','CMS']]],
+    ['PLB-SOC.PUB-006','Schedule a week of posts and summarize mentions','Social publishing & listening',[['Draft posts','AI writer'],['Create images','Design tool'],['Schedule across channels','Social suite'],['Summarize mentions','Listening tool']]],
+    ['PLB-SOC.INF-002','Shortlist creators and send outreach','Influencer & creator',[['Search creators for the brief','Creator platform'],['Vet audience fit','Creator platform'],['Draft outreach','AI writer'],['Send and track','CRM']]],
+    ['PLB-COM.LEAD-001','Route a lead form','Lead capture, scoring & routing',[['Capture the form','Forms'],['Enrich the lead','Enrichment'],['Score it','Marketing automation'],['Route to the right rep','CRM']]],
+    ['PLB-COM.LEAD-009','Clean 500 contacts','Lead capture, scoring & routing',[['Export contacts','CRM'],['Dedupe and fix fields','Data tool'],['Re-import safely','CRM']]],
+    ['PLB-COM.ABM-003','Launch a tiered ABM program','Account-based marketing',[['Build the account list','Intent data'],['Tier the accounts','CRM'],['Launch tier-1 ads','Ad platform'],['Set up sales alerts','CRM']]]
+  ];
+  var state={fn:'ALL',vert:'RET',sel:TASKS[0][0]};
+  function rng(seed){var s=0;for(var i=0;i<seed.length;i++){s=(s*31+seed.charCodeAt(i))>>>0}return function(){s=(s*1664525+1013904223)>>>0;return s/4294967296}}
+  function fnOf(t){return t[0].split('-')[1].split('.')[0]}
+  function metrics(t){
+    var r=rng(t[0]+state.vert), n=t[3].length, out={};
+    out.HIL={time:Math.round((90+r()*240)*n/4),cost:Math.round(160+r()*520),impact:Math.round(72+r()*20),intv:null,unsafe:0};
+    out.HIL.human=out.HIL.time;
+    out.HOL={time:Math.round((14+r()*40)*n/4),cost:Math.round(30+r()*130),impact:Math.round(70+r()*24),intv:Math.round(1+r()*3),unsafe:0};
+    out.HOL.human=Math.round(out.HOL.time*(.35+r()*.3));
+    out.HOOL={time:Math.round((3+r()*20)*n/4),cost:+(1.5+r()*14).toFixed(2),impact:Math.round(50+r()*40),human:0,intv:0,unsafe:Math.round(r()*2.4)};
+    // Best way: the cheapest level that meets the standard (80)
+    var best=null;['HOOL','HOL','HIL'].forEach(function(k){if(!best&&out[k].impact>=80)best=k});
+    out.best=best;
+    return out;
+  }
+  function fmtT(m){return m>=60?(Math.floor(m/60)+'h'+(m%60?' '+String(m%60).padStart(2,'0')+'m':'')):m+'m'}
+  function fmtC(c){return '$'+(c<20?c.toFixed(2):Math.round(c))}
+  function grade(s){return s>=85?'A':s>=75?'B':s>=65?'C':'D'}
+  function gcap(s){var g=grade(s);return '<span class="grade'+(g==='A'?' a':'')+'">'+g+'</span>'}
+  function esc(t){return t.replace(/&/g,'&amp;')}
+  function vName(){return VERTS.filter(function(v){return v[0]===state.vert})[0][1]}
+  function list(){return TASKS.filter(function(t){return state.fn==='ALL'||fnOf(t)===state.fn})}
+
+  function renderIndex(){
+    var rows=list();
+    if(!rows.some(function(t){return t[0]===state.sel}))state.sel=rows[0][0];
+    document.getElementById('idx-body').innerHTML=rows.map(function(t){
+      var m=metrics(t);
+      var cells=['HIL','HOL','HOOL'].map(function(k){var x=m[k];return '<td class="lv'+(m.best===k?' best':'')+'"><div class="cell">'+gcap(x.impact)+'<span class="num">'+fmtT(x.time)+'<br><em>'+fmtC(x.cost)+'</em></span></div></td>'}).join('');
+      return '<tr tabindex="0" data-id="'+t[0]+'" aria-selected="'+(t[0]===state.sel)+'"><td><span class="tname">'+esc(t[1])+'</span><span class="tsub"><code>'+t[0]+'</code> · '+esc(t[2])+'</span></td><td><span class="num">'+t[3].map(function(s){return s[1]}).filter(function(v,i,a){return a.indexOf(v)===i}).length+'</span></td>'+cells+'</tr>';
+    }).join('');
+    document.getElementById('idx-cap').textContent='Sample data. '+rows.length+' tasks · '+vName()+' · each level run 12 times (4 models × 3 runs).';
+    [].forEach.call(document.querySelectorAll('#idx-body tr'),function(tr){
+      function pick(){state.sel=tr.dataset.id;renderIndex();renderTask()}
+      tr.addEventListener('click',pick);
+      tr.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();pick()}});
+    });
+  }
+
+  function renderTask(){
+    var t=TASKS.filter(function(x){return x[0]===state.sel})[0], m=metrics(t), f=fnOf(t);
+    document.getElementById('task-meta').textContent=t[0]+' · '+FN[f]+' › '+t[2]+' · '+vName()+' · Sample data';
+    document.getElementById('task-h').textContent=t[1];
+    document.getElementById('task-board').textContent=FN[f]+' board';
+    var tools=[];t[3].forEach(function(s){if(tools.indexOf(s[1])<0)tools.push(s[1])});
+    document.getElementById('task-stack').innerHTML='<span class="lbl" style="margin-right:4px">Tools in this workflow</span>'+tools.map(function(x,i){return '<span class="chip">'+esc(x)+' <b>Tool '+'ABCDEFGH'[i]+'</b></span>'}).join('');
+    var names={HIL:['Human in the loop','Marketer in the tools'],HOL:['Human on the loop','Marketer directs agents'],HOOL:['Human out of the loop','Agents run it alone']};
+    document.getElementById('task-levels').innerHTML=['HIL','HOL','HOOL'].map(function(k){
+      var x=m[k], meets=x.impact>=80, best=m.best===k;
+      return '<article class="card lvcard'+(best?' best':'')+'"><div class="top"><div><p class="lbl">'+k+' · '+names[k][1]+'</p><h4>'+names[k][0]+'</h4></div>'+(best?'<span class="badge best">Best way</span>':(meets?'<span class="badge pass">Meets</span>':'<span class="badge fail">Below standard</span>'))+'</div>'+
+        '<div class="big3"><div><span class="num">'+fmtT(x.time)+'</span><span class="lbl">Time</span></div><div><span class="num">'+fmtC(x.cost)+'</span><span class="lbl">Cost</span></div><div><span class="num">'+x.impact+'</span><span class="lbl">Impact</span></div></div>'+
+        '<div class="imp"><div class="row"><span>Impact, graded by the board</span>'+gcap(x.impact)+'</div><div class="gauge" role="img" aria-label="Impact '+x.impact+' of 100. The standard is 80."><span class="zone"></span><span class="mk" style="left:'+x.impact+'%;'+(best?'background:var(--purple)':'')+'"></span></div><div class="scale"><span style="left:0">0</span><span style="left:80%;transform:translateX(-100%);padding-right:4px;color:var(--purple)">standard · 80</span><span style="right:0">100</span></div></div>'+
+        '<div class="minor"><div><span>Human time</span><span class="num">'+fmtT(x.human)+'</span></div><div><span>Interventions</span><span class="num">'+(x.intv===null?'n/a':x.intv)+'</span></div><div><span>Unsafe writes</span><span class="num">'+x.unsafe+' of 12 runs</span></div></div></article>';
+    }).join('');
+    var r=rng(t[0]+'steps'+state.vert), tot={HIL:0,HOL:0,HOOL:0}, n=t[3].length;
+    var rows=t[3].map(function(s,i){
+      var w=[.7,1.4,1,.9,.8][i]||1, cells={};
+      ['HIL','HOL','HOOL'].forEach(function(k){
+        var v=(i===n-1)?m[k].time-tot[k]:Math.round(m[k].time/n*w*(.85+r()*.3));
+        v=Math.max(1,v);tot[k]+=v;cells[k]=v;
+      });
+      return '<tr><td>'+(i+1)+'. '+esc(s[0])+'</td><td><small>'+esc(s[1])+'</small></td><td class="num">'+fmtT(cells.HIL)+'</td><td class="num">'+fmtT(cells.HOL)+'</td><td class="num">'+fmtT(cells.HOOL)+'</td></tr>';
+    }).join('');
+    document.getElementById('task-steps').innerHTML=rows+'<tr class="tot"><td>Total</td><td></td><td class="num">'+fmtT(tot.HIL)+'</td><td class="num">'+fmtT(tot.HOL)+'</td><td class="num">'+fmtT(tot.HOOL)+'</td></tr>';
+  }
+
+  function press(group,btn){group.forEach(function(b){b.setAttribute('aria-pressed',b===btn?'true':'false')})}
+  var seg=document.getElementById('seg-fn');
+  seg.innerHTML=[['ALL','All tasks']].concat(Object.keys(FN).map(function(k){return [k,FN[k]]})).map(function(x){return '<button type="button" data-fn="'+x[0]+'" aria-pressed="'+(x[0]===state.fn)+'">'+esc(x[1])+'</button>'}).join('');
+  var fb=[].slice.call(seg.querySelectorAll('button'));
+  fb.forEach(function(b){b.addEventListener('click',function(){state.fn=b.dataset.fn;press(fb,b);renderIndex();renderTask()})});
+  var vb=document.getElementById('verts');
+  vb.innerHTML=VERTS.map(function(v){return '<button class="flt" type="button" data-v="'+v[0]+'" aria-pressed="'+(v[0]===state.vert)+'"><span>Vertical</span>'+esc(v[1])+'</button>'}).join('');
+  var vbs=[].slice.call(vb.querySelectorAll('button'));
+  vbs.forEach(function(b){b.addEventListener('click',function(){state.vert=b.dataset.v;press(vbs,b);renderIndex();renderTask()})});
+  renderIndex();renderTask();
+})();
+</script>
+</body>
+</html>
