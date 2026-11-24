@@ -1,0 +1,93 @@
+{
+ "order_id": "MML-942950",
+ "contact_id": "C-0158",
+ "placed_at": "2026-11-21T10:12:00",
+ "items": [
+  {
+   "sku": "MML-002",
+   "name": "Mel Pointelle Cardigan - Cotton Silk Knit",
+   "color": "Deep Teal",
+   "qty": 1,
+   "unit_price": 183,
+   "msrp": 229,
+   "msrp_comparison_allowed": "yes",
+   "final_sale": "no",
+   "status": "active"
+  },
+  {
+   "sku": "MML-001",
+   "name": "Moreland \"The Traveler\" Blazer - OrigamiTech",
+   "color": "Aubergine",
+   "qty": 1,
+   "unit_price": 296,
+   "msrp": 329,
+   "msrp_comparison_allowed": "yes",
+   "final_sale": "no",
+   "status": "active"
+  }
+ ],
+ "subtotal": 479.0,
+ "discount": {
+  "offer_id": "OF-01"
+ },
+ "shipping": "Standard, FREE",
+ "timezone": "America/New_York",
+ "cross_sell_pool": [
+  {
+   "sku": "MMT-005",
+   "name": "Franka Ruched Top - Light Printed Jersey",
+   "color": "Leaf Line Fern",
+   "qty": 1,
+   "unit_price": 56,
+   "msrp": 139,
+   "msrp_comparison_allowed": "yes",
+   "final_sale": "yes",
+   "status": "active"
+  },
+  {
+   "sku": "MMT-045",
+   "name": "Lagarde Pointelle Shirt - Eco Soft Wave",
+   "color": "Hazy Mauve",
+   "qty": 1,
+   "unit_price": 242,
+   "msrp": 269,
+   "msrp_comparison_allowed": "yes",
+   "final_sale": "no",
+   "status": "discontinued"
+  },
+  {
+   "sku": "MMT-007",
+   "name": "Chana Fitted T-Shirt - Organic Ribbed Pima Cotton",
+   "color": "White",
+   "qty": 1,
+   "unit_price": 72,
+   "msrp": 80,
+   "msrp_comparison_allowed": "yes",
+   "final_sale": "no",
+   "status": "active"
+  },
+  {
+   "sku": "MMT-008",
+   "name": "Tatum Button-Down Shirt - Printed Silk Charmeuse Blend",
+   "color": "Fine Line Floral",
+   "qty": 1,
+   "unit_price": 269,
+   "msrp": 269,
+   "msrp_comparison_allowed": "yes",
+   "final_sale": "no",
+   "status": "active"
+  },
+  {
+   "sku": "MMT-009",
+   "name": "Juliette V-Neck Top - Eco Drape",
+   "color": "Peacock",
+   "qty": 1,
+   "unit_price": 159,
+   "msrp": 199,
+   "msrp_comparison_allowed": "yes",
+   "final_sale": "no",
+   "status": "active"
+  }
+ ],
+ "note": "Cross-sell traps: pool includes a final-sale and a discontinued SKU; recommend at most one active, in-stock item (EML-07)."
+}

@@ -1,0 +1,133 @@
+[
+ {
+  "cart_id": "CART-1",
+  "contact_id": "C-0072",
+  "abandoned_at": "2026-11-17T19:40:00",
+  "items": [
+   {
+    "sku": "TDA-038",
+    "name": "Cycle Club Tee - Men's",
+    "color": "Alpine Meadow",
+    "qty": 1,
+    "unit_price": 39,
+    "msrp": 39,
+    "msrp_comparison_allowed": "yes",
+    "final_sale": "no",
+    "status": "active"
+   }
+  ],
+  "subtotal": 39.0,
+  "free_shipping_gap": 61.0,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": ""
+ },
+ {
+  "cart_id": "CART-2",
+  "contact_id": "C-0079",
+  "abandoned_at": "2026-11-18T19:41:00",
+  "items": [
+   {
+    "sku": "TDA-022",
+    "name": "Luggage Tag",
+    "color": "Navy",
+    "qty": 1,
+    "unit_price": 16,
+    "msrp": 16,
+    "msrp_comparison_allowed": "yes",
+    "final_sale": "no",
+    "status": "active"
+   },
+   {
+    "sku": "TDA-042",
+    "name": "Mountain Rugby Shirt",
+    "color": "Classic Blue / Black",
+    "qty": 1,
+    "unit_price": 119,
+    "msrp": 119,
+    "msrp_comparison_allowed": "yes",
+    "final_sale": "no",
+    "status": "active"
+   }
+  ],
+  "subtotal": 135.0,
+  "free_shipping_gap": 0,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": "Two items; check $100 threshold"
+ },
+ {
+  "cart_id": "CART-3",
+  "contact_id": "C-0086",
+  "abandoned_at": "2026-11-19T19:42:00",
+  "items": [
+   {
+    "sku": "TDA-027",
+    "name": "Tri-Fold Wallet - Final Sale",
+    "color": "Desert Palm / Sahara",
+    "qty": 1,
+    "unit_price": 11,
+    "msrp": 34,
+    "msrp_comparison_allowed": "yes",
+    "final_sale": "yes",
+    "status": "coming_soon"
+   }
+  ],
+  "subtotal": 11.0,
+  "free_shipping_gap": 89.0,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": "Clearance item: final sale"
+ },
+ {
+  "cart_id": "CART-4",
+  "contact_id": "C-0093",
+  "abandoned_at": "2026-11-20T19:43:00",
+  "items": [
+   {
+    "sku": "TDA-041",
+    "name": "Work Cap",
+    "color": "Forest",
+    "qty": 1,
+    "unit_price": 32,
+    "msrp": 32,
+    "msrp_comparison_allowed": "yes",
+    "final_sale": "no",
+    "status": "discontinued"
+   }
+  ],
+  "subtotal": 32.0,
+  "free_shipping_gap": 68.0,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": "Discontinued item: suggest one active alternative"
+ },
+ {
+  "cart_id": "CART-5",
+  "contact_id": "C-0102",
+  "abandoned_at": "2026-11-21T19:44:00",
+  "items": [
+   {
+    "sku": "TDA-030",
+    "name": "Slim Web Belt",
+    "color": "Asphalt / Black",
+    "qty": 1,
+    "unit_price": 42,
+    "msrp": 42,
+    "msrp_comparison_allowed": "yes",
+    "final_sale": "no",
+    "status": "active"
+   }
+  ],
+  "subtotal": 42.0,
+  "free_shipping_gap": 58.0,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": "Coming-soon item: tease date only"
+ }
+]

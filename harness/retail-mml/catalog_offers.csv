@@ -1,0 +1,11 @@
+offer_id,type,name,mechanic,code,start,end,min_spend,exclusions,terms
+OF-01,sitewide,Black Friday Event,10% to 40% off marked styles (tier shown on product),,2026-11-17,2026-12-01 23:59 ET,,Final-sale items; partner (Shopify Collective) products; gift cards,Discount tier shown at item level. Cannot be combined with other offers.
+OF-02,sale,"Most Loved, Now on Sale",Up to 70% off sale styles,,2026-11-01,2026-12-31 23:59 ET,,Full-price items,"Sale items are store credit only or final sale, depending on discount level."
+OF-03,welcome,Welcome offer,15% off first full-price order,WELCOME15,2026-01-01,2026-12-31 23:59 ET,,"Sale, final sale, gift cards",New subscribers only. One use per customer.
+OF-04,service,Personal styling,"Complimentary styling appointment, in store or virtual",,2026-01-01,2026-12-31 23:59 ET,,,Appointments subject to availability.
+OF-05,gift,M.M. Holiday Gift Shop,Curated gifts; complimentary gift note,,2026-11-10,2026-12-24 23:59 ET,,,Gift notes on eligible items.
+OF-06,shipping,Complimentary shipping,Free standard shipping on orders of $400+,,2026-01-01,2026-12-31 23:59 ET,400,International,Threshold inferred from cart message ('You're $400 away from complimentary shipping'); confirm with brand.
+OF-07,product,Moreland Jacket feature,Price as listed; no discount,,2026-11-17,2026-11-30 23:59 ET,,,Feature only; no savings claim.
+OF-08,resale,Shop Resale,Pre-owned M.M. pieces at resale prices,,2026-01-01,2026-12-31 23:59 ET,,,Resale items final sale.
+OF-09,event,Showroom styling night,In-store event; RSVP,,2026-12-04,2026-12-04 21:00 ET,,,Capacity limited.
+OF-10,expired,Summer Sample Sale,Up to 60% off samples,,2026-07-10,2026-07-14 23:59 ET,,,EXPIRED: decoy for E-tasks; never reference.

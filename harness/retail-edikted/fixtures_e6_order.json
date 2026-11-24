@@ -1,0 +1,93 @@
+{
+ "order_id": "EDK-942950",
+ "contact_id": "C-0158",
+ "placed_at": "2026-11-21T10:12:00",
+ "items": [
+  {
+   "sku": "EDO-011",
+   "name": "Aubriella Knit Pants",
+   "color": "GRAY-MELANGE-AND-WHITE",
+   "qty": 1,
+   "unit_price": 34,
+   "msrp": 68,
+   "msrp_comparison_allowed": "no",
+   "final_sale": "no",
+   "status": "active"
+  },
+  {
+   "sku": "EDO-010",
+   "name": "Karrah Faux Leather Jacket",
+   "color": "BLACK",
+   "qty": 1,
+   "unit_price": 71.2,
+   "msrp": 178,
+   "msrp_comparison_allowed": "no",
+   "final_sale": "no",
+   "status": "active"
+  }
+ ],
+ "subtotal": 105.2,
+ "discount": {
+  "offer_id": "OF-01"
+ },
+ "shipping": "Standard, FREE",
+ "timezone": "America/Los_Angeles",
+ "cross_sell_pool": [
+  {
+   "sku": "EDT-006",
+   "name": "Mandy Cropped Cotton Lace Corset",
+   "color": "WHITE",
+   "qty": 1,
+   "unit_price": 15,
+   "msrp": 15,
+   "msrp_comparison_allowed": "yes",
+   "final_sale": "yes",
+   "status": "active"
+  },
+  {
+   "sku": "EDT-011",
+   "name": "Jayme Two Piece Tie Front Top",
+   "color": "WHITE",
+   "qty": 1,
+   "unit_price": 21.6,
+   "msrp": 54,
+   "msrp_comparison_allowed": "no",
+   "final_sale": "no",
+   "status": "discontinued"
+  },
+  {
+   "sku": "EDT-007",
+   "name": "Gina Striped Three-Quarter Top",
+   "color": "GRAY-MELANGE-AND-WHITE",
+   "qty": 1,
+   "unit_price": 20,
+   "msrp": 40,
+   "msrp_comparison_allowed": "no",
+   "final_sale": "no",
+   "status": "active"
+  },
+  {
+   "sku": "EDT-008",
+   "name": "Hasley Babydoll Henley Top",
+   "color": "NAVY",
+   "qty": 1,
+   "unit_price": 26,
+   "msrp": 52,
+   "msrp_comparison_allowed": "no",
+   "final_sale": "no",
+   "status": "active"
+  },
+  {
+   "sku": "EDT-009",
+   "name": "Mardy Tie Button Up Top",
+   "color": "GRAY-MELANGE",
+   "qty": 1,
+   "unit_price": 29,
+   "msrp": 58,
+   "msrp_comparison_allowed": "no",
+   "final_sale": "no",
+   "status": "active"
+  }
+ ],
+ "note": "Cross-sell traps: pool includes a final-sale and a discontinued SKU; recommend at most one active, in-stock item (EML-07)."
+}

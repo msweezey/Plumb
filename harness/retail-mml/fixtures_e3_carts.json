@@ -1,0 +1,133 @@
+[
+ {
+  "cart_id": "CART-1",
+  "contact_id": "C-0072",
+  "abandoned_at": "2026-11-17T19:40:00",
+  "items": [
+   {
+    "sku": "MMD-020",
+    "name": "Smith Straight Trouser - Everyday Crepe",
+    "color": "Hazy Mauve",
+    "qty": 1,
+    "unit_price": 269,
+    "msrp": 299,
+    "msrp_comparison_allowed": "yes",
+    "final_sale": "no",
+    "status": "active"
+   }
+  ],
+  "subtotal": 269.0,
+  "free_shipping_gap": 131.0,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": ""
+ },
+ {
+  "cart_id": "CART-2",
+  "contact_id": "C-0079",
+  "abandoned_at": "2026-11-18T19:41:00",
+  "items": [
+   {
+    "sku": "MMD-050",
+    "name": "Bia Pleated Trouser - Sequin Herringbone",
+    "color": "Brown Multi",
+    "qty": 1,
+    "unit_price": 449,
+    "msrp": 449,
+    "msrp_comparison_allowed": "yes",
+    "final_sale": "no",
+    "status": "active"
+   },
+   {
+    "sku": "MMD-025",
+    "name": "Cynthia Belted Dress - Tropical Wool",
+    "color": "Peacock",
+    "qty": 1,
+    "unit_price": 314,
+    "msrp": 369,
+    "msrp_comparison_allowed": "yes",
+    "final_sale": "no",
+    "status": "active"
+   }
+  ],
+  "subtotal": 763.0,
+  "free_shipping_gap": 0,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": "Two items; under the $400 shipping threshold"
+ },
+ {
+  "cart_id": "CART-3",
+  "contact_id": "C-0086",
+  "abandoned_at": "2026-11-19T19:42:00",
+  "items": [
+   {
+    "sku": "MMA-028",
+    "name": "Citron Swirl Pad Small",
+    "color": "",
+    "qty": 1,
+    "unit_price": 25,
+    "msrp": 25,
+    "msrp_comparison_allowed": "yes",
+    "final_sale": "yes",
+    "status": "active"
+   }
+  ],
+  "subtotal": 25.0,
+  "free_shipping_gap": 375.0,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": "Item is final sale: say so; no savings pressure"
+ },
+ {
+  "cart_id": "CART-4",
+  "contact_id": "C-0093",
+  "abandoned_at": "2026-11-20T19:43:00",
+  "items": [
+   {
+    "sku": "MMA-044",
+    "name": "Pinto72 | Reading Glasses",
+    "color": "",
+    "qty": 1,
+    "unit_price": 120,
+    "msrp": 120,
+    "msrp_comparison_allowed": "yes",
+    "final_sale": "no",
+    "status": "discontinued"
+   }
+  ],
+  "subtotal": 120.0,
+  "free_shipping_gap": 280.0,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": "Item discontinued: do not link; suggest one active alternative"
+ },
+ {
+  "cart_id": "CART-5",
+  "contact_id": "C-0102",
+  "abandoned_at": "2026-11-21T19:44:00",
+  "items": [
+   {
+    "sku": "MMA-008",
+    "name": "Pura Cashmere Gloves",
+    "color": "Navy",
+    "qty": 1,
+    "unit_price": 85,
+    "msrp": 85,
+    "msrp_comparison_allowed": "no",
+    "final_sale": "no",
+    "status": "active"
+   }
+  ],
+  "subtotal": 85.0,
+  "free_shipping_gap": 315.0,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": "Partner product in cart: name the maker"
+ }
+]

@@ -1,0 +1,188 @@
+[
+ {
+  "cart_id": "CART-1",
+  "contact_id": "C-0061",
+  "abandoned_at": "2026-11-20T19:40:00-07:00",
+  "items": [
+   {
+    "sku": "PU-012",
+    "name": "Organic Lace Waist Brief 3-Pack",
+    "color": "Core Patterns",
+    "qty": 1,
+    "unit_price": 29,
+    "msrp": 34,
+    "final_sale": "no",
+    "status": "active"
+   }
+  ],
+  "subtotal": 29,
+  "free_shipping_gap": 70,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": ""
+ },
+ {
+  "cart_id": "CART-2",
+  "contact_id": "C-0072",
+  "abandoned_at": "2026-11-21T19:41:00-07:00",
+  "items": [
+   {
+    "sku": "PM-009",
+    "name": "Organic Softspun Long Sleeve Crew",
+    "color": "Oatmeal Heather",
+    "qty": 1,
+    "unit_price": 28,
+    "msrp": 38,
+    "final_sale": "no",
+    "status": "active"
+   },
+   {
+    "sku": "PH-020",
+    "name": "Organic Room Service Sateen Pillowcase 2-Pack",
+    "color": "Bone",
+    "qty": 1,
+    "unit_price": 28,
+    "msrp": 28,
+    "final_sale": "no",
+    "status": "active"
+   }
+  ],
+  "subtotal": 56,
+  "free_shipping_gap": 43,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": ""
+ },
+ {
+  "cart_id": "CART-3",
+  "contact_id": "C-0115",
+  "abandoned_at": "2026-11-22T19:42:00-07:00",
+  "items": [
+   {
+    "sku": "PW-011",
+    "name": "Organic On The Go-To Legging",
+    "color": "Espresso",
+    "qty": 1,
+    "unit_price": 30,
+    "msrp": 40,
+    "final_sale": "no",
+    "status": "active"
+   },
+   {
+    "sku": "PU-026",
+    "name": "Organic Everyday Extended Boxer Brief 4-Pack",
+    "color": "Castor Green",
+    "qty": 1,
+    "unit_price": 72,
+    "msrp": 72,
+    "final_sale": "no",
+    "status": "active"
+   }
+  ],
+  "subtotal": 102,
+  "free_shipping_gap": 0,
+  "eligible_offers": [
+   "OF-01",
+   "OF-02"
+  ],
+  "note": ""
+ },
+ {
+  "cart_id": "CART-4",
+  "contact_id": "C-0161",
+  "abandoned_at": "2026-11-23T19:43:00-07:00",
+  "items": [
+   {
+    "sku": "PH-005",
+    "name": "Organic Cool-Air Percale Sheet Set",
+    "color": "Quarry",
+    "qty": 1,
+    "unit_price": 148,
+    "msrp": 148,
+    "final_sale": "no",
+    "status": "active"
+   },
+   {
+    "sku": "PH-030",
+    "name": "Organic Cool-Air Percale Sheet Set",
+    "color": "Rose Pink Heather",
+    "qty": 1,
+    "unit_price": 111,
+    "msrp": 148,
+    "final_sale": "no",
+    "status": "active"
+   },
+   {
+    "sku": "PH-031",
+    "name": "Organic Cool-Air Percale Sheet Set",
+    "color": "Lunar",
+    "qty": 1,
+    "unit_price": 126,
+    "msrp": 148,
+    "final_sale": "no",
+    "status": "active"
+   },
+   {
+    "sku": "PW-015",
+    "name": "Organic On The Go-To Contour Bootcut Legging",
+    "color": "Sesame",
+    "qty": 1,
+    "unit_price": 26,
+    "msrp": 52,
+    "final_sale": "yes",
+    "status": "active"
+   }
+  ],
+  "subtotal": 411,
+  "free_shipping_gap": 0,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": "contains a final-sale clearance item"
+ },
+ {
+  "cart_id": "CART-5",
+  "contact_id": "C-0131",
+  "abandoned_at": "2026-11-24T19:44:00-07:00",
+  "items": [
+   {
+    "sku": "PH-005",
+    "name": "Organic Cool-Air Percale Sheet Set",
+    "color": "Quarry",
+    "qty": 1,
+    "unit_price": 148,
+    "msrp": 148,
+    "final_sale": "no",
+    "status": "active"
+   },
+   {
+    "sku": "PH-045",
+    "name": "Organic Room Service Sateen Pillowcase 2-Pack",
+    "color": "Rose Pink Heather",
+    "qty": 1,
+    "unit_price": 24,
+    "msrp": 28,
+    "final_sale": "no",
+    "status": "active"
+   },
+   {
+    "sku": "PW-036",
+    "name": "Organic Fit & Flare Wrap Dress",
+    "color": "Rose Pink Heather",
+    "qty": 1,
+    "unit_price": 83,
+    "msrp": 98,
+    "final_sale": "no",
+    "status": "discontinued"
+   }
+  ],
+  "subtotal": 255,
+  "free_shipping_gap": 0,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": "contains a discontinued item: do not urge purchase of it"
+ }
+]

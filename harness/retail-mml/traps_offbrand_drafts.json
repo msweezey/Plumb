@@ -1,0 +1,305 @@
+{
+ "note": "Off-brand drafts for B1 (brand edit) and review tasks. T-01..T-06 twin the wave 1 goldens; T-07..T-10 cover other channels. Agents never see expected_violations.",
+ "drafts": [
+  {
+   "id": "T-01",
+   "twin_of": "P1-G1",
+   "task": "P1",
+   "text": {
+    "sku": "MML-001",
+    "title": "Moreland \"The Traveler\" Blazer - OrigamiTech",
+    "description": "This slimming blazer is totally wrinkle-proof and made in USA! Designed for executives who travel, in a polished suiting fabric that goes everywhere you go.",
+    "fiber_content": "97% polyester, 3% spandex",
+    "care": "Machine-washable",
+    "fit": "",
+    "sizes": "",
+    "origin": "Made in China"
+   },
+   "expected_violations": [
+    {
+     "rule": "MSG-07"
+    },
+    {
+     "rule": "LEG-15"
+    },
+    {
+     "rule": "VOI-12"
+    },
+    {
+     "rule": "LEG-16"
+    },
+    {
+     "rule": "VOI-23"
+    }
+   ]
+  },
+  {
+   "id": "T-02",
+   "twin_of": "P1-G2",
+   "task": "P1",
+   "text": {
+    "sku": "MMA-012",
+    "title": "Slow North Signature Candle - Eucalyptus + Lavender",
+    "description": "Designed by M.M. for the office: a non-toxic candle with a calm, clean scent 🕯️ that makes any desk feel polished.",
+    "fiber_content": "",
+    "care": "",
+    "fit": "",
+    "sizes": "",
+    "origin": ""
+   },
+   "expected_violations": [
+    {
+     "rule": "MSG-08"
+    },
+    {
+     "rule": "VOI-01"
+    },
+    {
+     "rule": "LEG-14"
+    },
+    {
+     "rule": "VOI-10"
+    }
+   ]
+  },
+  {
+   "id": "T-03",
+   "twin_of": "E1-G1",
+   "task": "E1",
+   "text": {
+    "segment": "active",
+    "subject": "Your Bento Box + Sample Sale prices inside",
+    "preheader": "Our biggest markdowns of the year on suiting, dresses and knits.",
+    "body": "Hi there,\n\nYour stylist picked a Bento Box just for you, and the Sample Sale is back with 45% off everything you love in our workwear wardrobe.",
+    "cta": "Shop now",
+    "terms": "Ends soon.",
+    "footer": "M.M.LaFleur · Unsubscribe · Privacy · Accessibility · © 2026 M.M.LaFleur"
+   },
+   "expected_violations": [
+    {
+     "rule": "BRD-08"
+    },
+    {
+     "rule": "MSG-05"
+    },
+    {
+     "rule": "MSG-06"
+    },
+    {
+     "rule": "LEG-01"
+    },
+    {
+     "rule": "LEG-11"
+    }
+   ]
+  },
+  {
+   "id": "T-04",
+   "twin_of": "E1-G2",
+   "task": "E1",
+   "text": {
+    "segment": "lapsed",
+    "subject": "We miss you!! Come back to MM LaFleur",
+    "preheader": "Event pricing on the pieces our clients wear most this season.",
+    "body": "Hi {first_name|there},\n\nWe miss you! Our Black Friday Event is on, with 20% off marked styles for your work wardrobe 💼 and free shipping over $150!",
+    "cta": "Shop the event",
+    "terms": "Ends Dec 1, 2026, 11:59 pm ET. Free shipping over $150.",
+    "footer": "M.M.LaFleur · 100 Broadway, Fl 3, New York, NY 10005 · Unsubscribe · Preferences · Privacy · Accessibility · © 2026 M.M.LaFleur"
+   },
+   "expected_violations": [
+    {
+     "rule": "VOI-12"
+    },
+    {
+     "rule": "VOI-10"
+    },
+    {
+     "rule": "VOI-03"
+    },
+    {
+     "rule": "LEG-12"
+    }
+   ]
+  },
+  {
+   "id": "T-05",
+   "twin_of": "A1-G1",
+   "task": "A1",
+   "text": {
+    "ad_group": "women's suiting",
+    "headlines": [
+     "Best Suiting for Women in New York",
+     "Wrinkle-Proof Suits",
+     "Suiting for Your Whole Day",
+     "Suiting for Your Whole Day",
+     "Machine Washable Suiting",
+     "The Moreland Blazer",
+     "Designed in New York",
+     "Polished, Not Stiff",
+     "Blazers With Pockets",
+     "Book a Free Stylist",
+     "Black Friday Event",
+     "Sizes 00 to 20",
+     "Power Casual Workwear",
+     "Suits That Pack Flat",
+     "M.M.LaFleur Suiting"
+    ],
+    "descriptions": [
+     "Every piece is machine washable, so your work wardrobe is always ready to go.",
+     "Tailored suiting in easy-care fabrics.",
+     "Black Friday Event on marked styles.",
+     "Free styling."
+    ]
+   },
+   "expected_violations": [
+    {
+     "rule": "DR-01"
+    },
+    {
+     "rule": "DR-03"
+    },
+    {
+     "rule": "DR-02"
+    },
+    {
+     "rule": "MSG-07"
+    },
+    {
+     "rule": "MSG-09"
+    }
+   ]
+  },
+  {
+   "id": "T-06",
+   "twin_of": "A1-G2",
+   "task": "A1",
+   "text": {
+    "ad_group": "work dresses",
+    "headlines": [
+     "Better Than Theory Dresses",
+     "OBSESSED WITH THIS DRESS",
+     "Work Dresses With Pockets!",
+     "Dresses for Your Whole Day",
+     "The Valencia Power Dress",
+     "Machine Washable Dresses",
+     "Travel Dresses That Work",
+     "Polished in One Piece",
+     "Designed in New York",
+     "Sizes 00 to 20",
+     "Meeting to Dinner",
+     "Book a Free Stylist",
+     "Black Friday Event",
+     "Power Casual Dresses",
+     "Shop Work Dresses"
+    ],
+    "descriptions": [
+     "Dresses designed for working women.",
+     "The Lancia Travel Dress is wrinkle-resistant.",
+     "Black Friday Event on marked styles.",
+     "Free styling help."
+    ]
+   },
+   "expected_violations": [
+    {
+     "rule": "MSG-17"
+    },
+    {
+     "rule": "VOI-24"
+    },
+    {
+     "rule": "VOI-12"
+    },
+    {
+     "rule": "VOI-11"
+    }
+   ]
+  },
+  {
+   "id": "T-07",
+   "task": "S1",
+   "text": {
+    "caption": "Slay the office in the Moreland blazer 🔥✨ #workwear #mmlafleur #powercasual",
+    "partner": true
+   },
+   "expected_violations": [
+    {
+     "rule": "SOC-01"
+    },
+    {
+     "rule": "VOI-10"
+    },
+    {
+     "rule": "LEG-06"
+    },
+    {
+     "rule": "VOI-24"
+    }
+   ]
+  },
+  {
+   "id": "T-08",
+   "task": "M1",
+   "text": {
+    "text": "M.M.LaFleur: Black Friday Event! Take 45% off the Moreland blazer, the Valencia dress and the Bia trouser today only, plus free styling appointments in every showroom and online this week. Shop: mmlf.co/bf",
+    "contact": {
+     "contact_id": "C-0131",
+     "sms_consent_type": "email only"
+    }
+   },
+   "expected_violations": [
+    {
+     "rule": "LEG-02"
+    },
+    {
+     "rule": "EML-08"
+    },
+    {
+     "rule": "MSG-06"
+    }
+   ]
+  },
+  {
+   "id": "T-09",
+   "task": "S3",
+   "text": {
+    "caption": "Our crepe is hypoallergenic and cures irritation, and honestly it is better than Theory."
+   },
+   "expected_violations": [
+    {
+     "rule": "LEG-17"
+    },
+    {
+     "rule": "VOI-01"
+    },
+    {
+     "rule": "MSG-17"
+    }
+   ]
+  },
+  {
+   "id": "T-10",
+   "task": "P1",
+   "text": {
+    "sku": "MMT-045",
+    "title": "Lagarde Pointelle Shirt - Eco Soft Wave",
+    "description": "A pointelle shirt in Eco Soft Wave that layers under a blazer or stands alone on warmer days. Designed for the office, it keeps its shape through a long working day and is polished enough for client meetings.",
+    "fiber_content": "100% organic cotton",
+    "care": "Machine-washable",
+    "fit": "",
+    "sizes": "XS, S, M, L, XL, XXL",
+    "origin": "Made in Italy"
+   },
+   "expected_violations": [
+    {
+     "rule": "DCO-05"
+    },
+    {
+     "rule": "LEG-16"
+    },
+    {
+     "rule": "LEG-14"
+    }
+   ]
+  }
+ ]
+}

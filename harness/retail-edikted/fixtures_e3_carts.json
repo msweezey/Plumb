@@ -1,0 +1,133 @@
+[
+ {
+  "cart_id": "CART-1",
+  "contact_id": "C-0072",
+  "abandoned_at": "2026-11-17T19:40:00",
+  "items": [
+   {
+    "sku": "EDB-042",
+    "name": "Shoshie Wide Leg Plaid Pants",
+    "color": "Red",
+    "qty": 1,
+    "unit_price": 100,
+    "msrp": 100,
+    "msrp_comparison_allowed": "yes",
+    "final_sale": "no",
+    "status": "active"
+   }
+  ],
+  "subtotal": 100.0,
+  "free_shipping_gap": 0,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": ""
+ },
+ {
+  "cart_id": "CART-2",
+  "contact_id": "C-0079",
+  "abandoned_at": "2026-11-18T19:41:00",
+  "items": [
+   {
+    "sku": "EDA-022",
+    "name": "City Living Baggy Swearpants",
+    "color": "BLUE",
+    "qty": 1,
+    "unit_price": 39,
+    "msrp": 78,
+    "msrp_comparison_allowed": "no",
+    "final_sale": "no",
+    "status": "active"
+   },
+   {
+    "sku": "EDB-047",
+    "name": "Shirell Bead & Sequin Mini Dress",
+    "color": "White",
+    "qty": 1,
+    "unit_price": 79,
+    "msrp": 158,
+    "msrp_comparison_allowed": "no",
+    "final_sale": "no",
+    "status": "active"
+   }
+  ],
+  "subtotal": 118.0,
+  "free_shipping_gap": 0,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": "Two items; check $80 threshold"
+ },
+ {
+  "cart_id": "CART-3",
+  "contact_id": "C-0086",
+  "abandoned_at": "2026-11-19T19:42:00",
+  "items": [
+   {
+    "sku": "EDO-029",
+    "name": "Delana Embroidered Knit Crop Top",
+    "color": "BLACK",
+    "qty": 1,
+    "unit_price": 15,
+    "msrp": 15,
+    "msrp_comparison_allowed": "yes",
+    "final_sale": "yes",
+    "status": "active"
+   }
+  ],
+  "subtotal": 15.0,
+  "free_shipping_gap": 65.0,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": "Warehouse item: final sale"
+ },
+ {
+  "cart_id": "CART-4",
+  "contact_id": "C-0093",
+  "abandoned_at": "2026-11-20T19:43:00",
+  "items": [
+   {
+    "sku": "EDO-028",
+    "name": "Union Jack Oversized Hoodie",
+    "color": "LIGHT-GRAY-MELANGE",
+    "qty": 1,
+    "unit_price": 48,
+    "msrp": 96,
+    "msrp_comparison_allowed": "no",
+    "final_sale": "no",
+    "status": "discontinued"
+   }
+  ],
+  "subtotal": 48.0,
+  "free_shipping_gap": 32.0,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": "Discontinued item: suggest one active alternative"
+ },
+ {
+  "cart_id": "CART-5",
+  "contact_id": "C-0102",
+  "abandoned_at": "2026-11-21T19:44:00",
+  "items": [
+   {
+    "sku": "EDA-030",
+    "name": "Ribbon Pilates Socks",
+    "color": "WHITE",
+    "qty": 1,
+    "unit_price": 5.6,
+    "msrp": 14,
+    "msrp_comparison_allowed": "no",
+    "final_sale": "no",
+    "status": "active"
+   }
+  ],
+  "subtotal": 5.6,
+  "free_shipping_gap": 74.4,
+  "eligible_offers": [
+   "OF-01"
+  ],
+  "note": "Coming-soon item in wishlist: tease the drop date, no 'shop now'"
+ }
+]

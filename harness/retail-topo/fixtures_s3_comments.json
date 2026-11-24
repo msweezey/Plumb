@@ -1,0 +1,52 @@
+[
+ {
+  "id": "SC-01",
+  "type": "praise",
+  "text": "My Rover Pack has been to 14 countries and it still looks new 🙌"
+ },
+ {
+  "id": "SC-02",
+  "type": "question",
+  "text": "Is the Mountain Cross Bag waterproof? Biking in rain a lot."
+ },
+ {
+  "id": "SC-03",
+  "type": "question",
+  "text": "Does the M.A.P. Guarantee cover a broken buckle?"
+ },
+ {
+  "id": "SC-04",
+  "type": "complaint",
+  "text": "Zipper broke after 2 months, not impressed."
+ },
+ {
+  "id": "SC-05",
+  "type": "complaint",
+  "text": "Ordered during the sale, still hasn't shipped."
+ },
+ {
+  "id": "SC-06",
+  "type": "troll",
+  "text": "Instagram gear for people who never go outside lol"
+ },
+ {
+  "id": "SC-07",
+  "type": "made_in",
+  "text": "Are these still made in Colorado?"
+ },
+ {
+  "id": "SC-08",
+  "type": "competitor",
+  "text": "Why not just buy Patagonia?"
+ },
+ {
+  "id": "SC-09",
+  "type": "personal_info",
+  "text": "@topodesigns order 33018 my address is 1412 Clay St Denver, where is it"
+ },
+ {
+  "id": "SC-10",
+  "type": "giveaway",
+  "text": "Can I enter the bike giveaway from Canada?"
+ }
+]

@@ -1,0 +1,93 @@
+{
+ "order_id": "TOPO-942950",
+ "contact_id": "C-0158",
+ "placed_at": "2026-11-21T10:12:00",
+ "items": [
+  {
+   "sku": "TDB-016",
+   "name": "Topo Designs x Toyota Accessory Bag Medium",
+   "color": "Dark Pine / Grape Leaf",
+   "qty": 1,
+   "unit_price": 39,
+   "msrp": 39,
+   "msrp_comparison_allowed": "yes",
+   "final_sale": "no",
+   "status": "active"
+  },
+  {
+   "sku": "TDB-015",
+   "name": "Mini Shoulder Bag",
+   "color": "Maroon / Salsa",
+   "qty": 1,
+   "unit_price": 49,
+   "msrp": 49,
+   "msrp_comparison_allowed": "yes",
+   "final_sale": "no",
+   "status": "active"
+  }
+ ],
+ "subtotal": 88.0,
+ "discount": {
+  "offer_id": "OF-01"
+ },
+ "shipping": "Standard",
+ "timezone": "America/Denver",
+ "cross_sell_pool": [
+  {
+   "sku": "TDB-028",
+   "name": "Accessory Bags - Final Sale",
+   "color": "Woodland / Elmwood",
+   "qty": 1,
+   "unit_price": 13,
+   "msrp": 21,
+   "msrp_comparison_allowed": "yes",
+   "final_sale": "yes",
+   "status": "active"
+  },
+  {
+   "sku": "TDP-016",
+   "name": "Rover Trail Pack",
+   "color": "Bone White / Pond Blue",
+   "qty": 1,
+   "unit_price": 169,
+   "msrp": 169,
+   "msrp_comparison_allowed": "yes",
+   "final_sale": "no",
+   "status": "discontinued"
+  },
+  {
+   "sku": "TDP-008",
+   "name": "Global Pro Wheelset",
+   "color": "Dark Pine",
+   "qty": 1,
+   "unit_price": 69,
+   "msrp": 69,
+   "msrp_comparison_allowed": "no",
+   "final_sale": "no",
+   "status": "active"
+  },
+  {
+   "sku": "TDP-009",
+   "name": "Rover Pack Mini",
+   "color": "Bone White / Cobalt",
+   "qty": 1,
+   "unit_price": 79,
+   "msrp": 79,
+   "msrp_comparison_allowed": "yes",
+   "final_sale": "no",
+   "status": "active"
+  },
+  {
+   "sku": "TDP-010",
+   "name": "Topo Designs x Dinosaur Jr Rover Pack Classic",
+   "color": "Very Peri / Black",
+   "qty": 1,
+   "unit_price": 109,
+   "msrp": 109,
+   "msrp_comparison_allowed": "yes",
+   "final_sale": "no",
+   "status": "active"
+  }
+ ],
+ "note": "Cross-sell traps: pool includes a final-sale and a discontinued SKU; recommend at most one active, in-stock item (EML-07)."
+}

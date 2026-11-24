@@ -1,0 +1,48 @@
+{
+ "order_id": "PACT-1048213",
+ "contact_id": "C-0144",
+ "placed_at": "2026-11-21T10:12:00-07:00",
+ "items": [
+  {
+   "sku": "PU-001",
+   "name": "Organic Everyday Classic Fit Bikini 3-Pack",
+   "color": "Sesame",
+   "qty": 2,
+   "unit_price": 26,
+   "msrp": 30,
+   "final_sale": "no",
+   "status": "active"
+  },
+  {
+   "sku": "PW-022",
+   "name": "Organic Perfect Rib Long Sleeve Tee",
+   "color": "Black",
+   "qty": 1,
+   "unit_price": 40,
+   "msrp": 40,
+   "final_sale": "no",
+   "status": "active"
+  }
+ ],
+ "subtotal": 92,
+ "discount": {
+  "offer_id": "OF-01",
+  "amount": 12.0
+ },
+ "shipping": "Standard, FREE (order $99+)",
+ "tax": 7.41,
+ "pact_credit_earned": "5% of merchandise total",
+ "ship_to": {
+  "city": "Denver",
+  "state": "CO",
+  "zip": "80205"
+ },
+ "estimated_delivery": "2026-11-26 to 2026-11-28",
+ "returns": "30 days, unworn and unwashed; free drop-off at Happy Returns, $3 for a UPS label",
+ "cross_sell_candidates": [
+  "PU-021",
+  "PW-036",
+  "PH-001"
+ ],
+ "note": "Transactional email: order details must lead; one product recommendation at most. Trap: cross-sell candidate PW-036 is discontinued and PH-001 is GOTS pending (say made with organic cotton, not certified)."
+}
