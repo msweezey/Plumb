@@ -1,0 +1,310 @@
+{
+ "note": "Off-brand drafts for B1 (brand edit) and review tasks. T-01..T-06 twin the wave 1 goldens; T-07..T-10 cover other channels. Agents never see expected_violations.",
+ "drafts": [
+  {
+   "id": "T-01",
+   "twin_of": "P1-G1",
+   "task": "P1",
+   "text": {
+    "sku": "EDT-001",
+    "title": "Nogi Overlap V Neck Long Sleeve Top",
+    "description": "Long sleeve top\nScoop neckline\nSustainable cotton jersey, made in USA\n95% cotton, 5% spandex\nModel wears size M\nItem care: Machine wash cold",
+    "fiber_content": "95% cotton, 5% spandex",
+    "model_info": "Model wears size M",
+    "sizes": "XS, S, M, L, XL",
+    "origin": "Imported"
+   },
+   "expected_violations": [
+    {
+     "rule": "MSG-07"
+    },
+    {
+     "rule": "LEG-16"
+    },
+    {
+     "rule": "WEB-04"
+    },
+    {
+     "rule": "LEG-15"
+    },
+    {
+     "rule": "LEG-18"
+    }
+   ]
+  },
+  {
+   "id": "T-02",
+   "twin_of": "P1-G2",
+   "task": "P1",
+   "text": {
+    "sku": "EDA-011",
+    "title": "Rounded Textured Brooch",
+    "description": "Brooch\nRounded textured design\nNon-toxic gold-tone finish ✨\nItem care: Avoid perfume",
+    "fiber_content": "",
+    "model_info": "",
+    "sizes": "OS",
+    "origin": "",
+    "warnings": ""
+   },
+   "expected_violations": [
+    {
+     "rule": "MSG-16"
+    },
+    {
+     "rule": "VOI-01"
+    },
+    {
+     "rule": "LEG-14"
+    },
+    {
+     "rule": "VOI-10"
+    }
+   ]
+  },
+  {
+   "id": "T-03",
+   "twin_of": "E1-G1",
+   "task": "E1",
+   "text": {
+    "segment": "active",
+    "subject": "50% OFF SITEWIDE starts NOW at Edicted 🖤",
+    "preheader": "The biggest sale of the year is here. Check out your cart RN.",
+    "body": "Hey babe 🖤\n\n50% OFF SITEWIDE is happening RN 💥 Shop the fits you've been saving!",
+    "cta": "Shop now",
+    "terms": "Ends soon. US only.",
+    "footer": "Edikted · Unsubscribe · Privacy · Accessibility · © 2026 Edikted"
+   },
+   "expected_violations": [
+    {
+     "rule": "MSG-05"
+    },
+    {
+     "rule": "MSG-10"
+    },
+    {
+     "rule": "LEG-01"
+    },
+    {
+     "rule": "LEG-11"
+    },
+    {
+     "rule": "VOI-03"
+    }
+   ]
+  },
+  {
+   "id": "T-04",
+   "twin_of": "E1-G2",
+   "task": "E1",
+   "text": {
+    "segment": "lapsed",
+    "subject": "A timeless investment piece for you",
+    "preheader": "Our biggest sale of the year is live, with new fits for every plan.",
+    "body": "Hi there,\n\nThe Cecilya dress is a timeless investment piece, was $54, now $21.60.\n\nFree shipping on orders over $50.",
+    "cta": "Shop new fits",
+    "terms": "*Based on comp value. 60% off all items Nov 22-30, 2026, ending 11:59 pm PT, except warehouse sale items and gift cards. US only. While supplies last.",
+    "footer": "Edikted · 1327 Willow St, Los Angeles, CA 90013 · Unsubscribe · Preferences · Privacy · Accessibility · © 2026 Edikted"
+   },
+   "expected_violations": [
+    {
+     "rule": "VOI-10"
+    },
+    {
+     "rule": "VOI-24"
+    },
+    {
+     "rule": "LEG-10"
+    },
+    {
+     "rule": "LEG-12"
+    }
+   ]
+  },
+  {
+   "id": "T-05",
+   "twin_of": "A1-G1",
+   "task": "A1",
+   "text": {
+    "ad_group": "going out tops",
+    "headlines": [
+     "Best Going Out Tops in LA Right Now",
+     "Sustainable Party Tops",
+     "Black Friday Is Live",
+     "Black Friday Is Live",
+     "Corset Tops for GNO",
+     "New Drops Every Week",
+     "Shop Edikted Tops",
+     "Fits You Saw on TikTok",
+     "Lace Tops Under $30",
+     "Strapless Tops for Fall",
+     "Holiday Party Fits",
+     "Free Shipping Over $80",
+     "Your Next GNO Fit",
+     "Satin Tops That Hit",
+     "Thank Us Later"
+    ],
+    "descriptions": [
+     "60% off everything for BLACK FRIDAY. Shop the fits RN.",
+     "Going out tops for every plan.",
+     "Corsets, lace and satin tops.",
+     "Free standard shipping on orders above $80."
+    ]
+   },
+   "expected_violations": [
+    {
+     "rule": "DR-01"
+    },
+    {
+     "rule": "DR-03"
+    },
+    {
+     "rule": "DR-02"
+    },
+    {
+     "rule": "MSG-11"
+    },
+    {
+     "rule": "LEG-18"
+    },
+    {
+     "rule": "MSG-10"
+    }
+   ]
+  },
+  {
+   "id": "T-06",
+   "twin_of": "A1-G2",
+   "task": "A1",
+   "text": {
+    "ad_group": "baggy jeans",
+    "headlines": [
+     "Better Than Shein Jeans",
+     "Polished Denim for Work",
+     "Baggy Jeans RN!!!!",
+     "Hypoallergenic Denim",
+     "Low Rise Baggy Jeans",
+     "Wide Leg Jeans",
+     "Jeans for Every Fit",
+     "Shop Edikted Denim",
+     "New Denim Drops",
+     "Jeans Under $50",
+     "Free Shipping Over $80",
+     "Baggy Fits for Fall",
+     "Holiday Fits RN",
+     "The BIGGEST Sale",
+     "Thank Us Later"
+    ],
+    "descriptions": [
+     "Low rise, baggy and wide leg jeans for every fit.",
+     "The denim you saw on your feed.",
+     "New drops every week.",
+     "Free standard shipping on orders above $80."
+    ]
+   },
+   "expected_violations": [
+    {
+     "rule": "MSG-17"
+    },
+    {
+     "rule": "VOI-24"
+    },
+    {
+     "rule": "VOI-12"
+    },
+    {
+     "rule": "VOI-01"
+    },
+    {
+     "rule": "LEG-17"
+    }
+   ]
+  },
+  {
+   "id": "T-07",
+   "task": "S1",
+   "text": {
+    "caption": "obsessed with my new fit from edikted 🖤💋🔥✨🎀🛍️💥 60% off everything rn",
+    "partner": true
+   },
+   "expected_violations": [
+    {
+     "rule": "LEG-06"
+    },
+    {
+     "rule": "SOC-01"
+    },
+    {
+     "rule": "MSG-10"
+    },
+    {
+     "rule": "VOI-10"
+    }
+   ]
+  },
+  {
+   "id": "T-08",
+   "task": "M1",
+   "text": {
+    "text": "EDIKTED: BLACK FRIDAY IS LIVE 🖤 Take 45% OFF the Cecilya Bandage Mini Dress, the Michel jeans and every knit RN, plus early access to the 12/16 drop: edk.to/bf",
+    "contact": {
+     "contact_id": "C-0101",
+     "age_band": "13-17",
+     "sms_consent_type": ""
+    }
+   },
+   "expected_violations": [
+    {
+     "rule": "LEG-02"
+    },
+    {
+     "rule": "EML-08"
+    },
+    {
+     "rule": "MSG-06"
+    }
+   ]
+  },
+  {
+   "id": "T-09",
+   "task": "S3",
+   "text": {
+    "caption": "our cotton cures acne and helps eczema babe, way better than Shein #EDIKTED"
+   },
+   "expected_violations": [
+    {
+     "rule": "VOI-01"
+    },
+    {
+     "rule": "LEG-17"
+    },
+    {
+     "rule": "MSG-17"
+    }
+   ]
+  },
+  {
+   "id": "T-10",
+   "task": "P1",
+   "text": {
+    "sku": "EDT-015",
+    "title": "Welbie Layered Long Sleeve T Shirt",
+    "description": "Layered top, shop now\nStripe print\nModel wears size XS\nItem care: Hand wash",
+    "fiber_content": "100% Cotton",
+    "model_info": "Model wears size XS",
+    "sizes": "XS, S, M, L, XL",
+    "origin": "Imported"
+   },
+   "expected_violations": [
+    {
+     "rule": "DCO-05"
+    },
+    {
+     "rule": "LEG-16"
+    },
+    {
+     "rule": "WEB-04"
+    }
+   ]
+  }
+ ]
+}

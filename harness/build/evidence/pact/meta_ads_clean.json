@@ -1,0 +1,769 @@
+[
+ {
+  "id": "1097227286256134",
+  "start": "2026-10-23T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "THREADS"
+  ],
+  "fmt": "IMAGE",
+  "title": "Clothes Have Ingredients, Too",
+  "body": "You read labels on your skincare. Your clothes are part of your wellness routine too, and ours are made with organic cotton.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/pages/pact-wellness-shouldnt-be-a-luxury",
+  "caption": "wearpact.com",
+  "link_desc": "Wellness shouldn\u2019t be a luxury",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "4796224413944018",
+  "start": "2026-11-02T08:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "THREADS"
+  ],
+  "fmt": "VIDEO",
+  "title": "Organic Leggings only $20",
+  "body": "Ease into the holiday season. Shop our $20 Organic Leggings and all our best deals on organic gifts and feel-good favorites before Black Friday begins.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/women/pages/black%20friday?filters=style-code%3Dallsingles%252Cwfz%252Cw1k%252Cfbm%26viz-filter%3Dleggings%257Cstarting%257Cat%257Cdollar20",
+  "caption": "wearpact.com",
+  "link_desc": "Wellness Shouldn't be a Luxury",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "1828338534865900",
+  "start": "2026-10-23T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM"
+  ],
+  "fmt": "VIDEO",
+  "title": "Wellness shouldn't be a luxury.",
+  "body": "Getting dressed is part of your wellness routine. Pact makes organic cotton essentials, from tees to leggings, made without harsh chemicals, toxic dyes and PFAS.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/pages/pact-wellness-shouldnt-be-a-luxury",
+  "caption": "wearpact.com",
+  "link_desc": "Organic essentials from $10.",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "4721431284799230",
+  "start": "2026-10-23T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "THREADS"
+  ],
+  "fmt": "IMAGE",
+  "title": "Organic essentials starting at $10",
+  "body": "What touches your skin every day matters. Pact bras and underwear are made with GOTS-certified organic cotton and made without harsh chemicals, toxic dyes and PFAS.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/pages/pact-wellness-shouldnt-be-a-luxury",
+  "caption": "wearpact.com",
+  "link_desc": "Shop Organic Underwear",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "1341947678109098",
+  "start": "2026-07-30T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "MESSENGER",
+   "THREADS"
+  ],
+  "fmt": "DPA",
+  "title": "Organic, Made Easy",
+  "body": "Made with organic cotton and designed to move with you \u2014 these are the pieces you\u2019ll reach for again and again.",
+  "cta": "Shop now",
+  "link": "http://wearpact.com/",
+  "caption": "wearpact.com",
+  "link_desc": null,
+  "cards": [
+   {
+    "t": "Organic, Made Easy",
+    "b": "Made with organic cotton and designed to move with you \u2014 these are the pieces you\u2019ll reach for again and again.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Organic, Made Easy",
+    "b": "Made with organic cotton and designed to move with you \u2014 these are the pieces you\u2019ll reach for again and again.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Organic, Made Easy",
+    "b": "Made with organic cotton and designed to move with you \u2014 these are the pieces you\u2019ll reach for again and again.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Organic, Made Easy",
+    "b": "Made with organic cotton and designed to move with you \u2014 these are the pieces you\u2019ll reach for again and again.",
+    "cta": "Shop Now"
+   }
+  ],
+  "ai": null
+ },
+ {
+  "id": "1303855675067846",
+  "start": "2026-05-27T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "MESSENGER",
+   "THREADS"
+  ],
+  "fmt": "DPA",
+  "title": "o r g a n i c - {{product.current_price strip_zeros}}",
+  "body": "Organic comfort, sustainably durable.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/men",
+  "caption": "wearpact.com",
+  "link_desc": "pact | organic comfort",
+  "cards": [
+   {
+    "t": "o r g a n i c - $98",
+    "b": "Organic comfort, sustainably durable.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "o r g a n i c - $98",
+    "b": "Organic comfort, sustainably durable.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "o r g a n i c - $98",
+    "b": "Organic comfort, sustainably durable.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "o r g a n i c - $98",
+    "b": "Organic comfort, sustainably durable.",
+    "cta": "Shop Now"
+   }
+  ],
+  "ai": null
+ },
+ {
+  "id": "1153768714262806",
+  "start": "2026-10-29T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "THREADS"
+  ],
+  "fmt": "VIDEO",
+  "title": "The Pants That Go With Everything",
+  "body": "Girl math: one high-quality pair of organic cotton pants that goes with literally everything. Made without PFAS, toxic dyes or harsh chemicals.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/women/apparel/all%20bottoms/all-day%20twill%20wide%20leg%20pant/wa1-fcc-esp",
+  "caption": "wearpact.com",
+  "link_desc": "Shop the Wide Leg in Espresso.",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "2547168005790201",
+  "start": "2026-10-23T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "THREADS"
+  ],
+  "fmt": "IMAGE",
+  "title": "Clean Comfort, All Day",
+  "body": "Think organic costs more? It doesn\u2019t. Our organic cotton leggings are made without harsh chemicals and start at $20.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/pages/pact-wellness-shouldnt-be-a-luxury",
+  "caption": "wearpact.com",
+  "link_desc": "Wellness shouldn\u2019t be a luxury",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "1722025229034955",
+  "start": "2026-08-03T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "MESSENGER",
+   "THREADS"
+  ],
+  "fmt": "VIDEO",
+  "title": "Underwear Without The Plastic",
+  "body": "Most underwear is made from plastic-based synthetics. Yours doesn't have to be. PACT is organic cotton \u2014 breathable, clean, and only $10.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/women/collection/underwear%20month",
+  "caption": "wearpact.com",
+  "link_desc": "From $10 this month",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "2382548819146513",
+  "start": "2026-11-02T08:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "THREADS"
+  ],
+  "fmt": "VIDEO",
+  "title": "Wellness shouldn't be a luxury",
+  "body": "Shop, Save, Gift, Repeat. Shop our best deals of the season before they're sold out.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/women/pages/black%20friday",
+  "caption": "wearpact.com",
+  "link_desc": "Upgrade to organic",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "2391858964905584",
+  "start": "2026-11-02T08:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "THREADS"
+  ],
+  "fmt": "VIDEO",
+  "title": "Organic Leggings only $20",
+  "body": "Ease into the holiday season. Shop our $20 Organic Leggings and all our best deals on organic gifts and feel-good favorites before Black Friday begins.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/women/pages/black%20friday?filters=style-code%3Dallsingles%252Cwfz%252Cw1k%252Cfbm%26viz-filter%3Dleggings%257Cstarting%257Cat%257Cdollar20",
+  "caption": "wearpact.com",
+  "link_desc": "Wellness Shouldn't be a Luxury",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "1811282983409324",
+  "start": "2026-10-23T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "THREADS"
+  ],
+  "fmt": "IMAGE",
+  "title": "Organic essentials starting at $10",
+  "body": "Getting dressed is part of your wellness routine. Pact makes organic cotton essentials, from tees to leggings, made without harsh chemicals, toxic dyes and PFAS.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/pages/pact-wellness-shouldnt-be-a-luxury",
+  "caption": "wearpact.com",
+  "link_desc": "Shop Organic",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "2033808387316160",
+  "start": "2026-10-01T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "THREADS"
+  ],
+  "fmt": "VIDEO",
+  "title": "The Swap I Almost Missed",
+  "body": "You low-tox'd your whole routine but never your underwear. Pact is GOTS organic cotton \u2014 no PFAS, no toxic dyes.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/women/collection/underwear%20month",
+  "caption": "wearpact.com",
+  "link_desc": "Organic cotton, nothing hidden",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "29385043187848979",
+  "start": "2026-10-26T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "THREADS"
+  ],
+  "fmt": "VIDEO",
+  "title": "Know What You're Wearing",
+  "body": "Know exactly what you're wearing. Our Swiss Dot underwear is GOTS certified organic cotton, traceable from farm to finished product.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/women/underwear/undies",
+  "caption": "wearpact.com",
+  "link_desc": "Shop Swiss Dot",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "1534612934266666",
+  "start": "2026-07-30T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "MESSENGER",
+   "THREADS"
+  ],
+  "fmt": "VIDEO",
+  "title": "\u2605\u2605\u2605\u2605\u2605 1,600+ Five Star Reviews",
+  "body": "Sustainable bedding you won\u2019t lose sleep over \ud83d\udca4 Make the switch to 100% organic cotton sheets & quilts at Pact.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/home/bedguide",
+  "caption": "wearpact.com",
+  "link_desc": "Upgrade to Organic",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "1631839387929458",
+  "start": "2026-05-27T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "MESSENGER",
+   "THREADS"
+  ],
+  "fmt": "DPA",
+  "title": "o r g a n i c - {{product.current_price strip_zeros}}",
+  "body": "Organic comfort, sustainably durable.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/men",
+  "caption": "wearpact.com",
+  "link_desc": "pact | organic comfort",
+  "cards": [
+   {
+    "t": "o r g a n i c - $98",
+    "b": "Organic comfort, sustainably durable.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "o r g a n i c - $98",
+    "b": "Organic comfort, sustainably durable.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "o r g a n i c - $98",
+    "b": "Organic comfort, sustainably durable.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "o r g a n i c - $98",
+    "b": "Organic comfort, sustainably durable.",
+    "cta": "Shop Now"
+   }
+  ],
+  "ai": null
+ },
+ {
+  "id": "1634026641451056",
+  "start": "2026-09-23T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "MESSENGER",
+   "THREADS"
+  ],
+  "fmt": "VIDEO",
+  "title": "The Swap I Almost Missed",
+  "body": "You low-tox'd your whole routine but never your underwear. Pact is GOTS organic cotton \u2014 no PFAS, no toxic dyes.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/women/collection/underwear%20month",
+  "caption": "wearpact.com",
+  "link_desc": "Organic cotton, nothing hidden",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "1038078455799605",
+  "start": "2026-07-30T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "MESSENGER",
+   "THREADS"
+  ],
+  "fmt": "DPA",
+  "title": "Save with Bundles",
+  "body": "Everyday essentials, bundled for comfort \u2014 and a little extra value.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/women/underwear/undies?filters=style-code%3Dwxk3%252Cwbb3%252Cwaa3%252Cwei3%252Cwdy3%252Cweu3%252Cwbc-6%252Cwbs-6%252Cwlb-3%252Cwlt-3%252Cwci3%252Cwbs-5%252Cwbc-5%252Cw8r-5%252Cw7c-5%252Cw7c-6%252Cw8r-6%252Cwcb-3%252Cwbs6%252Cwlt3%252Cwlu2%252Cwch3%252Cwes3%252Cwec2%252Cwcc2%252Cwaa2%252Cwts2%252Cwlh2%252Cwls3%252Cwms3%252Cwch3%252Cwbt2%252Cwqw3%252Cwed2%252Cwqi%252Cw7c5%26viz-filter%3Dsave%257Cwith%257Csets%257Cand%257Cbundles",
+  "caption": "wearpact.com",
+  "link_desc": "Always organic",
+  "cards": [
+   {
+    "t": "Save with Bundles",
+    "b": "Everyday essentials, bundled for comfort \u2014 and a little extra value.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Save with Bundles",
+    "b": "Everyday essentials, bundled for comfort \u2014 and a little extra value.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Save with Bundles",
+    "b": "Everyday essentials, bundled for comfort \u2014 and a little extra value.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Save with Bundles",
+    "b": "Everyday essentials, bundled for comfort \u2014 and a little extra value.",
+    "cta": "Shop Now"
+   }
+  ],
+  "ai": null
+ },
+ {
+  "id": "2941385319568829",
+  "start": "2026-10-01T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "THREADS"
+  ],
+  "fmt": "VIDEO",
+  "title": "Save with Sets",
+  "body": "Pulled-together without the stiffness. Soft, breathable, 100% organic cotton.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/women/apparel/all%20tops/on%20the%20go-to%20form%20set/bdl-wof2-blak",
+  "caption": "wearpact.com",
+  "link_desc": "Upgrade to organic",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "1369227607869559",
+  "start": "2026-07-30T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "MESSENGER",
+   "THREADS"
+  ],
+  "fmt": "DPA",
+  "title": "Feel Good, Every Day",
+  "body": "Clothing that meets you where you are. Soft, breathable, and designed to feel good in real life.",
+  "cta": "Shop now",
+  "link": "http://wearpact.com/",
+  "caption": "wearpact.com",
+  "link_desc": null,
+  "cards": [
+   {
+    "t": "Feel Good, Every Day",
+    "b": "Clothing that meets you where you are. Soft, breathable, and designed to feel good in real life.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Feel Good, Every Day",
+    "b": "Clothing that meets you where you are. Soft, breathable, and designed to feel good in real life.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Feel Good, Every Day",
+    "b": "Clothing that meets you where you are. Soft, breathable, and designed to feel good in real life.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Feel Good, Every Day",
+    "b": "Clothing that meets you where you are. Soft, breathable, and designed to feel good in real life.",
+    "cta": "Shop Now"
+   }
+  ],
+  "ai": null
+ },
+ {
+  "id": "28198580036392737",
+  "start": "2026-07-30T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "MESSENGER",
+   "THREADS"
+  ],
+  "fmt": "DPA",
+  "title": "Well Looks Good on You",
+  "body": "Getting dressed doesn\u2019t have to be complicated. Clean fabrics, effortless fits, and comfort you can feel all day.",
+  "cta": "Shop now",
+  "link": "http://wearpact.com/",
+  "caption": "wearpact.com",
+  "link_desc": null,
+  "cards": [
+   {
+    "t": "Well Looks Good on You",
+    "b": "Getting dressed doesn\u2019t have to be complicated. Clean fabrics, effortless fits, and comfort you can feel all day.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Well Looks Good on You",
+    "b": "Getting dressed doesn\u2019t have to be complicated. Clean fabrics, effortless fits, and comfort you can feel all day.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Well Looks Good on You",
+    "b": "Getting dressed doesn\u2019t have to be complicated. Clean fabrics, effortless fits, and comfort you can feel all day.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Well Looks Good on You",
+    "b": "Getting dressed doesn\u2019t have to be complicated. Clean fabrics, effortless fits, and comfort you can feel all day.",
+    "cta": "Shop Now"
+   }
+  ],
+  "ai": null
+ },
+ {
+  "id": "2223573315111321",
+  "start": "2026-07-30T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "MESSENGER",
+   "THREADS"
+  ],
+  "fmt": "IMAGE",
+  "title": "Nothing Harsh, Nothing Hidden",
+  "body": "Most underwear hides toxic dyes and forever chemicals. Pact is always made with organic cotton that feels like skincare you wear. Every pair is $10 all August.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/women/collection/underwear%20month",
+  "caption": "wearpact.com",
+  "link_desc": "Every pair is $10 all August.",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "1673834080580877",
+  "start": "2026-07-30T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "MESSENGER",
+   "THREADS"
+  ],
+  "fmt": "DPA",
+  "title": "Save with Bundles",
+  "body": "The quiet luxury of always having your favorites on hand \u2014 organic cotton essentials in one easy bundle.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/women/underwear/undies?filters=style-code%3Dwxk3%252Cwbb3%252Cwaa3%252Cwei3%252Cwdy3%252Cweu3%252Cwbc-6%252Cwbs-6%252Cwlb-3%252Cwlt-3%252Cwci3%252Cwbs-5%252Cwbc-5%252Cw8r-5%252Cw7c-5%252Cw7c-6%252Cw8r-6%252Cwcb-3%252Cwbs6%252Cwlt3%252Cwlu2%252Cwch3%252Cwes3%252Cwec2%252Cwcc2%252Cwaa2%252Cwts2%252Cwlh2%252Cwls3%252Cwms3%252Cwch3%252Cwbt2%252Cwqw3%252Cwed2%252Cwqi%252Cw7c5%26viz-filter%3Dsave%257Cwith%257Csets%257Cand%257Cbundles",
+  "caption": "wearpact.com",
+  "link_desc": "Always Organic",
+  "cards": [
+   {
+    "t": "Save with Bundles",
+    "b": "The quiet luxury of always having your favorites on hand \u2014 organic cotton essentials in one easy bundle.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Save with Bundles",
+    "b": "The quiet luxury of always having your favorites on hand \u2014 organic cotton essentials in one easy bundle.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Save with Bundles",
+    "b": "The quiet luxury of always having your favorites on hand \u2014 organic cotton essentials in one easy bundle.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Save with Bundles",
+    "b": "The quiet luxury of always having your favorites on hand \u2014 organic cotton essentials in one easy bundle.",
+    "cta": "Shop Now"
+   }
+  ],
+  "ai": null
+ },
+ {
+  "id": "1711883919926412",
+  "start": "2026-07-30T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "MESSENGER",
+   "THREADS"
+  ],
+  "fmt": "DPA",
+  "title": "Everyday, Done Well",
+  "body": "These aren\u2019t just basics. They\u2019re beautifully simple essentials designed with softness, ease, and intention.",
+  "cta": "Shop now",
+  "link": "http://wearpact.com/",
+  "caption": "wearpact.com",
+  "link_desc": null,
+  "cards": [
+   {
+    "t": "Everyday, Done Well",
+    "b": "These aren\u2019t just basics. They\u2019re beautifully simple essentials designed with softness, ease, and intention.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Everyday, Done Well",
+    "b": "These aren\u2019t just basics. They\u2019re beautifully simple essentials designed with softness, ease, and intention.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Everyday, Done Well",
+    "b": "These aren\u2019t just basics. They\u2019re beautifully simple essentials designed with softness, ease, and intention.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Everyday, Done Well",
+    "b": "These aren\u2019t just basics. They\u2019re beautifully simple essentials designed with softness, ease, and intention.",
+    "cta": "Shop Now"
+   }
+  ],
+  "ai": null
+ },
+ {
+  "id": "2033304750661388",
+  "start": "2026-10-29T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "THREADS"
+  ],
+  "fmt": "IMAGE",
+  "title": "Organic Leggings only $20",
+  "body": "Ease into the holiday season. Shop our $20 Organic Leggings and all our best deals on organic gifts and feel-good favorites before Black Friday begins.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/women/pages/black%20friday?filters=style-code%3Dallsingles%252Cwfz%252Cw1k%252Cfbm%26viz-filter%3Dleggings%257Cstarting%257Cat%257Cdollar20",
+  "caption": "wearpact.com",
+  "link_desc": "Wellness Shouldn't be a Luxury",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "978494398576734",
+  "start": "2026-07-31T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "MESSENGER",
+   "THREADS"
+  ],
+  "fmt": "VIDEO",
+  "title": "Dress Yourself Well",
+  "body": "Breathable, comfortable, designed for every kind of day. The Luxe set at Pact.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/women/apparel/all%20tops/cool%20stretch%20lunar%20set/bdl-wel2-nybl",
+  "caption": "wearpact.com",
+  "link_desc": "Upgrade to Organic",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "1011863728338023",
+  "start": "2026-07-30T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "MESSENGER",
+   "THREADS"
+  ],
+  "fmt": "DPA",
+  "title": "Slip Into Comfort",
+  "body": "Slip into something softer. Clean, organic essentials designed to help you slow down and feel at home.",
+  "cta": "Shop now",
+  "link": "http://wearpact.com/",
+  "caption": "wearpact.com",
+  "link_desc": null,
+  "cards": [
+   {
+    "t": "Slip Into Comfort",
+    "b": "Slip into something softer. Clean, organic essentials designed to help you slow down and feel at home.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Slip Into Comfort",
+    "b": "Slip into something softer. Clean, organic essentials designed to help you slow down and feel at home.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Slip Into Comfort",
+    "b": "Slip into something softer. Clean, organic essentials designed to help you slow down and feel at home.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "Slip Into Comfort",
+    "b": "Slip into something softer. Clean, organic essentials designed to help you slow down and feel at home.",
+    "cta": "Shop Now"
+   }
+  ],
+  "ai": null
+ },
+ {
+  "id": "1948254919892078",
+  "start": "2026-10-23T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK"
+  ],
+  "fmt": "VIDEO",
+  "title": "Wellness shouldn't be a luxury.",
+  "body": "Getting dressed is part of your wellness routine. Pact makes organic cotton essentials, from tees to leggings, made without harsh chemicals, toxic dyes and PFAS.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/pages/pact-wellness-shouldnt-be-a-luxury",
+  "caption": "wearpact.com",
+  "link_desc": "Organic essentials from $10.",
+  "cards": [],
+  "ai": null
+ },
+ {
+  "id": "972428648991382",
+  "start": "2026-05-27T07:00:00.000Z",
+  "platforms": [
+   "FACEBOOK",
+   "INSTAGRAM",
+   "AUDIENCE_NETWORK",
+   "MESSENGER",
+   "THREADS"
+  ],
+  "fmt": "DPA",
+  "title": "o r g a n i c - {{product.current_price strip_zeros}}",
+  "body": "Organic comfort, sustainably durable.",
+  "cta": "Shop now",
+  "link": "https://wearpact.com/men",
+  "caption": "wearpact.com",
+  "link_desc": "pact | organic comfort",
+  "cards": [
+   {
+    "t": "o r g a n i c - $98",
+    "b": "Organic comfort, sustainably durable.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "o r g a n i c - $98",
+    "b": "Organic comfort, sustainably durable.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "o r g a n i c - $98",
+    "b": "Organic comfort, sustainably durable.",
+    "cta": "Shop Now"
+   },
+   {
+    "t": "o r g a n i c - $98",
+    "b": "Organic comfort, sustainably durable.",
+    "cta": "Shop Now"
+   }
+  ],
+  "ai": null
+ }
+]

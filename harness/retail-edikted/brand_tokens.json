@@ -1,0 +1,260 @@
+{
+ "brand": "edikted",
+ "version": "0.3-public-build",
+ "colors_note": "Colors are referenced by hex only (no Pantone). Values and use counts come from edikted.com homepage HTML/CSS, 22 Nov 2026.",
+ "colors": {
+  "ink": {
+   "hex": "#252424",
+   "rgb": [
+    37,
+    36,
+    36
+   ],
+   "role": "primary",
+   "used_for": "Body text, headlines, borders",
+   "homepage_uses": 190,
+   "usage_share": "48%",
+   "source": "edikted.com homepage, 22 Nov 2026"
+  },
+  "white": {
+   "hex": "#FFFFFF",
+   "rgb": [
+    255,
+    255,
+    255
+   ],
+   "role": "background",
+   "used_for": "Backgrounds, text on pink and ink",
+   "homepage_uses": 77,
+   "usage_share": "19%",
+   "source": "edikted.com homepage, 22 Nov 2026"
+  },
+  "bubblegum": {
+   "hex": "#EC6BAD",
+   "rgb": [
+    236,
+    107,
+    173
+   ],
+   "role": "primary",
+   "used_for": "Primary buttons, sale banners",
+   "homepage_uses": 37,
+   "usage_share": "9%",
+   "source": "edikted.com homepage, 22 Nov 2026"
+  },
+  "black": {
+   "hex": "#000000",
+   "rgb": [
+    0,
+    0,
+    0
+   ],
+   "role": "primary",
+   "used_for": "Logo, nav",
+   "homepage_uses": 42,
+   "usage_share": "11%",
+   "source": "edikted.com homepage, 22 Nov 2026"
+  },
+  "baby_blue": {
+   "hex": "#BFE1EF",
+   "rgb": [
+    191,
+    225,
+    239
+   ],
+   "role": "background",
+   "used_for": "Promo bars, tiles",
+   "homepage_uses": 20,
+   "usage_share": "5%",
+   "source": "edikted.com homepage, 22 Nov 2026"
+  },
+  "soft_pink": {
+   "hex": "#F6A8D0",
+   "rgb": [
+    246,
+    168,
+    208
+   ],
+   "role": "background",
+   "used_for": "Hover and secondary panels",
+   "homepage_uses": 7,
+   "usage_share": "2%",
+   "source": "edikted.com homepage, 22 Nov 2026"
+  },
+  "near_black": {
+   "hex": "#100F0D",
+   "rgb": [
+    16,
+    15,
+    13
+   ],
+   "role": "secondary",
+   "used_for": "Overlays",
+   "homepage_uses": 5,
+   "usage_share": "1%",
+   "source": "edikted.com homepage, 22 Nov 2026"
+  },
+  "cloud": {
+   "hex": "#ECECEC",
+   "rgb": [
+    236,
+    236,
+    236
+   ],
+   "role": "background",
+   "used_for": "Inputs, dividers",
+   "homepage_uses": 4,
+   "usage_share": "1%",
+   "source": "edikted.com homepage, 22 Nov 2026"
+  },
+  "alert_red": {
+   "hex": "#EA1111",
+   "rgb": [
+    234,
+    17,
+    17
+   ],
+   "role": "alert",
+   "used_for": "Errors, low stock",
+   "homepage_uses": 4,
+   "usage_share": "1%",
+   "source": "edikted.com homepage, 22 Nov 2026"
+  },
+  "wine": {
+   "hex": "#5B1521",
+   "rgb": [
+    91,
+    21,
+    33
+   ],
+   "role": "secondary",
+   "used_for": "Holiday accents",
+   "homepage_uses": 4,
+   "usage_share": "1%",
+   "source": "edikted.com homepage, 22 Nov 2026"
+  },
+  "raspberry": {
+   "hex": "#CD0037",
+   "rgb": [
+    205,
+    0,
+    55
+   ],
+   "role": "alert",
+   "used_for": "Sale price",
+   "homepage_uses": 4,
+   "usage_share": "1%",
+   "source": "edikted.com homepage, 22 Nov 2026"
+  },
+  "mint": {
+   "hex": "#E7FAF3",
+   "rgb": [
+    231,
+    250,
+    243
+   ],
+   "role": "background",
+   "used_for": "Success messages",
+   "homepage_uses": 4,
+   "usage_share": "1%",
+   "source": "edikted.com homepage, 22 Nov 2026"
+  }
+ },
+ "approved_text_pairings": [
+  "Ink #252424 on White #FFFFFF (15.48:1)",
+  "Ink #252424 on Baby Blue #BFE1EF (11.23:1)",
+  "Ink #252424 on Soft Pink #F6A8D0 (8.43:1)",
+  "Ink #252424 on Cloud #ECECEC (13.1:1)",
+  "Ink #252424 on Mint #E7FAF3 (14.28:1)",
+  "Black #000000 on White #FFFFFF (21.0:1)",
+  "Black #000000 on Baby Blue #BFE1EF (15.23:1)",
+  "Black #000000 on Soft Pink #F6A8D0 (11.43:1)",
+  "Black #000000 on Cloud #ECECEC (17.78:1)",
+  "Black #000000 on Mint #E7FAF3 (19.37:1)",
+  "Near Black #100F0D on White #FFFFFF (19.16:1)",
+  "Near Black #100F0D on Baby Blue #BFE1EF (13.9:1)",
+  "Near Black #100F0D on Soft Pink #F6A8D0 (10.43:1)",
+  "Near Black #100F0D on Cloud #ECECEC (16.22:1)",
+  "Near Black #100F0D on Mint #E7FAF3 (17.67:1)",
+  "Alert Red #EA1111 on White #FFFFFF (4.58:1)",
+  "Wine #5B1521 on White #FFFFFF (13.34:1)",
+  "Wine #5B1521 on Baby Blue #BFE1EF (9.68:1)",
+  "Wine #5B1521 on Soft Pink #F6A8D0 (7.26:1)",
+  "Wine #5B1521 on Cloud #ECECEC (11.29:1)",
+  "Wine #5B1521 on Mint #E7FAF3 (12.3:1)",
+  "Raspberry #CD0037 on White #FFFFFF (5.75:1)",
+  "Raspberry #CD0037 on Cloud #ECECEC (4.87:1)",
+  "Raspberry #CD0037 on Mint #E7FAF3 (5.3:1)"
+ ],
+ "large_text_only": [
+  "Alert Red #EA1111 on Baby Blue #BFE1EF (3.32:1)",
+  "Alert Red #EA1111 on Cloud #ECECEC (3.88:1)",
+  "Alert Red #EA1111 on Mint #E7FAF3 (4.22:1)",
+  "Raspberry #CD0037 on Baby Blue #BFE1EF (4.17:1)",
+  "Raspberry #CD0037 on Soft Pink #F6A8D0 (3.13:1)"
+ ],
+ "banned_text_pairings": [
+  "Bubblegum #EC6BAD on White #FFFFFF (2.89:1)",
+  "Bubblegum #EC6BAD on Baby Blue #BFE1EF (2.09:1)",
+  "Bubblegum #EC6BAD on Soft Pink #F6A8D0 (1.57:1)",
+  "Bubblegum #EC6BAD on Cloud #ECECEC (2.44:1)",
+  "Bubblegum #EC6BAD on Mint #E7FAF3 (2.66:1)",
+  "Alert Red #EA1111 on Soft Pink #F6A8D0 (2.49:1)"
+ ],
+ "typography": {
+  "families": [
+   {
+    "name": "Obviously Extended",
+    "type": "extended sans (display)",
+    "weights": "Semibold; Medium Italic",
+    "use": "Headlines, nav, promo bars",
+    "source": "self-hosted Obviously-Semibold / Obviously-Extended_Medium_Italic; CSS spells the family 'Obiously Extended'"
+   },
+   {
+    "name": "Druk Wide",
+    "type": "wide display sans",
+    "weights": "Heavy; Medium Italic",
+    "use": "Sale numerals and event headlines (e.g. '60% OFF')",
+    "source": "self-hosted Druk_Wide-Heavy-Web"
+   },
+   {
+    "name": "Montserrat",
+    "type": "sans",
+    "weights": "Light, Regular, Medium",
+    "use": "Body, product details, buttons",
+    "source": "self-hosted Montserrat-Light/Regular/Medium"
+   },
+   {
+    "name": "Adobe kit aab3ogq",
+    "type": "kit",
+    "weights": "",
+    "use": "Loaded on homepage; contents unconfirmed",
+    "source": "use.typekit.net/aab3ogq"
+   }
+  ],
+  "fallbacks": {
+   "Obviously Extended": "'Arial Black', Arial, sans-serif",
+   "Druk Wide": "Impact, 'Arial Black', sans-serif",
+   "Montserrat": "Arial, sans-serif"
+  }
+ },
+ "spacing_px": [
+  4,
+  8,
+  12,
+  16,
+  24,
+  32,
+  48,
+  64
+ ],
+ "radius_px": 0,
+ "logo": {
+  "files": [
+   "logo-full.svg (to supply)",
+   "logo-mono.svg (to supply)",
+   "logo-icon.svg (to supply)"
+  ],
+  "notes": "Wordmark 'EDIKTED' in caps (logo only). Running copy uses 'Edikted', 'EDIKTED' or lowercase 'edikted' (all observed)."
+ }
+}

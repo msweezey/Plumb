@@ -1,0 +1,11 @@
+offer_id,type,name,mechanic,code,start,end,min_spend,exclusions,terms
+OF-01,sitewide,Black Friday early access,Up to 40% off sitewide,,2026-11-17,2026-11-23 23:59 MT,,"Gift cards; clearance already final sale; discount varies by item, max 40%",Discount shown at item level. While supplies last. Cannot be combined with welcome offer.
+OF-02,sitewide,Welcome offer,15% off first order,WELCOME15,2026-01-01,2026-12-31 23:59 MT,,"Gift cards, clearance, bundles already discounted",New email subscribers only. One use per customer. Code sent by email after sign-up.
+OF-03,category,$20 organic leggings,On The Go-To Legging at $20,,2026-11-17,2026-11-30 23:59 MT,,Applies to On The Go-To Legging (WGL) only; pocket and bootcut styles excluded,Price as marked. While supplies last.
+OF-04,category,Underwear restock,25% off underwear and bralettes,,2026-11-03,2026-11-09 23:59 MT,,Multi-pack bundles already discounted,Ended. Do not reference as current.
+OF-05,category,Bedding event,"25% off sheets, duvets and quilts",SLEEPWELL,2026-11-24,2026-12-01 23:59 MT,$150,"Towels, throws, clearance",Code required at checkout. Minimum $150 bedding subtotal before tax and shipping.
+OF-06,category,Save with sets,"Buy any 2 matching set pieces, save 20%",,2026-10-01,2026-12-31 23:59 MT,,Clearance,Discount applied in cart to matching top and bottom from the same set collection.
+OF-07,product,Wrap dress $49,Organic Fit & Flare V-Neck Twist Dress for $49,,2026-11-17,2026-11-23 23:59 MT,,Black colorway only,Limited quantities. Price as marked.
+OF-08,product,Waffle set back in stock,Luxe Waffle Set 30% off,,2026-11-11,2026-11-16 23:59 MT,,,Ended. Do not reference as current.
+OF-09,product,Swiss Dot $10,Swiss Dot Bikini $10 each,,2026-11-17,2026-11-30 23:59 MT,,Single pairs only,Price as marked.
+OF-10,product,Free pillowcases with sheet set,Free Room Service Sateen Pillowcase 2-Pack with any Room Service Sateen Sheet Set,PILLOWGIFT,2026-12-02,2026-12-14 23:59 MT,,While supplies last; matching color subject to availability,Add both items to cart and enter code. Value $28.

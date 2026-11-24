@@ -1,0 +1,10 @@
+# Edikted — evidence log (pulled 22 Nov 2026)
+
+E01 Homepage edikted.com (HTML via crawl4ai, 22 Nov 2026): headings '70-80% Off Items', 'countdown to black friday sale 50% off sitewide', 'Online Warehouse Sale'; app code APP10 for 10% off; product prices $24–$88.
+E02 Homepage CSS: Obviously Extended (Semibold, Medium Italic; CSS spells 'Obiously Extended'), Druk Wide (Heavy, Medium Italic), Montserrat (Light, Regular, Medium), Adobe kit aab3ogq. Hex counts: #252424 190, #FFFFFF 77, #EC6BAD 37, #000000 42, #BFE1EF 20, #F6A8D0 7, #100F0D 5, #ECECEC/#EA1111/#5B1521/#CD0037/#E7FAF3 4 each.
+E03 Shopify products.json (250): one product per color; median price $26; 239 have compare-at prices, mostly 2.5x (60% off) or 2x (50% off) the live price. Tags: 60discount 109, Warehouse 9, P65_Message 15 (Prop 65 warning), Drop_2026-12-16 40 (future drop), Influencers Monthly 87, wholesale tags Nordstrom 11 and Tillys 61.
+E04 Product descriptions (median 44 words) are attribute lists: garment, fit, closure, details, fabric name, fibers without percentages, 'Model wears size S', 'Model height is 5'7', 'Item care: ...'.
+E05 Meta Ad Library (63 ads; 20 unique pulled): 'BLACK FRIDAY IS LIVE🖤💥 SAVE 60% ON EVERYTHING & Shop The BIGGEST SALE Of The Year ASAP🛒 *Based on comp value'; headlines 'Thank Us Later🤑', 'BLACK FRIDAY Only Comes Around Once A Year & You're Missing It‼️'; all CTAs 'Shop now'; every ad has emoji and caps.
+E06 Shipping page: free standard shipping on orders above $80 (48 contiguous states; AK/PR/HI also $80+); standard $5, expedited $9, express $18. No address on page; directory listing 1327 Willow St, Los Angeles.
+E07 Instagram @edikted: 'BLACK FRIDAY IS HOT🔥 SHOP 60% OFF EVERYTHING & checkout your cart RN🚨🖤 #EDIKTED *US only'; TV-show teasers ('tune in 11/22'); creator posts tagged #ediktedad; every own post ends with #EDIKTED.
+E08 Press: founded 2020 (Tel Aviv roots, LA HQ) by ex-Adika founders Dedy Shwartzberg and Zvika Alon; Gen Z focus ('speak in Gen Z's language'); stores from 2023 (SoHo) and 11 locations by 2025; revenue estimates $42M–$300M (sources disagree).

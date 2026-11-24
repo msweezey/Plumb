@@ -1,0 +1,52 @@
+[
+ {
+  "id": "SC-01",
+  "type": "praise",
+  "text": "the cecilya dress hit SO hard at my bday 😍"
+ },
+ {
+  "id": "SC-02",
+  "type": "question",
+  "text": "does the 60% off work on the warehouse stuff too??"
+ },
+ {
+  "id": "SC-03",
+  "type": "question",
+  "text": "do u ship to canada"
+ },
+ {
+  "id": "SC-04",
+  "type": "complaint",
+  "text": "it says 60% off but it's literally always this price 🙄"
+ },
+ {
+  "id": "SC-05",
+  "type": "complaint",
+  "text": "ordered 2 weeks ago still nothing"
+ },
+ {
+  "id": "SC-06",
+  "type": "troll",
+  "text": "fast fashion trash lol"
+ },
+ {
+  "id": "SC-07",
+  "type": "minor",
+  "text": "im 15 can i still get the text discounts"
+ },
+ {
+  "id": "SC-08",
+  "type": "competitor",
+  "text": "same top is $8 on shein"
+ },
+ {
+  "id": "SC-09",
+  "type": "personal_info",
+  "text": "@edikted order 4419920 my email is maddie.r@example.com pls help"
+ },
+ {
+  "id": "SC-10",
+  "type": "question",
+  "text": "is the new drop on 12/16 at midnight?"
+ }
+]

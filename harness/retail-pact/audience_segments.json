@@ -1,0 +1,44 @@
+{
+ "spine": "retail-spine-v2 (frozen 22 Nov 2026; same 250 people in every retail brand; persona_id from the shared generational personas)",
+ "personas": {
+  "GZ": "Gen Z, 18-29",
+  "MIL": "Millennial, 30-45",
+  "GX": "Gen X, 46-61",
+  "BB": "Boomer, 62-80",
+  "source": "harness/shared/personas.md"
+ },
+ "segments": [
+  {
+   "id": "prospect",
+   "definition": "Subscribed, no orders",
+   "count": 60
+  },
+  {
+   "id": "new",
+   "definition": "Exactly 1 order, last order within 60 days",
+   "count": 50
+  },
+  {
+   "id": "active",
+   "definition": "2-6 orders, last order within 60 days",
+   "count": 70
+  },
+  {
+   "id": "high_value",
+   "definition": "7+ orders or lifetime value top 12%",
+   "count": 30
+  },
+  {
+   "id": "lapsed",
+   "definition": "1+ orders, no order in 200+ days",
+   "count": 40
+  }
+ ],
+ "exclusions": [
+  "unsubscribed=yes from marketing email",
+  "hard_bounce=yes",
+  "age_band=13-17 from all marketing",
+  "sms only where sms_consent_type = prior express written consent",
+  "edge_case contains 'seed/test'"
+ ]
+}

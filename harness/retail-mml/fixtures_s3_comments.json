@@ -1,0 +1,52 @@
+[
+ {
+  "id": "SC-01",
+  "type": "praise",
+  "text": "Wore the Moreland to my promotion dinner. Felt like myself, only sharper."
+ },
+ {
+  "id": "SC-02",
+  "type": "question",
+  "text": "Is the Aditi dress machine washable or dry clean?"
+ },
+ {
+  "id": "SC-03",
+  "type": "question",
+  "text": "Does the Black Friday discount apply to the sale section too?"
+ },
+ {
+  "id": "SC-04",
+  "type": "complaint",
+  "text": "$8.95 to return something? That's new and not cool."
+ },
+ {
+  "id": "SC-05",
+  "type": "complaint",
+  "text": "My order is 9 days late and the tracking hasn't moved."
+ },
+ {
+  "id": "SC-06",
+  "type": "troll",
+  "text": "Overpriced polyester for people who think they're fancy."
+ },
+ {
+  "id": "SC-07",
+  "type": "health",
+  "text": "Is the crepe safe for eczema? My skin reacts to everything."
+ },
+ {
+  "id": "SC-08",
+  "type": "competitor",
+  "text": "Theory has the same blazer for less, why should I buy yours?"
+ },
+ {
+  "id": "SC-09",
+  "type": "personal_info",
+  "text": "@mmlafleur my order # is 1488203 and my address is 22 W 71st, can you check?"
+ },
+ {
+  "id": "SC-10",
+  "type": "question",
+  "text": "Do you still do the Bento boxes?"
+ }
+]

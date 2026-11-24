@@ -1,0 +1,311 @@
+{
+ "note": "Off-brand drafts for B1 (brand edit) and review tasks. T-01..T-06 twin the wave 1 goldens; T-07..T-10 cover other channels. Agents never see expected_violations.",
+ "drafts": [
+  {
+   "id": "T-01",
+   "twin_of": "P1-G1",
+   "task": "P1",
+   "text": {
+    "sku": "TDP-012",
+    "title": "Mountain Duffel 40L",
+    "description": "A waterproof duffel made in Colorado and built for every trip, with backpack straps for the walk from the trailhead. Covered by our lifetime warranty.",
+    "fiber_content": "1000D Cordura",
+    "care": "",
+    "fit": "40L",
+    "sizes": "One size",
+    "origin": "Imported"
+   },
+   "expected_violations": [
+    {
+     "rule": "LEG-21"
+    },
+    {
+     "rule": "LEG-15"
+    },
+    {
+     "rule": "MSG-09"
+    },
+    {
+     "rule": "LEG-22"
+    },
+    {
+     "rule": "LEG-16"
+    }
+   ]
+  },
+  {
+   "id": "T-02",
+   "twin_of": "P1-G2",
+   "task": "P1",
+   "text": {
+    "sku": "TDB-042",
+    "title": "Topo Designs x Pine Printshop Classic Canvas Tote - Catalog",
+    "description": "A USA-made canvas tote printed with non-toxic inks 🎨 Built for daily hauls, market runs and weekend trips.",
+    "fiber_content": "cotton canvas",
+    "care": "",
+    "fit": "10L",
+    "sizes": "One size",
+    "origin": ""
+   },
+   "expected_violations": [
+    {
+     "rule": "WEB-04"
+    },
+    {
+     "rule": "MSG-09"
+    },
+    {
+     "rule": "VOI-01"
+    },
+    {
+     "rule": "LEG-14"
+    },
+    {
+     "rule": "VOI-10"
+    }
+   ]
+  },
+  {
+   "id": "T-03",
+   "twin_of": "E1-G1",
+   "task": "E1",
+   "text": {
+    "segment": "active",
+    "subject": "Memorial Day deals are back at TopoDesigns",
+    "preheader": "Our biggest markdowns of the year on packs, bags and layers.",
+    "body": "Hi there,\n\nThe Memorial Day sale is back with up to 40% off. Every pack comes with a lifetime warranty.",
+    "cta": "Shop now",
+    "terms": "Ends soon.",
+    "footer": "Topo Designs · Unsubscribe · Privacy · Accessibility · © 2026 Topo Designs"
+   },
+   "expected_violations": [
+    {
+     "rule": "MSG-05"
+    },
+    {
+     "rule": "MSG-11"
+    },
+    {
+     "rule": "LEG-22"
+    },
+    {
+     "rule": "LEG-01"
+    },
+    {
+     "rule": "LEG-11"
+    },
+    {
+     "rule": "VOI-03"
+    }
+   ]
+  },
+  {
+   "id": "T-04",
+   "twin_of": "E1-G2",
+   "task": "E1",
+   "text": {
+    "segment": "lapsed",
+    "subject": "We are obsessed with this sale, come back",
+    "preheader": "Up to 50% off select styles, made for anywhere on your map.",
+    "body": "Hi {first_name|there},\n\nHuge news! Take 50% off everything in our gear lineup! Free shipping over $75!",
+    "cta": "Find your bag",
+    "terms": "Up to 50% off select styles Nov 20 to Dec 1, 2026, ending 11:59 pm MT. Discount varies by item, max 50%. Excludes new arrivals, limited editions, collaborations and gift cards. While supplies last. Free U.S. shipping on $100+.",
+    "footer": "Topo Designs · York Street Yards, Steele St, Denver, CO 80205 · Unsubscribe · Preferences · Privacy · Accessibility · © 2026 Topo Designs"
+   },
+   "expected_violations": [
+    {
+     "rule": "MSG-06"
+    },
+    {
+     "rule": "VOI-12"
+    },
+    {
+     "rule": "LEG-12"
+    },
+    {
+     "rule": "VOI-24"
+    }
+   ]
+  },
+  {
+   "id": "T-05",
+   "twin_of": "A1-G1",
+   "task": "A1",
+   "text": {
+    "ad_group": "crossbody bags",
+    "headlines": [
+     "Best Crossbody Bag Ever Made, Period",
+     "Made in USA Crossbody Bags",
+     "Crossbody Bags for Anywhere",
+     "Crossbody Bags for Anywhere",
+     "The Mountain Cross Bag",
+     "Fits a 14 Inch Laptop",
+     "Everyday Carry, Sorted",
+     "Recycled Nylon Bags",
+     "Town to Trail Crossbody",
+     "Free U.S. Shipping $100+",
+     "Designed in Colorado",
+     "Slim Crossbody Bags",
+     "Bike and Commute Bags",
+     "Gifts Under $100",
+     "Made for Anywhere"
+    ],
+    "descriptions": [
+     "Crossbody bags that carry your daily essentials.",
+     "The Mountain Cross Bag keeps a slim profile.",
+     "Black Friday: up to 50% off select styles.",
+     "Free U.S. shipping on $100+."
+    ]
+   },
+   "expected_violations": [
+    {
+     "rule": "DR-01"
+    },
+    {
+     "rule": "DR-02"
+    },
+    {
+     "rule": "DR-03"
+    },
+    {
+     "rule": "LEG-15"
+    },
+    {
+     "rule": "MSG-09"
+    }
+   ]
+  },
+  {
+   "id": "T-06",
+   "twin_of": "A1-G2",
+   "task": "A1",
+   "text": {
+    "ad_group": "travel backpacks",
+    "headlines": [
+     "Better Than Patagonia Packs",
+     "Waterproof Travel Packs",
+     "OMG Travel Backpacks",
+     "Carry-On Ready 🎒✈️",
+     "The Rover Pack Classic",
+     "Global Travel Backpacks",
+     "Laptop Backpacks",
+     "Commute to Trailhead",
+     "Free U.S. Shipping $100+",
+     "Designed in Colorado",
+     "Packs for Weekend Trips",
+     "Classic Packs Since 2008",
+     "Recycled Nylon Packs",
+     "Topo Designs Packs",
+     "Made for Anywhere"
+    ],
+    "descriptions": [
+     "Travel backpacks with smart organization.",
+     "Classic Topo designs in durable materials.",
+     "Black Friday: up to 50% off select styles.",
+     "Free U.S. shipping on $100+."
+    ]
+   },
+   "expected_violations": [
+    {
+     "rule": "MSG-17"
+    },
+    {
+     "rule": "LEG-21"
+    },
+    {
+     "rule": "VOI-24"
+    },
+    {
+     "rule": "VOI-10"
+    }
+   ]
+  },
+  {
+   "id": "T-07",
+   "task": "S1",
+   "text": {
+    "caption": "Giveaway time! 🚲🎉🏔️🎒✨🙌 Win a full bike build from Topo and friends. Tag 3 friends to enter. #topodesigns #giveaway",
+    "partner": true
+   },
+   "expected_violations": [
+    {
+     "rule": "SOC-06"
+    },
+    {
+     "rule": "SOC-01"
+    },
+    {
+     "rule": "LEG-06"
+    },
+    {
+     "rule": "VOI-10"
+    }
+   ]
+  },
+  {
+   "id": "T-08",
+   "task": "M1",
+   "text": {
+    "text": "Topo Designs: take 35% off the Rover Pack Classic, the Mountain Cross Bag and every Global Wool Sweater through Monday night, plus free U.S. shipping on $100+ orders: topo.co/bf",
+    "contact": {
+     "contact_id": "C-0131",
+     "sms_consent_type": "email only"
+    }
+   },
+   "expected_violations": [
+    {
+     "rule": "LEG-02"
+    },
+    {
+     "rule": "EML-08"
+    },
+    {
+     "rule": "MSG-06"
+    }
+   ]
+  },
+  {
+   "id": "T-09",
+   "task": "S3",
+   "text": {
+    "caption": "Yep, everything is still made in Colorado, eco-friendly and better than Patagonia."
+   },
+   "expected_violations": [
+    {
+     "rule": "LEG-15"
+    },
+    {
+     "rule": "MSG-17"
+    },
+    {
+     "rule": "VOI-01"
+    }
+   ]
+  },
+  {
+   "id": "T-10",
+   "task": "P1",
+   "text": {
+    "sku": "TDP-006",
+    "title": "Daypack Classic",
+    "description": "Our classic Daypack, an ideal travel companion and workmate for the daily hike in the hills. Shop now in Bone White, with natural leather lash tabs for extra gear.",
+    "fiber_content": "recycled nylon",
+    "care": "",
+    "fit": "",
+    "sizes": "One size",
+    "origin": "Imported"
+   },
+   "expected_violations": [
+    {
+     "rule": "MSG-08"
+    },
+    {
+     "rule": "DCO-05"
+    },
+    {
+     "rule": "LEG-16"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,29 @@
+# Edikted harness manifest (harness.yaml)
+id: retail-edikted
+version: 0.3-public-build
+built: 2026-11-22
+segment: retail
+quadrant: expressive x value
+source: public material (see evidence_log.md); partner swap pending
+rule_count: 181
+auto_share: 0.79
+personas: shared (primary GZ, secondary MIL)
+files:
+  brief: brief.md
+  guidelines: guidelines.md
+  rules: rules.json
+  rubric: rubric.md
+  checks: checks.py
+  brand: [brand_tokens.json, logo files (to supply)]
+  catalog: [catalog_products.csv (200), catalog_offers.csv (10), catalog_price_history.csv (200 x 12), catalog_reviews.csv (300)]
+  audience: [audience_segments.json, audience_contacts.csv (250, retail-spine-v2 + Edikted columns)]
+  shared: [harness/shared/personas.md, harness/shared/contacts_spine_v2.csv]
+  library: [library_copy-bank.md, library_claims.md (25)]
+  history: [history_golden_wave1.md (6)]
+  traps: [traps.md, traps_offbrand_drafts.json (10 drafts, 42 violations)]
+  tasks: [tasks_wave1.md]
+  fixtures: [fixtures_e3_carts.json, fixtures_e6_order.json, fixtures_s3_comments.json]
+  tests: [realcopy_corpus.json, test_report_fidelity.md]
+  method: [evidence_log.md, assumptions_method-a.md]
+deprecated: ["Ended '50% off sitewide' pre-BF offer (OF-09)", "Expired Back to School up to 70% off (OF-10)"]
+not_yet_built: [logo files, image library, golden examples for waves 2-3, AI judge calibration]

@@ -1,0 +1,52 @@
+[
+ {
+  "id": "SC-01",
+  "type": "praise",
+  "text": "Obsessed with my wrap dress, wore it 3 days in a row \ud83d\ude0d"
+ },
+ {
+  "id": "SC-02",
+  "type": "question",
+  "text": "Do the leggings run small? I'm between M and L"
+ },
+ {
+  "id": "SC-03",
+  "type": "question",
+  "text": "Is the Black Friday sale on bedding too?"
+ },
+ {
+  "id": "SC-04",
+  "type": "complaint",
+  "text": "My order is a week late and nobody answers emails"
+ },
+ {
+  "id": "SC-05",
+  "type": "complaint",
+  "text": "Shirt shrank after one wash. $30 for this??"
+ },
+ {
+  "id": "SC-06",
+  "type": "troll",
+  "text": "organic cotton is a scam, it's all marketing lol"
+ },
+ {
+  "id": "SC-07",
+  "type": "troll",
+  "text": "Made by underpaid workers overseas, nice try"
+ },
+ {
+  "id": "SC-08",
+  "type": "claim_bait",
+  "text": "Will these help my eczema? My dermatologist said synthetics make it worse"
+ },
+ {
+  "id": "SC-09",
+  "type": "claim_bait",
+  "text": "Are your clothes 100% plastic free? Even the socks?"
+ },
+ {
+  "id": "SC-10",
+  "type": "claim_bait",
+  "text": "Is Pact still a B Corp? I thought you were"
+ }
+]

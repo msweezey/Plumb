@@ -1,0 +1,11 @@
+offer_id,type,name,mechanic,code,start,end,min_spend,exclusions,terms
+OF-01,sitewide,Black Friday sale,Up to 50% off select styles,,2026-11-20,2026-12-01 23:59 MT,,"New arrivals, limited editions, collaborations, gift cards","Discount varies by item, max 50%. While supplies last."
+OF-02,welcome,Join The Topo Crew,10% off your first order,CREW10,2026-01-01,2026-12-31 23:59 MT,,"Sale items, gift cards",New email subscribers only.
+OF-03,shipping,Free U.S. shipping,Free U.S. shipping on $100+ and exchanges,,2026-01-01,2026-12-31 23:59 MT,100,,Contiguous US.
+OF-04,guarantee,M.A.P. Guarantee™,We guarantee everything we make,,2026-01-01,2026-12-31 23:59 MT,,Terms on guarantee page (not retrieved: page blocked),Name it exactly; link terms; never 'lifetime warranty'.
+OF-05,collab,"Puffin x Topo Designs, round 2",Collab launch; full price,,2026-11-19,2026-12-31 23:59 MT,,,No discount.
+OF-06,limited,2026 Limited Edition Solar Hiker Kit,VAER x Topo Designs x Worn & Wound; full price,,2026-10-01,2026-12-31 23:59 MT,,,Limited quantities.
+OF-07,giveaway,Dream bike giveaway,Enter to win a Surly Straggler build,,2026-11-01,2026-11-22 23:59 MT,,,US participants only. No purchase necessary. Rules linked in bio. Ends 11/22/26.
+OF-08,gift,Holiday Gift Guide,Curated gifts; no discount of its own,,2026-11-10,2026-12-24 23:59 MT,,,
+OF-09,retail,HQ storefront grand opening,New store at York Street Yards,,2026-11-08,2026-11-15 23:59 MT,,,ENDED: decoy.
+OF-10,expired,Memorial Day sale,Up to 40% off,,2026-05-22,2026-05-26 23:59 MT,,,EXPIRED: decoy.

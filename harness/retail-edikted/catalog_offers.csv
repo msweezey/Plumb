@@ -1,0 +1,11 @@
+offer_id,type,name,mechanic,code,start,end,min_spend,exclusions,terms
+OF-01,sitewide,Black Friday,60% off everything (based on comp value),,2026-11-22,2026-11-30 23:59 PT,,Gift cards; warehouse sale items; US only,*Based on comp value. US only. While supplies last.
+OF-02,sale,Online Warehouse Sale,70-80% off items,,2026-11-01,2026-12-31 23:59 PT,,,Warehouse items are final sale. *Based on comp value.
+OF-03,app,App offer,10% off first app order,APP10,2026-01-01,2026-12-31 23:59 PT,,Gift cards,App only; one use per customer.
+OF-04,shipping,Free standard shipping,Free standard shipping on orders above $80,,2026-01-01,2026-12-31 23:59 PT,80,,"48 contiguous states; AK, PR, HI also $80+ standard."
+OF-05,event,Totally Edikted (BF livestream),"Content event, no discount of its own",,2026-11-22,2026-11-22 23:59 PT,,,"Campaign line, BF 2026 only."
+OF-06,drop,New drop,New arrivals drop; no discount,,2026-12-16,2026-12-16 23:59 PT,,,Items not shoppable before drop time.
+OF-07,sms,SMS sign-up,Early access to drops for SMS subscribers,,2026-01-01,2026-12-31 23:59 PT,,,Requires written SMS consent; 18+.
+OF-08,retail,In-store event,In-store styling event at The Grove,,2026-12-06,2026-12-06 20:00 PT,,,While capacity lasts.
+OF-09,sitewide,Pre-BF early access,50% off sitewide,,2026-11-17,2026-11-21 23:59 PT,,Gift cards,"ENDED Nov 21: decoy, never reference as live. *Based on comp value."
+OF-10,expired,Back to School,Up to 70% off,,2026-08-01,2026-08-31 23:59 PT,,,EXPIRED: decoy.

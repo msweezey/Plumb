@@ -1,0 +1,245 @@
+{
+ "brand": "mml",
+ "version": "0.3-public-build",
+ "colors_note": "Colors are referenced by hex only (no Pantone). Values and use counts come from mmlafleur.com homepage HTML/CSS, 22 Nov 2026.",
+ "colors": {
+  "black": {
+   "hex": "#000000",
+   "rgb": [
+    0,
+    0,
+    0
+   ],
+   "role": "primary",
+   "used_for": "Logo, headlines, primary text",
+   "homepage_uses": 46,
+   "usage_share": "19%",
+   "source": "mmlafleur.com homepage, 22 Nov 2026"
+  },
+  "white": {
+   "hex": "#FFFFFF",
+   "rgb": [
+    255,
+    255,
+    255
+   ],
+   "role": "background",
+   "used_for": "Page and card backgrounds, text on dark",
+   "homepage_uses": 43,
+   "usage_share": "18%",
+   "source": "mmlafleur.com homepage, 22 Nov 2026"
+  },
+  "espresso": {
+   "hex": "#251001",
+   "rgb": [
+    37,
+    16,
+    1
+   ],
+   "role": "primary",
+   "used_for": "Brand dark: buttons, nav text, footer",
+   "homepage_uses": 36,
+   "usage_share": "15%",
+   "source": "mmlafleur.com homepage, 22 Nov 2026"
+  },
+  "ivory": {
+   "hex": "#FCFAF6",
+   "rgb": [
+    252,
+    250,
+    246
+   ],
+   "role": "background",
+   "used_for": "Warm page background, editorial blocks",
+   "homepage_uses": 16,
+   "usage_share": "7%",
+   "source": "mmlafleur.com homepage, 22 Nov 2026"
+  },
+  "sale_red": {
+   "hex": "#E22C2C",
+   "rgb": [
+    226,
+    44,
+    44
+   ],
+   "role": "alert",
+   "used_for": "Sale prices and event badges",
+   "homepage_uses": 33,
+   "usage_share": "14%",
+   "source": "mmlafleur.com homepage, 22 Nov 2026"
+  },
+  "silver": {
+   "hex": "#B4B4B4",
+   "rgb": [
+    180,
+    180,
+    180
+   ],
+   "role": "neutral",
+   "used_for": "Borders, dividers, disabled states",
+   "homepage_uses": 17,
+   "usage_share": "7%",
+   "source": "mmlafleur.com homepage, 22 Nov 2026"
+  },
+  "rust": {
+   "hex": "#8A3A2A",
+   "rgb": [
+    138,
+    58,
+    42
+   ],
+   "role": "secondary",
+   "used_for": "Editorial accent, links on ivory",
+   "homepage_uses": 14,
+   "usage_share": "6%",
+   "source": "mmlafleur.com homepage, 22 Nov 2026"
+  },
+  "graphite": {
+   "hex": "#545454",
+   "rgb": [
+    84,
+    84,
+    84
+   ],
+   "role": "secondary",
+   "used_for": "Secondary text, captions",
+   "homepage_uses": 10,
+   "usage_share": "4%",
+   "source": "mmlafleur.com homepage, 22 Nov 2026"
+  },
+  "event_red": {
+   "hex": "#B3261E",
+   "rgb": [
+    179,
+    38,
+    30
+   ],
+   "role": "alert",
+   "used_for": "Black Friday sub-nav",
+   "homepage_uses": 6,
+   "usage_share": "3%",
+   "source": "mmlafleur.com homepage, 22 Nov 2026"
+  },
+  "taupe": {
+   "hex": "#806D61",
+   "rgb": [
+    128,
+    109,
+    97
+   ],
+   "role": "secondary",
+   "used_for": "Muted labels, swatch frames",
+   "homepage_uses": 6,
+   "usage_share": "3%",
+   "source": "mmlafleur.com homepage, 22 Nov 2026"
+  },
+  "mist": {
+   "hex": "#F2F2F2",
+   "rgb": [
+    242,
+    242,
+    242
+   ],
+   "role": "background",
+   "used_for": "Form fields, product tiles",
+   "homepage_uses": 5,
+   "usage_share": "2%",
+   "source": "mmlafleur.com homepage, 22 Nov 2026"
+  },
+  "deep_red": {
+   "hex": "#B40000",
+   "rgb": [
+    180,
+    0,
+    0
+   ],
+   "role": "alert",
+   "used_for": "Error messages",
+   "homepage_uses": 6,
+   "usage_share": "3%",
+   "source": "mmlafleur.com homepage, 22 Nov 2026"
+  }
+ },
+ "approved_text_pairings": [
+  "Black #000000 on White #FFFFFF (21.0:1)",
+  "Black #000000 on Ivory #FCFAF6 (20.14:1)",
+  "Black #000000 on Silver #B4B4B4 (10.13:1)",
+  "Black #000000 on Mist #F2F2F2 (18.76:1)",
+  "Espresso #251001 on White #FFFFFF (18.21:1)",
+  "Espresso #251001 on Ivory #FCFAF6 (17.47:1)",
+  "Espresso #251001 on Silver #B4B4B4 (8.78:1)",
+  "Espresso #251001 on Mist #F2F2F2 (16.27:1)",
+  "Sale Red #E22C2C on White #FFFFFF (4.54:1)",
+  "Rust #8A3A2A on White #FFFFFF (7.72:1)",
+  "Rust #8A3A2A on Ivory #FCFAF6 (7.41:1)",
+  "Rust #8A3A2A on Mist #F2F2F2 (6.9:1)",
+  "Graphite #545454 on White #FFFFFF (7.57:1)",
+  "Graphite #545454 on Ivory #FCFAF6 (7.26:1)",
+  "Graphite #545454 on Mist #F2F2F2 (6.76:1)",
+  "Event Red #B3261E on White #FFFFFF (6.54:1)",
+  "Event Red #B3261E on Ivory #FCFAF6 (6.27:1)",
+  "Event Red #B3261E on Mist #F2F2F2 (5.84:1)",
+  "Taupe #806D61 on White #FFFFFF (4.91:1)",
+  "Taupe #806D61 on Ivory #FCFAF6 (4.71:1)",
+  "Deep Red #B40000 on White #FFFFFF (7.14:1)",
+  "Deep Red #B40000 on Ivory #FCFAF6 (6.85:1)",
+  "Deep Red #B40000 on Mist #F2F2F2 (6.38:1)"
+ ],
+ "large_text_only": [
+  "Sale Red #E22C2C on Ivory #FCFAF6 (4.35:1)",
+  "Sale Red #E22C2C on Mist #F2F2F2 (4.05:1)",
+  "Rust #8A3A2A on Silver #B4B4B4 (3.72:1)",
+  "Graphite #545454 on Silver #B4B4B4 (3.65:1)",
+  "Event Red #B3261E on Silver #B4B4B4 (3.15:1)",
+  "Taupe #806D61 on Mist #F2F2F2 (4.38:1)",
+  "Deep Red #B40000 on Silver #B4B4B4 (3.44:1)"
+ ],
+ "banned_text_pairings": [
+  "Sale Red #E22C2C on Silver #B4B4B4 (2.19:1)",
+  "Silver #B4B4B4 on White #FFFFFF (2.07:1)",
+  "Silver #B4B4B4 on Ivory #FCFAF6 (1.99:1)",
+  "Silver #B4B4B4 on Mist #F2F2F2 (1.85:1)",
+  "Taupe #806D61 on Silver #B4B4B4 (2.37:1)"
+ ],
+ "typography": {
+  "families": [
+   {
+    "name": "Geist",
+    "type": "sans",
+    "weights": "100–900 (variable, Google Fonts)",
+    "use": "Body, navigation, buttons, product titles and prices",
+    "source": "fonts.googleapis.com/css2?family=Geist on homepage"
+   },
+   {
+    "name": "M.M. serif (--mm-font-serif)",
+    "type": "serif",
+    "weights": "unconfirmed",
+    "use": "Editorial headlines and the styling assistant title",
+    "source": "CSS variable on homepage; family file not reachable (stylesheet blocked). Confirm with brand."
+   }
+  ],
+  "fallbacks": {
+   "Geist": "'Helvetica Neue', Arial, sans-serif",
+   "serif": "Georgia, 'Times New Roman', serif"
+  }
+ },
+ "spacing_px": [
+  4,
+  8,
+  12,
+  16,
+  24,
+  32,
+  48,
+  64
+ ],
+ "radius_px": 0,
+ "logo": {
+  "files": [
+   "logo-full.svg (to supply)",
+   "logo-mono.svg (to supply)",
+   "logo-icon.svg (to supply)"
+  ],
+  "notes": "Wordmark 'M.M.LaFleur' (periods, no spaces). Black on light, white on dark. Files to supply."
+ }
+}

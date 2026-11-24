@@ -1,0 +1,3870 @@
+{
+ "brand": "pact",
+ "version": "0.1-public-build",
+ "built": "2026-11-22",
+ "rules": [
+  {
+   "id": "BRD-01",
+   "section": "BRD",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Purpose: make getting dressed an act of self-care, with clothes made to clear, certified standards.",
+   "type": "soft",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "observed",
+   "source": "E02",
+   "anchors": {
+    "1": "Reads as generic basics or fast fashion",
+    "4": "Ties the product to everyday wellness and verified standards"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "BRD-02",
+   "section": "BRD",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Positioning: certified organic essentials that are gentle on skin and priced for everyday life.",
+   "type": "soft",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "inferred",
+   "source": "E02,E08",
+   "anchors": {
+    "1": "Positions as luxury or as cheapest",
+    "4": "Clean, certified, and within reach in one idea"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "BRD-03",
+   "section": "BRD",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Lead with personal wellness (what touches your skin); planet and people benefits support, never lead.",
+   "type": "soft",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "inferred",
+   "source": "E02,E08",
+   "anchors": {
+    "1": "Opens on saving the planet",
+    "4": "Opens on skin, comfort or daily routine, then proof"
+   },
+   "pass": "What touches your skin every day matters.",
+   "fail": "Save the planet one pair of undies at a time.",
+   "layer": "brand"
+  },
+  {
+   "id": "BRD-04",
+   "section": "BRD",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Personality trait 1 — Caring: is warm and reassuring; is not preachy or guilt-driven.",
+   "type": "soft",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "inferred",
+   "source": "E02,E08",
+   "anchors": {
+    "1": "Shames the reader's current choices",
+    "4": "Invites, never scolds"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "BRD-05",
+   "section": "BRD",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Personality trait 2 — Clear: is plain about what's in the clothes; is not technical or jargon-heavy.",
+   "type": "soft",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "inferred",
+   "source": "E04",
+   "anchors": {
+    "1": "Stacks certifications and acronyms",
+    "4": "Explains one standard in plain words"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "BRD-06",
+   "section": "BRD",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Personality trait 3 — Grounded: is honest about limits; is not absolute or perfectionist.",
+   "type": "soft",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "observed",
+   "source": "E04",
+   "anchors": {
+    "1": "Claims perfection",
+    "4": "Committed to progress, specific about what is verified"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "BRD-07",
+   "section": "BRD",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Personality trait 4 — Easygoing: is relaxed and a little playful; is not slangy or try-hard outside social.",
+   "type": "soft",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "inferred",
+   "source": "E08,E09",
+   "anchors": {
+    "1": "Slang in email or PDP",
+    "4": "Light touch, fits the channel"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "BRD-08",
+   "section": "BRD",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Current tagline is 'Dress Yourself Well'. Never use the retired line \"Earth's Favorite\" in any form.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E01,E02",
+   "test": {
+    "not_contains_any": [
+     "Earth's Favorite",
+     "Earth’s Favorite",
+     "Earths Favorite"
+    ]
+   },
+   "pass": "Dress Yourself Well",
+   "fail": "Earth's Favorite™ Clothing",
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-01",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Never use any word on the banned list (30 words) in customer-facing copy.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness, E04",
+   "test": {
+    "not_contains_any_ci": [
+     "eco-friendly",
+     "chemical-free",
+     "toxin-free",
+     "non-toxic",
+     "detox",
+     "hypoallergenic",
+     "antibacterial",
+     "cures",
+     "heals",
+     "treats",
+     "eczema",
+     "dermatologist-approved",
+     "clinically proven",
+     "plastic-free",
+     "zero waste",
+     "carbon negative",
+     "climate positive",
+     "B Corp",
+     "Earth's Favorite",
+     "cheap",
+     "flawless",
+     "guaranteed",
+     "#1",
+     "miracle",
+     "game-changer",
+     "insane",
+     "act now",
+     "don't miss out",
+     "once-in-a-lifetime",
+     "sweatshop-free"
+    ],
+    "exceptions": [
+     "product names from catalog"
+    ]
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "VOI-02",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Prefer the brand vocabulary (20 words); at least one brand word per asset.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E01-E09",
+   "test": {
+    "contains_any_ci": [
+     "organic cotton",
+     "GOTS-certified",
+     "Fair Trade Certified™",
+     "soft",
+     "breathable",
+     "everyday",
+     "essentials",
+     "clean",
+     "gentle on skin",
+     "made without",
+     "wellness",
+     "feel-good",
+     "easy",
+     "comfort",
+     "layers",
+     "standards",
+     "certified",
+     "real life",
+     "intention",
+     "restock"
+    ]
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-03",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Write the brand name as 'Pact' in running copy. Never 'PACT' or 'pact' in sentences.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E07,E08,E10",
+   "test": {
+    "regex_absent": "\\bPACT\\b(?!-)|(?<![@#/\\w])pact\\b(?!\\.com)"
+   },
+   "pass": "Pact makes organic essentials.",
+   "fail": "PACT is organic cotton.",
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-04",
+   "section": "VOI",
+   "applies_to": [
+    "brand",
+    "social",
+    "web"
+   ],
+   "rule": "The spaced wordmark 'p a c t' appears only as a logo or display lockup, never in a sentence.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E08,E10",
+   "test": {
+    "regex_absent_in_body": "p a c t"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-05",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Serial comma is optional (Pact uses both); be consistent within one asset.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "realcopy: 13 lists with, 9 without",
+   "test": {
+    "serial_comma": "consistent_within_asset"
+   },
+   "pass": "soft, breathable, and easy ... calm, clean, and simple",
+   "fail": "soft, breathable, and easy ... calm, clean and simple",
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-06",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Prices drop trailing zeros: $10 not $10.00; keep cents only when non-zero.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E08",
+   "test": {
+    "regex_absent": "\\$\\d+\\.00\\b"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-07",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Percentages as numerals with %: '40%' not '40 percent'.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E01",
+   "test": {
+    "regex_absent": "\\d+\\s?percent"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-08",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Use a spaced em dash ' — ' for asides; never double hyphens.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E08",
+   "test": {
+    "regex_absent": "--"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-09",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "web",
+    "pdp",
+    "lp"
+   ],
+   "rule": "No emoji in email body, web, PDP or landing page copy (subject lines may carry one).",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E01,E07",
+   "test": {
+    "emoji_max": 0,
+    "fields": [
+     "body",
+     "pdp",
+     "lp"
+    ]
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-10",
+   "section": "VOI",
+   "applies_to": [
+    "social"
+   ],
+   "rule": "Organic social: up to 3 emoji per caption.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E09",
+   "test": {
+    "emoji_max": 3
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-11",
+   "section": "VOI",
+   "applies_to": [
+    "dr",
+    "dco"
+   ],
+   "rule": "Paid ads: no more than 1 emoji per ad.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E08",
+   "test": {
+    "emoji_max": 1
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-12",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Exclamation marks: none in ads, PDP, web and email body; one per social caption at most.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "realcopy: 0 of 29 ads, max 1 per IG caption",
+   "test": {
+    "exclaim_max": {
+     "ad": 0,
+     "pdp": 0,
+     "web": 0,
+     "email_body": 0,
+     "social": 1
+    }
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-13",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Reading level: grade 10 or below (Flesch-Kincaid) for ads, email, web and PDP copy of 3+ sentences; shorter copy and social are judged, not scored.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "realcopy: ads median 7.9, p90 8.9",
+   "test": {
+    "fk_grade_max": 10
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-14",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Sentences average 18 words or fewer (ads, email, web, PDP); a spaced em dash counts as a break.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "realcopy: ads median 10, max 21 (SEO copy)",
+   "test": {
+    "avg_sentence_words_max": 18
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-15",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Speak to the reader as 'you'; refer to the brand as 'we' or 'Pact', never 'the company'.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E02,E08",
+   "test": {
+    "regex_absent": "\\bthe company\\b"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-16",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "'Made without' / 'free from' / 'no' lists name only the approved items (harsh chemicals, toxic dyes, PFAS), in any order and any subset. Never add other substances (bare 'dyes' is MSG-16).",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "realcopy: 10 lists, 5 orderings",
+   "test": {
+    "without_list_items_subset_of": [
+     "harsh chemicals",
+     "toxic dyes",
+     "PFAS"
+    ]
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-17",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Tone — promo: upbeat and direct about the deal, never frantic.",
+   "type": "soft",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "inferred",
+   "source": "E01,E08",
+   "anchors": {
+    "1": "Countdown panic, stacked urgency",
+    "4": "Clear deal, calm confidence"
+   },
+   "pass": "Everything is up to 40% off through Sunday.",
+   "fail": "HURRY!!! Prices this low won't last!!!",
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-18",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Tone — service: practical, specific, owns the next step.",
+   "type": "soft",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "harness",
+   "anchors": {
+    "1": "Vague or defensive",
+    "4": "Names the fix and the timeline"
+   },
+   "pass": "Your order shipped today. Track it here.",
+   "fail": "We are experiencing delays beyond our control.",
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-19",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Tone — apology: brief, sincere, no excuses, one concrete remedy.",
+   "type": "soft",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "harness",
+   "anchors": {
+    "1": "Blames others",
+    "4": "Owns it and offers a fix"
+   },
+   "pass": "We got this wrong. A replacement is on its way.",
+   "fail": "Due to unprecedented demand, mistakes happen.",
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-20",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Tone — onboarding: welcoming, explains what makes Pact different in one idea per message.",
+   "type": "soft",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "inferred",
+   "source": "E05,E09",
+   "anchors": {
+    "1": "Info dump",
+    "4": "One clear idea, one next step"
+   },
+   "pass": "Welcome. Here's what 'certified organic' means for what you wear.",
+   "fail": "Welcome! Here are 12 things about us, our certifications, our mission...",
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-21",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Tone — sensitive news (recall, price change, delay): plain facts first, no promotional lines.",
+   "type": "soft",
+   "severity": "critical",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "harness",
+   "anchors": {
+    "1": "Sells during bad news",
+    "4": "Facts, impact, what to do"
+   },
+   "pass": "We've paused sales of one style while we check a fabric issue.",
+   "fail": "Oops! While we sort this out, shop our new arrivals!",
+   "layer": "compliance"
+  },
+  {
+   "id": "VOI-22",
+   "section": "VOI",
+   "applies_to": [
+    "social"
+   ],
+   "rule": "Social may use light internet phrases already in brand use (e.g. 'girl math', 'restock'); never slurs, body comments or slang that mocks.",
+   "type": "soft",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "observed",
+   "source": "E08,E09",
+   "anchors": {
+    "1": "Slang that punches down",
+    "4": "Playful, kind"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-23",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "No body-shaming or body-fixing language ('flattering for your shape', 'hides', 'slimming').",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "test": {
+    "not_contains_any_ci": [
+     "flattering for your shape",
+     "slimming",
+     "hides your",
+     "tummy control",
+     "problem areas"
+    ]
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "VOI-24",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "No fake familiarity or guilt ('you NEED this', 'shame on').",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "test": {
+    "not_contains_any_ci": [
+     "you need this",
+     "shame on",
+     "you deserve better than"
+    ]
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "VOI-25",
+   "section": "VOI",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Sounds like Pact: warm, clear, grounded, easy (matches golden examples).",
+   "type": "soft",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "inferred",
+   "source": "history/",
+   "anchors": {
+    "1": "Could be any brand",
+    "4": "Indistinguishable from golden examples"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "MSG-01",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Use only claims listed in library/claims.md, worded as approved.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "claims.md",
+   "test": {
+    "claims_from": "library/claims.md"
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "MSG-02",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Value prop 1 — Gentle on skin: certified organic cotton made without harsh chemicals, toxic dyes and PFAS.",
+   "type": "soft",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "observed",
+   "source": "E02,E07",
+   "anchors": {
+    "1": "Missing or wrong proof",
+    "4": "Prop plus one proof point"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "MSG-03",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Value prop 2 — Verified standards: GOTS-certified organic cotton, made in Fair Trade Certified™ factories.",
+   "type": "soft",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "observed",
+   "source": "E03,E04",
+   "anchors": {
+    "1": "Vague 'sustainable'",
+    "4": "Names the certification"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "MSG-04",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Value prop 3 — Organic for everyday life: essentials priced for real routines (proof: prices from catalog).",
+   "type": "soft",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "observed",
+   "source": "E08",
+   "anchors": {
+    "1": "Positions as premium",
+    "4": "Price proof from the catalog"
+   },
+   "pass": "Think organic costs more? Our leggings start at $20.",
+   "fail": "Luxury organic at a premium worth paying.",
+   "layer": "brand"
+  },
+  {
+   "id": "MSG-05",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "'Starting at $X' only when an active, in-stock SKU is currently priced at $X.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E08",
+   "test": {
+    "lookup": "catalog_products.csv",
+    "field": "price",
+    "rule": "min(active price in group) == X"
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "MSG-06",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "'Up to X% off' only with the maximum stated in offers.csv for that offer.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E01",
+   "test": {
+    "lookup": "catalog_offers.csv",
+    "rule": "X <= offer max"
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "MSG-07",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Say 'made with organic cotton' for blends; say '100% organic cotton' only when material is 100% organic cotton.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E07",
+   "test": {
+    "lookup": "catalog_products.csv",
+    "field": "material"
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "MSG-08",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Call a product 'GOTS-certified' only when gots_certified = yes. Pending SKUs: 'made with organic cotton'.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E04",
+   "test": {
+    "lookup": "catalog_products.csv",
+    "field": "gots_certified",
+    "equals": "yes"
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "MSG-09",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Never say every Pact product is certified organic or 100% organic; socks and blends contain recycled nylon or elastane.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E04,E09 vs catalog",
+   "test": {
+    "not_contains_any_ci": [
+     "every piece is gots",
+     "every garment we make is certified",
+     "100% organic, all the time",
+     "all organic, all the time"
+    ]
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "MSG-10",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Water and energy claim: only '81% less water and 62% less energy than conventional cotton', with the comparison. The 95% water figure is retired.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E06 vs E12",
+   "test": {
+    "regex_absent": "95%\\s+less water",
+    "if_contains": "less water",
+    "must_contain": "conventional cotton"
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "MSG-11",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Carbon claims must say how: 'carbon neutral through verified offsets with SimpliZero'. Never 'zero emissions' alone.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E03",
+   "test": {
+    "if_contains_any": [
+     "carbon neutral",
+     "zero net carbon"
+    ],
+    "must_contain": "offset"
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "MSG-12",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Do not disparage other brands or certifications by name in ads ('If it's not GOTS, it's not organic' stays on the Standards page only).",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E04",
+   "test": {
+    "applies_to": [
+     "social",
+     "dr",
+     "dco"
+    ],
+    "not_contains_any_ci": [
+     "it's not organic",
+     "not real organic",
+     "OEKO-TEX",
+     "OCS"
+    ]
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "MSG-13",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Boilerplate (short, 50 words) and (long, 100 words) are used word for word from library/copy-bank.md.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "test": {
+    "exact_match": "copy-bank.md#boilerplate"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "MSG-14",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Name product lines exactly as in the catalog (e.g. 'On The Go-To Legging', 'Room Service Sateen').",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E10",
+   "test": {
+    "lookup": "catalog_products.csv",
+    "field": "name"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "MSG-16",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Never imply the clothes have no dyes; say 'toxic dyes', not 'dyes'.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "realcopy held-out ad",
+   "test": {
+    "regex_absent": "\\bno (pfas or )?dyes\\b|dye-free|undyed"
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "MSG-17",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "No comparative or superiority claims ('better than denim', 'the leading brand') unless in claims.md.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "realcopy held-out PDP",
+   "test": {
+    "regex_absent": "\\bbetter than\\b|\\bthe leading\\b|\\bleading brand\\b"
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "MSG-15",
+   "section": "MSG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Message fits the shared persona (GZ, MIL, GX, BB) and segment named in the task.",
+   "type": "soft",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "harness/shared/personas.md",
+   "anchors": {
+    "1": "Generic",
+    "4": "Clearly for that persona, uses a relevant proof"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "LOG-01",
+   "section": "LOG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Use logo-full (black wordmark) on light backgrounds.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E11",
+   "layer": "brand"
+  },
+  {
+   "id": "LOG-02",
+   "section": "LOG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Use logo-mono (white wordmark) on dark or photo backgrounds.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E11",
+   "layer": "brand"
+  },
+  {
+   "id": "LOG-03",
+   "section": "LOG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Use logo-icon only where space is under 120 px wide (avatars, favicons).",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E11",
+   "layer": "brand"
+  },
+  {
+   "id": "LOG-04",
+   "section": "LOG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Clear space on all sides equals the height of the letter 'p'.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E11",
+   "layer": "brand"
+  },
+  {
+   "id": "LOG-05",
+   "section": "LOG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Minimum size digital: 64 px wide for the wordmark.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E11",
+   "layer": "brand"
+  },
+  {
+   "id": "LOG-06",
+   "section": "LOG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Minimum size print: 18 mm wide for the wordmark.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E11",
+   "layer": "brand"
+  },
+  {
+   "id": "LOG-07",
+   "section": "LOG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Approved placements: top-left, top-center, bottom-center end card, bottom-left footer.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E11",
+   "layer": "brand"
+  },
+  {
+   "id": "LOG-08",
+   "section": "LOG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Never recolor the wordmark outside black or white.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E11",
+   "layer": "brand"
+  },
+  {
+   "id": "LOG-09",
+   "section": "LOG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Never stretch, rotate, outline or add effects to the wordmark.",
+   "type": "hard",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "E11",
+   "layer": "brand"
+  },
+  {
+   "id": "LOG-10",
+   "section": "LOG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Never set the wordmark in caps ('PACT') or re-type it in another font.",
+   "type": "hard",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "observed",
+   "source": "E11",
+   "layer": "brand"
+  },
+  {
+   "id": "LOG-11",
+   "section": "LOG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Never use the retired caps logo file (brand/deprecated/logo-legacy.svg).",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E11",
+   "layer": "brand"
+  },
+  {
+   "id": "LOG-12",
+   "section": "LOG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Never place the logo on busy image areas without the mono version and 4.5:1 contrast.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "E11",
+   "layer": "brand"
+  },
+  {
+   "id": "COL-01",
+   "section": "COL",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Primary: Warm Charcoal #4D4A43 for body text, UI text and primary buttons (the site's most-used color).",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E13 (site CSS), brand_tokens.json",
+   "layer": "brand"
+  },
+  {
+   "id": "COL-02",
+   "section": "COL",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Primary: Pact Black #040404 for the wordmark only.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E13 (site CSS), brand_tokens.json",
+   "layer": "brand"
+  },
+  {
+   "id": "COL-03",
+   "section": "COL",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Secondary: Deep Charcoal #3E3B36 for hover and pressed states; Wine #7D2D3B for Sale and Gift navigation; Tan #A98D6D for loyalty (Pact Balance) accents only.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E13 (site CSS), brand_tokens.json",
+   "layer": "brand"
+  },
+  {
+   "id": "COL-04",
+   "section": "COL",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Neutrals: White #FFFFFF, Off-White #F7F7F5 and Stone #EBEAE8 for backgrounds; Grey #CAC9C7 for borders; Muted Grey #94928E for non-essential labels at large sizes only.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E13 (site CSS), brand_tokens.json",
+   "layer": "brand"
+  },
+  {
+   "id": "COL-05",
+   "section": "COL",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Alerts: Sale Red #C8422D for sale prices, errors and final-sale markers; Earth Green #38761D for sustainability headings and success messages.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E13 (site CSS), brand_tokens.json",
+   "layer": "brand"
+  },
+  {
+   "id": "COL-06",
+   "section": "COL",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Reference colors by hex only (no Pantone); use only the 12 palette hex values.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E13 (site CSS), brand_tokens.json",
+   "layer": "brand"
+  },
+  {
+   "id": "COL-07",
+   "section": "COL",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Usage share: neutrals about 70%, primaries about 20%, secondaries about 8%, alerts under 2%.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "inferred",
+   "source": "E13 (site CSS), brand_tokens.json",
+   "layer": "brand"
+  },
+  {
+   "id": "COL-08",
+   "section": "COL",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Text pairings: use only the approved pairings in brand_tokens.json (all 4.5:1 or higher).",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E13 (site CSS), brand_tokens.json",
+   "layer": "brand"
+  },
+  {
+   "id": "COL-09",
+   "section": "COL",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Never set body text in Grey, Muted Grey or Tan on White, Off-White or Stone (below 4.5:1).",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E13 (site CSS), brand_tokens.json",
+   "layer": "brand"
+  },
+  {
+   "id": "COL-10",
+   "section": "COL",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Sale Red on Stone (4.09:1) only at 18.66 px bold or 24 px and above.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E13 (site CSS), brand_tokens.json",
+   "layer": "brand"
+  },
+  {
+   "id": "COL-11",
+   "section": "COL",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Struck-through reference prices use Warm Charcoal, not Muted Grey (site's grey fails AA).",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E13 (site CSS), brand_tokens.json",
+   "layer": "brand"
+  },
+  {
+   "id": "COL-12",
+   "section": "COL",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "No gradients; flat color only.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E13 (site CSS), brand_tokens.json",
+   "layer": "brand"
+  },
+  {
+   "id": "TYP-01",
+   "section": "TYP",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Display family: Juana (serif; light 300, regular 400, semibold 600, with italics) for banners, collection and marketing headings and page titles.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E13 (site @font-face and CSS)",
+   "layer": "brand"
+  },
+  {
+   "id": "TYP-02",
+   "section": "TYP",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Body and UI family: Averta (sans; 300, 400, 700, 900) for body copy, navigation, buttons and forms.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E13 (site @font-face and CSS)",
+   "layer": "brand"
+  },
+  {
+   "id": "TYP-03",
+   "section": "TYP",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Product family: GT Eesti (sans; light 300, regular 400) for product titles and the price block.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E13 (site @font-face and CSS)",
+   "layer": "brand"
+  },
+  {
+   "id": "TYP-04",
+   "section": "TYP",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Fallback stacks: Juana → Georgia, 'Times New Roman', serif; Averta and GT Eesti → 'Helvetica Neue', Arial, sans-serif (as in site CSS).",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E13 (site @font-face and CSS)",
+   "layer": "brand"
+  },
+  {
+   "id": "TYP-05",
+   "section": "TYP",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Hierarchy: H1, H2, H3, body, caption, legal; one H1 per page or email.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E13 (site @font-face and CSS)",
+   "layer": "brand"
+  },
+  {
+   "id": "TYP-06",
+   "section": "TYP",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Web sizes: banner headings 24-28 px Juana; PDP title 20 px GT Eesti light; body 16 px Averta; price 14 px GT Eesti; legal 12 px.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E13 (site @font-face and CSS)",
+   "layer": "brand"
+  },
+  {
+   "id": "TYP-07",
+   "section": "TYP",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Email sizes: H1 28 px, H2 22 px, body 16 px, legal 12 px.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E13 (site @font-face and CSS)",
+   "layer": "brand"
+  },
+  {
+   "id": "TYP-08",
+   "section": "TYP",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Social: on-image headline at least 48 px on a 1080 px canvas, Juana or Averta only.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E13 (site @font-face and CSS)",
+   "layer": "brand"
+  },
+  {
+   "id": "TYP-09",
+   "section": "TYP",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Buttons: Averta, sentence case, 6 px radius; uppercase with 2 px tracking only in loyalty modules.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E13 (site @font-face and CSS)",
+   "layer": "brand"
+  },
+  {
+   "id": "TYP-10",
+   "section": "TYP",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web"
+   ],
+   "rule": "Never use third-party widget fonts (Nunito Sans, Poppins, Open Sans) in brand assets.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E13 (site @font-face and CSS)",
+   "layer": "brand"
+  },
+  {
+   "id": "IMG-01",
+   "section": "IMG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Image types: product on figure, flat lay, home and bed scenes, texture close-ups, lifestyle in daily routines.",
+   "type": "soft",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "inferred",
+   "source": "E08,E11",
+   "layer": "brand"
+  },
+  {
+   "id": "IMG-02",
+   "section": "IMG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Real-feeling people in everyday settings; natural light; warm neutral tones.",
+   "type": "soft",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "inferred",
+   "source": "E08,E11",
+   "layer": "brand"
+  },
+  {
+   "id": "IMG-03",
+   "section": "IMG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Show a range of ages, bodies and skin tones across a campaign.",
+   "type": "soft",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "E08,E11",
+   "layer": "brand"
+  },
+  {
+   "id": "IMG-04",
+   "section": "IMG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "No retouching that changes body shape.",
+   "type": "hard",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "E08,E11",
+   "layer": "compliance"
+  },
+  {
+   "id": "IMG-05",
+   "section": "IMG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Texture close-ups must show the actual fabric of the SKU named.",
+   "type": "hard",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "E08,E11",
+   "layer": "brand"
+  },
+  {
+   "id": "IMG-06",
+   "section": "IMG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Product color in imagery matches the catalog color name.",
+   "type": "hard",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "E08,E11",
+   "layer": "brand"
+  },
+  {
+   "id": "IMG-07",
+   "section": "IMG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "No medical or clinical imagery (lab coats, dermatology visuals) implying health benefits.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "E08,E11",
+   "layer": "compliance"
+  },
+  {
+   "id": "IMG-08",
+   "section": "IMG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "No nature-as-proof imagery (earth from space, leaves on product) next to a green claim.",
+   "type": "hard",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "E08,E11",
+   "layer": "compliance"
+  },
+  {
+   "id": "IMG-09",
+   "section": "IMG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Use the 20-tag vocabulary in library/images tags for every asset.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E08,E11",
+   "layer": "brand"
+  },
+  {
+   "id": "IMG-10",
+   "section": "IMG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Icons: 24 line icons, 1.5 px stroke, Pact Black only.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E08,E11",
+   "layer": "brand"
+  },
+  {
+   "id": "IMG-11",
+   "section": "IMG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Certification marks (GOTS, Fair Trade) appear only next to certified SKUs and at official artwork.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E08,E11",
+   "layer": "compliance"
+  },
+  {
+   "id": "IMG-12",
+   "section": "IMG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Do/don't pairs: 6 pairs in library/images/do-dont.",
+   "type": "soft",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "E08,E11",
+   "layer": "brand"
+  },
+  {
+   "id": "IMG-13",
+   "section": "IMG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "AI-image policy: AI-generated people may not appear in ads; AI-generated product images are labeled and never replace real product shots on PDPs.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E08,E11",
+   "layer": "compliance"
+  },
+  {
+   "id": "IMG-14",
+   "section": "IMG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Reviews shown in imagery use real review text from reviews.csv only.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E08,E11",
+   "layer": "compliance"
+  },
+  {
+   "id": "IMG-15",
+   "section": "IMG",
+   "applies_to": [
+    "email",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Alt text describes product, color and setting in one sentence.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E08,E11",
+   "layer": "brand"
+  },
+  {
+   "id": "LAY-01",
+   "section": "LAY",
+   "applies_to": [
+    "email",
+    "lp",
+    "web",
+    "dco"
+   ],
+   "rule": "Web grid: 12 columns, 24 px gutters, 1280 px max width.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "brand"
+  },
+  {
+   "id": "LAY-02",
+   "section": "LAY",
+   "applies_to": [
+    "email",
+    "lp",
+    "web",
+    "dco"
+   ],
+   "rule": "Email grid: single column, 600 px wide.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "brand"
+  },
+  {
+   "id": "LAY-03",
+   "section": "LAY",
+   "applies_to": [
+    "email",
+    "lp",
+    "web",
+    "dco"
+   ],
+   "rule": "Spacing scale: 4, 8, 12, 16, 24, 32, 48, 64 px.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "brand"
+  },
+  {
+   "id": "LAY-04",
+   "section": "LAY",
+   "applies_to": [
+    "email",
+    "lp",
+    "web",
+    "dco"
+   ],
+   "rule": "One focal point per module.",
+   "type": "soft",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "brand"
+  },
+  {
+   "id": "LAY-05",
+   "section": "LAY",
+   "applies_to": [
+    "email",
+    "lp",
+    "web",
+    "dco"
+   ],
+   "rule": "Price sits directly under the product name.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "brand"
+  },
+  {
+   "id": "LAY-06",
+   "section": "LAY",
+   "applies_to": [
+    "email",
+    "lp",
+    "web",
+    "dco"
+   ],
+   "rule": "CTA is the last element in a module, never above the proof.",
+   "type": "soft",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "brand"
+  },
+  {
+   "id": "LAY-07",
+   "section": "LAY",
+   "applies_to": [
+    "email",
+    "lp",
+    "web",
+    "dco"
+   ],
+   "rule": "Generous white space: at least 32 px between modules.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "brand"
+  },
+  {
+   "id": "LAY-08",
+   "section": "LAY",
+   "applies_to": [
+    "email",
+    "lp",
+    "web",
+    "dco"
+   ],
+   "rule": "Legal lines sit in the footer, never inside a hero.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "brand"
+  },
+  {
+   "id": "ACC-01",
+   "section": "ACC",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Standard: WCAG 2.2 AA for every asset.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "WCAG 2.2; E01 footer",
+   "layer": "compliance"
+  },
+  {
+   "id": "ACC-02",
+   "section": "ACC",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Body text contrast at least 4.5:1.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "WCAG 2.2; E01 footer",
+   "layer": "compliance"
+  },
+  {
+   "id": "ACC-03",
+   "section": "ACC",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Large text (24 px+, or 18.66 px bold) at least 3:1.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "WCAG 2.2; E01 footer",
+   "layer": "compliance"
+  },
+  {
+   "id": "ACC-04",
+   "section": "ACC",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Every image has alt text; decorative images use empty alt.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "WCAG 2.2; E01 footer",
+   "layer": "compliance"
+  },
+  {
+   "id": "ACC-05",
+   "section": "ACC",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Video has captions; 15-second hooks have on-screen text matching audio.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "WCAG 2.2; E01 footer",
+   "layer": "compliance"
+  },
+  {
+   "id": "ACC-06",
+   "section": "ACC",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Link text describes the destination; never 'click here'.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "WCAG 2.2; E01 footer",
+   "layer": "compliance"
+  },
+  {
+   "id": "ACC-07",
+   "section": "ACC",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Buttons at least 44 x 44 px.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "WCAG 2.2; E01 footer",
+   "layer": "compliance"
+  },
+  {
+   "id": "ACC-08",
+   "section": "ACC",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Never use color alone to show a sale or status.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "WCAG 2.2; E01 footer",
+   "layer": "compliance"
+  },
+  {
+   "id": "ACC-09",
+   "section": "ACC",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Email has a plain-text version.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "WCAG 2.2; E01 footer",
+   "layer": "compliance"
+  },
+  {
+   "id": "ACC-10",
+   "section": "ACC",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Headings in order; no skipped levels.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "WCAG 2.2; E01 footer",
+   "layer": "compliance"
+  },
+  {
+   "id": "ACC-11",
+   "section": "ACC",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Emoji are never the only carrier of meaning.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "WCAG 2.2; E01 footer",
+   "layer": "compliance"
+  },
+  {
+   "id": "ACC-12",
+   "section": "ACC",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Footer links to the accessibility page (/accessibility).",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "WCAG 2.2; E01 footer",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-01",
+   "section": "LEG",
+   "applies_to": [
+    "email"
+   ],
+   "rule": "Marketing email: accurate sender, honest subject, physical address '4725 Walnut St, Boulder, CO 80301', working unsubscribe honored within 10 business days.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "FTC CAN-SPAM; E01",
+   "precedence": "LEG beats any VOI, MSG or channel rule",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-02",
+   "section": "LEG",
+   "applies_to": [
+    "sms"
+   ],
+   "rule": "SMS: send only where sms_consent_type = 'prior express written consent'; include brand name and 'Reply STOP to opt out'; send 8am-8pm recipient local time.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "TCPA/FCC; state quiet-hours laws",
+   "precedence": "LEG beats any VOI, MSG or channel rule",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-03",
+   "section": "LEG",
+   "applies_to": [
+    "email",
+    "sms",
+    "lp",
+    "web"
+   ],
+   "rule": "Privacy link in every email, SMS program terms and landing page footer.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E01",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-04",
+   "section": "LEG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Trademark symbols: 'Fair Trade Certified™' with ™ on first mention.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E03,E04",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-05",
+   "section": "LEG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Every objective claim has substantiation listed in claims.md.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "FTC",
+   "precedence": "LEG beats any VOI, MSG or channel rule",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-06",
+   "section": "LEG",
+   "applies_to": [
+    "social",
+    "dr",
+    "dco"
+   ],
+   "rule": "Endorsements: creators and partners disclose the material connection (#ad, 'Paid partnership' label, or 'gifted') in the first line; brand reposts keep the disclosure.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "FTC Endorsement Guides; E09",
+   "precedence": "LEG beats any VOI, MSG or channel rule",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-07",
+   "section": "LEG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Reviews: quote only reviews from reviews.csv with usable_in_marketing = yes; label incentivized reviews as incentivized; never use insider or edited reviews.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "FTC fake-reviews rule; E07",
+   "precedence": "LEG beats any VOI, MSG or channel rule",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-08",
+   "section": "LEG",
+   "applies_to": [
+    "social",
+    "dr",
+    "dco",
+    "brand"
+   ],
+   "rule": "AI content: disclose AI-generated or AI-altered realistic people or scenes, and declare AI creative in Meta, Google and TikTok ad settings.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "EU AI Act Art. 50; NY synthetic performer law; platform policies",
+   "precedence": "LEG beats any VOI, MSG or channel rule",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-09",
+   "section": "LEG",
+   "applies_to": [
+    "email",
+    "web",
+    "lp"
+   ],
+   "rule": "Accessibility statement link and copyright line '© 2026 Pact' in web and email footers.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "E01",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-10",
+   "section": "LEG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Reference prices: show 'MSRP' or a was-price only when catalog_price_history.csv says msrp_comparison_allowed = yes (charged at MSRP at least 3 of the last 12 months).",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "16 CFR 233.1/233.3; E01,E07",
+   "precedence": "LEG beats any VOI, MSG or channel rule",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-11",
+   "section": "LEG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Promotions show the end date and time (Mountain Time) and any code, minimum spend and exclusions from offers.csv; never reference ended offers.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "Brand policy; E01",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-12",
+   "section": "LEG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Free shipping: state the threshold exactly as '$99+' (standard shipping, contiguous US).",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E05 (site meta says $100+; policy table governs)",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-13",
+   "section": "LEG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Final sale: clearance items say 'Final sale, not eligible for return or exchange' wherever they are promoted.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E05",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-14",
+   "section": "LEG",
+   "applies_to": [
+    "pdp",
+    "web",
+    "dco"
+   ],
+   "rule": "Textile origin: every online product description states origin ('Imported' or the qualified USA line from catalog).",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "Textile Products Identification Act; FTC",
+   "precedence": "LEG beats any VOI, MSG or channel rule",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-15",
+   "section": "LEG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Made in USA: only the qualified line from catalog ('Cut and sewn in USA from imported organic cotton fabric'); never unqualified 'Made in USA'.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "FTC Made in USA rule",
+   "precedence": "LEG beats any VOI, MSG or channel rule",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-16",
+   "section": "LEG",
+   "applies_to": [
+    "pdp",
+    "web",
+    "dco"
+   ],
+   "rule": "Fiber content: list fibers by percentage, in descending order, exactly as catalog material. If material is blank, do not state fiber content.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "Textile Act; FTC",
+   "precedence": "LEG beats any VOI, MSG or channel rule",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-17",
+   "section": "LEG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "No health, disease or skin-condition claims (eczema, rashes, infections, allergies, 'hypoallergenic', 'detox').",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "FTC Act s.5; FDA device rules",
+   "precedence": "LEG beats any VOI, MSG or channel rule",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-18",
+   "section": "LEG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Green claims: no unqualified 'sustainable', 'eco-friendly' or 'green'; qualify with the specific certification or attribute.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "FTC Green Guides",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-19",
+   "section": "LEG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "'Made without PFAS' only for SKUs with pfas_free = yes; never 'PFAS-free guaranteed' or 'tested free of all chemicals'.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "State PFAS-in-apparel laws (e.g. CA AB 1817)",
+   "precedence": "LEG beats any VOI, MSG or channel rule",
+   "layer": "compliance"
+  },
+  {
+   "id": "LEG-20",
+   "section": "LEG",
+   "applies_to": [
+    "email",
+    "sms",
+    "social",
+    "dr",
+    "brand",
+    "dco",
+    "lp",
+    "web",
+    "pdp"
+   ],
+   "rule": "Loyalty: describe Pact Balance as '5% Pact Credit on orders' and link terms; credit is not cash.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E01",
+   "layer": "compliance"
+  },
+  {
+   "id": "EML-01",
+   "section": "EML",
+   "applies_to": [
+    "email"
+   ],
+   "rule": "Subject line 25-50 characters.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "test": {
+    "field": "subject",
+    "length": [
+     25,
+     50
+    ]
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "EML-02",
+   "section": "EML",
+   "applies_to": [
+    "email"
+   ],
+   "rule": "Preheader 40-90 characters and never repeats the subject.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "test": {
+    "field": "preheader",
+    "length": [
+     40,
+     90
+    ],
+    "not_equal": "subject"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "EML-03",
+   "section": "EML",
+   "applies_to": [
+    "email"
+   ],
+   "rule": "Sender name 'Pact'; reply-to a monitored address.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "brand"
+  },
+  {
+   "id": "EML-04",
+   "section": "EML",
+   "applies_to": [
+    "email"
+   ],
+   "rule": "One primary CTA per email; button text 2-4 words in sentence case (e.g. 'Shop the sale').",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "inferred",
+   "source": "E08",
+   "test": {
+    "cta_count": 1,
+    "cta_words": [
+     2,
+     4
+    ]
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "EML-05",
+   "section": "EML",
+   "applies_to": [
+    "email"
+   ],
+   "rule": "Footer: address, unsubscribe, preferences, privacy, accessibility, '© 2026 Pact'.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E01",
+   "layer": "brand"
+  },
+  {
+   "id": "EML-06",
+   "section": "EML",
+   "applies_to": [
+    "email"
+   ],
+   "rule": "Promo emails carry offer terms in a terms line above the footer.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "brand"
+  },
+  {
+   "id": "EML-07",
+   "section": "EML",
+   "applies_to": [
+    "email"
+   ],
+   "rule": "Transactional emails (order, shipping) lead with order facts; at most one product recommendation, below the order details.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "CAN-SPAM primary purpose",
+   "test": {
+    "recommendations_max": 1,
+    "position": "after_order_details"
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "EML-08",
+   "section": "EML",
+   "applies_to": [
+    "sms"
+   ],
+   "rule": "SMS: 160 characters max including 'Reply STOP to opt out'; one link; no emoji in the first 20 characters.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "TCPA/CTIA",
+   "test": {
+    "length_max": 160,
+    "must_contain": "Reply STOP to opt out",
+    "links_max": 1
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "SOC-01",
+   "section": "SOC",
+   "applies_to": [
+    "social"
+   ],
+   "rule": "Instagram: hook in the first 125 characters; 0-3 hashtags, and #organiccotton whenever hashtags are used.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "realcopy: 0-2 hashtags on 7 posts",
+   "test": {
+    "hashtags": [
+     0,
+     3
+    ],
+    "if_any_must_contain": "#organiccotton"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "SOC-02",
+   "section": "SOC",
+   "applies_to": [
+    "social"
+   ],
+   "rule": "TikTok: caption up to 150 chars; 2-4 hashtags; on-screen text in the top 80% safe zone.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "platform norms",
+   "test": {
+    "length_max": 150,
+    "hashtags": [
+     2,
+     4
+    ]
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "SOC-03",
+   "section": "SOC",
+   "applies_to": [
+    "social"
+   ],
+   "rule": "Pinterest: title up to 100 chars, description up to 500 chars, no hashtags, keyword-led.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "platform norms",
+   "test": {
+    "title_max": 100,
+    "desc_max": 500,
+    "hashtags": [
+     0,
+     0
+    ]
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "SOC-04",
+   "section": "SOC",
+   "applies_to": [
+    "social"
+   ],
+   "rule": "LinkedIn (S2): no emoji in first line; 1,300 characters max; up to 3 hashtags.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "platform norms",
+   "test": {
+    "length_max": 1300,
+    "hashtags": [
+     0,
+     3
+    ]
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "SOC-05",
+   "section": "SOC",
+   "applies_to": [
+    "social"
+   ],
+   "rule": "Comment-to-get-link posts state what the reader will receive and that it comes by DM.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E09",
+   "layer": "brand"
+  },
+  {
+   "id": "SOC-06",
+   "section": "SOC",
+   "applies_to": [
+    "social"
+   ],
+   "rule": "Giveaways state eligibility, end date, 'not affiliated with Instagram' and link to rules.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E09; platform promo rules",
+   "layer": "compliance"
+  },
+  {
+   "id": "SOC-07",
+   "section": "SOC",
+   "applies_to": [
+    "social"
+   ],
+   "rule": "Replies: answer the question, never argue; move order issues to DM or support; never make a claim not in claims.md.",
+   "type": "soft",
+   "severity": "critical",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "harness",
+   "anchors": {
+    "1": "Argues or makes a health claim",
+    "4": "Kind, specific, on-claim"
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "SOC-08",
+   "section": "SOC",
+   "applies_to": [
+    "social"
+   ],
+   "rule": "Video hook: first 2 seconds name the benefit or the price; never fake urgency.",
+   "type": "soft",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "inferred",
+   "source": "E08",
+   "anchors": {
+    "1": "Slow or clickbait",
+    "4": "Benefit or price immediately"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "DR-01",
+   "section": "DR",
+   "applies_to": [
+    "dr"
+   ],
+   "rule": "Search headlines max 30 characters; descriptions max 90.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "Google Ads",
+   "test": {
+    "headline_max": 30,
+    "description_max": 90
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "DR-02",
+   "section": "DR",
+   "applies_to": [
+    "dr"
+   ],
+   "rule": "Each ad group has 15 unique headlines and 4 unique descriptions.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "Google Ads",
+   "test": {
+    "headlines": 15,
+    "descriptions": 4,
+    "unique": true
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "DR-03",
+   "section": "DR",
+   "applies_to": [
+    "dr",
+    "social",
+    "dco"
+   ],
+   "rule": "No product superlatives ('best', '#1', 'softest') unless listed in claims.md. 'Best deals' and 'best sellers' are allowed.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "FTC; realcopy",
+   "test": {
+    "superlative_regex": "\\b(best|softest|#1|number one)\\b(?! (deals?|sellers?|selling))"
+   },
+   "layer": "compliance"
+  },
+  {
+   "id": "DR-04",
+   "section": "DR",
+   "applies_to": [
+    "dr",
+    "social"
+   ],
+   "rule": "Paid social: first sentence of primary text within 125 characters; headline up to 40; CTA 'Shop now'.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "realcopy: headlines max 34 chars, CTA always Shop now",
+   "test": {
+    "first_sentence_max": 125,
+    "headline_max": 40,
+    "cta": "Shop now"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "DR-05",
+   "section": "DR",
+   "applies_to": [
+    "dr",
+    "social",
+    "dco"
+   ],
+   "rule": "Paid ad headlines in Title Case (default) or sentence case; never all caps.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "realcopy: 23 of 29 Title Case",
+   "layer": "brand"
+  },
+  {
+   "id": "DR-06",
+   "section": "DR",
+   "applies_to": [
+    "dr",
+    "social"
+   ],
+   "rule": "Ad copy matches the landing page offer, price and dates.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "compliance"
+  },
+  {
+   "id": "BRA-01",
+   "section": "BRA",
+   "applies_to": [
+    "brand"
+   ],
+   "rule": "Tagline 'Dress Yourself Well' set as written, title case, no punctuation.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E01",
+   "layer": "brand"
+  },
+  {
+   "id": "BRA-02",
+   "section": "BRA",
+   "applies_to": [
+    "brand"
+   ],
+   "rule": "Video lengths :06, :15, :30; end card shows logo and tagline for at least 1.5 seconds.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "brand"
+  },
+  {
+   "id": "BRA-03",
+   "section": "BRA",
+   "applies_to": [
+    "brand"
+   ],
+   "rule": "Concept extends 'what touches your skin matters'; never planet-guilt as the lead.",
+   "type": "soft",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "inferred",
+   "source": "E02,E08",
+   "anchors": {
+    "1": "Off-idea",
+    "4": "Extends the brand idea"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "BRA-04",
+   "section": "BRA",
+   "applies_to": [
+    "brand"
+   ],
+   "rule": "Key visual: warm neutral palette, one product hero, generous white space.",
+   "type": "soft",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "inferred",
+   "source": "E11",
+   "anchors": {
+    "1": "Busy, off-palette",
+    "4": "Calm, on-palette"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "DCO-01",
+   "section": "DCO",
+   "applies_to": [
+    "dco"
+   ],
+   "rule": "Slots: headline (40), body (125), price, compare_price, product_name, cta, badge; each has a fallback.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E08 (DPA template)",
+   "layer": "brand"
+  },
+  {
+   "id": "DCO-02",
+   "section": "DCO",
+   "applies_to": [
+    "dco"
+   ],
+   "rule": "Price slot uses the feed value with trailing zeros stripped ('$98').",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E08",
+   "layer": "brand"
+  },
+  {
+   "id": "DCO-03",
+   "section": "DCO",
+   "applies_to": [
+    "dco"
+   ],
+   "rule": "compare_price slot renders only when msrp_comparison_allowed = yes; otherwise it is empty.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "16 CFR 233",
+   "layer": "compliance"
+  },
+  {
+   "id": "DCO-04",
+   "section": "DCO",
+   "applies_to": [
+    "dco"
+   ],
+   "rule": "No slot overflow; text never truncates mid-word.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "brand"
+  },
+  {
+   "id": "DCO-05",
+   "section": "DCO",
+   "applies_to": [
+    "dco"
+   ],
+   "rule": "Discontinued or final-sale SKUs are excluded from the feed.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "compliance"
+  },
+  {
+   "id": "LP-01",
+   "section": "LP",
+   "applies_to": [
+    "lp"
+   ],
+   "rule": "Hero headline repeats the ad's offer or promise word for word or near it.",
+   "type": "hard",
+   "severity": "major",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "brand"
+  },
+  {
+   "id": "LP-02",
+   "section": "LP",
+   "applies_to": [
+    "lp"
+   ],
+   "rule": "One conversion goal; one primary CTA repeated at most twice.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "brand"
+  },
+  {
+   "id": "LP-03",
+   "section": "LP",
+   "applies_to": [
+    "lp"
+   ],
+   "rule": "Three benefit blocks map to the three value props.",
+   "type": "soft",
+   "severity": "minor",
+   "check": "AI judge",
+   "provenance": "harness",
+   "source": "harness",
+   "anchors": {
+    "1": "Random benefits",
+    "4": "One block per value prop with proof"
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "LP-04",
+   "section": "LP",
+   "applies_to": [
+    "lp"
+   ],
+   "rule": "FAQ answers shipping ($99+), returns (30 days; clearance final sale) and certifications.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E05",
+   "layer": "brand"
+  },
+  {
+   "id": "LP-05",
+   "section": "LP",
+   "applies_to": [
+    "lp"
+   ],
+   "rule": "Legal footer present with offer terms, privacy and accessibility links.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E01",
+   "layer": "compliance"
+  },
+  {
+   "id": "WEB-01",
+   "section": "WEB",
+   "applies_to": [
+    "web",
+    "pdp"
+   ],
+   "rule": "Page title 60 characters max; meta description 160 max.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "SEO",
+   "test": {
+    "title_max": 60,
+    "meta_max": 160
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "WEB-02",
+   "section": "WEB",
+   "applies_to": [
+    "pdp"
+   ],
+   "rule": "PDP description 40-90 words: one-line hook, what it is, how it fits, how to wear it.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E07",
+   "test": {
+    "words": [
+     40,
+     90
+    ]
+   },
+   "layer": "brand"
+  },
+  {
+   "id": "WEB-03",
+   "section": "WEB",
+   "applies_to": [
+    "pdp"
+   ],
+   "rule": "PDP 'Wellness ingredients' module: MADE WITH / MADE WITHOUT / CERTIFIED, from catalog fields.",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E07",
+   "layer": "brand"
+  },
+  {
+   "id": "WEB-04",
+   "section": "WEB",
+   "applies_to": [
+    "pdp"
+   ],
+   "rule": "Footnote blends: '*Also with X% elastane for stretch and recovery' (or the recycled fiber).",
+   "type": "hard",
+   "severity": "major",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E07",
+   "layer": "brand"
+  },
+  {
+   "id": "WEB-05",
+   "section": "WEB",
+   "applies_to": [
+    "pdp"
+   ],
+   "rule": "Never invent fit, fabric weight, thread count or features not in catalog.",
+   "type": "hard",
+   "severity": "critical",
+   "check": "auto",
+   "provenance": "harness",
+   "source": "harness",
+   "layer": "compliance"
+  },
+  {
+   "id": "WEB-06",
+   "section": "WEB",
+   "applies_to": [
+    "pdp"
+   ],
+   "rule": "Product names start with 'Organic' as in the catalog.",
+   "type": "hard",
+   "severity": "minor",
+   "check": "auto",
+   "provenance": "observed",
+   "source": "E07,E10",
+   "layer": "brand"
+  }
+ ]
+}

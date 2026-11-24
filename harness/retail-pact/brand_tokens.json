@@ -1,0 +1,535 @@
+{
+ "brand": "pact",
+ "version": "0.2-public-build",
+ "colors_note": "Colors are referenced by hex only (no Pantone). All values pulled from wearpact.com CSS except the logo black.",
+ "colors": {
+  "warm_charcoal": {
+   "hex": "#4D4A43",
+   "rgb": [
+    77,
+    74,
+    67
+   ],
+   "role": "primary",
+   "used_for": "Body and UI text, primary buttons, outlines (most-used color: 237 uses)",
+   "homepage_css_uses": 237,
+   "usage_share": "20%",
+   "source": "wearpact.com homepage CSS, 22 Nov 2026"
+  },
+  "pact_black": {
+   "hex": "#040404",
+   "rgb": [
+    4,
+    4,
+    4
+   ],
+   "role": "primary",
+   "used_for": "Logo wordmark (logo SVG)",
+   "homepage_css_uses": null,
+   "usage_share": "20%",
+   "source": "logo SVG via Brand.dev"
+  },
+  "deep_charcoal": {
+   "hex": "#3E3B36",
+   "rgb": [
+    62,
+    59,
+    54
+   ],
+   "role": "secondary",
+   "used_for": "Button and link hover states",
+   "homepage_css_uses": 13,
+   "usage_share": "8%",
+   "source": "wearpact.com homepage CSS, 22 Nov 2026"
+  },
+  "wine": {
+   "hex": "#7D2D3B",
+   "rgb": [
+    125,
+    45,
+    59
+   ],
+   "role": "secondary",
+   "used_for": "Sale and Gift links in navigation",
+   "homepage_css_uses": 5,
+   "usage_share": "8%",
+   "source": "wearpact.com homepage CSS, 22 Nov 2026"
+  },
+  "tan": {
+   "hex": "#A98D6D",
+   "rgb": [
+    169,
+    141,
+    109
+   ],
+   "role": "secondary",
+   "used_for": "Pact Balance loyalty tooltip and toggles",
+   "homepage_css_uses": 6,
+   "usage_share": "8%",
+   "source": "wearpact.com homepage CSS, 22 Nov 2026"
+  },
+  "white": {
+   "hex": "#FFFFFF",
+   "rgb": [
+    255,
+    255,
+    255
+   ],
+   "role": "neutral",
+   "used_for": "Page and card backgrounds, text on dark",
+   "homepage_css_uses": 196,
+   "usage_share": "70%",
+   "source": "wearpact.com homepage CSS, 22 Nov 2026"
+  },
+  "off_white": {
+   "hex": "#F7F7F5",
+   "rgb": [
+    247,
+    247,
+    245
+   ],
+   "role": "neutral",
+   "used_for": "Section backgrounds (.bg-neutral12), image placeholders",
+   "homepage_css_uses": 61,
+   "usage_share": "70%",
+   "source": "wearpact.com homepage CSS, 22 Nov 2026"
+  },
+  "stone": {
+   "hex": "#EBEAE8",
+   "rgb": [
+    235,
+    234,
+    232
+   ],
+   "role": "neutral",
+   "used_for": "Borders, dividers, form fields, menu backgrounds",
+   "homepage_css_uses": 113,
+   "usage_share": "70%",
+   "source": "wearpact.com homepage CSS, 22 Nov 2026"
+  },
+  "grey": {
+   "hex": "#CAC9C7",
+   "rgb": [
+    202,
+    201,
+    199
+   ],
+   "role": "neutral",
+   "used_for": "Secondary borders, nav promo dividers",
+   "homepage_css_uses": 27,
+   "usage_share": "70%",
+   "source": "wearpact.com homepage CSS, 22 Nov 2026"
+  },
+  "muted_grey": {
+   "hex": "#94928E",
+   "rgb": [
+    148,
+    146,
+    142
+   ],
+   "role": "neutral",
+   "used_for": "Struck-through regular price, muted labels",
+   "homepage_css_uses": 6,
+   "usage_share": "70%",
+   "source": "wearpact.com homepage CSS, 22 Nov 2026"
+  },
+  "sale_red": {
+   "hex": "#C8422D",
+   "rgb": [
+    200,
+    66,
+    45
+   ],
+   "role": "alert",
+   "used_for": "Sale price, form errors, clearance and final-sale swatches",
+   "homepage_css_uses": 38,
+   "usage_share": "<2%",
+   "source": "wearpact.com homepage CSS, 22 Nov 2026"
+  },
+  "earth_green": {
+   "hex": "#38761D",
+   "rgb": [
+    56,
+    118,
+    29
+   ],
+   "role": "alert",
+   "used_for": "Sustainability headings on product pages, success messages",
+   "homepage_css_uses": 6,
+   "usage_share": "<2%",
+   "source": "wearpact.com homepage CSS, 22 Nov 2026"
+  }
+ },
+ "pairings": [
+  {
+   "text": "warm_charcoal",
+   "background": "white",
+   "ratio": 8.84,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "warm_charcoal",
+   "background": "off_white",
+   "ratio": 8.24,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "warm_charcoal",
+   "background": "stone",
+   "ratio": 7.35,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "pact_black",
+   "background": "white",
+   "ratio": 20.5,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "pact_black",
+   "background": "off_white",
+   "ratio": 19.11,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "pact_black",
+   "background": "stone",
+   "ratio": 17.05,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "deep_charcoal",
+   "background": "white",
+   "ratio": 11.15,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "deep_charcoal",
+   "background": "off_white",
+   "ratio": 10.39,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "deep_charcoal",
+   "background": "stone",
+   "ratio": 9.27,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "wine",
+   "background": "white",
+   "ratio": 9.09,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "wine",
+   "background": "off_white",
+   "ratio": 8.47,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "wine",
+   "background": "stone",
+   "ratio": 7.56,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "sale_red",
+   "background": "white",
+   "ratio": 4.91,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "sale_red",
+   "background": "off_white",
+   "ratio": 4.58,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "sale_red",
+   "background": "stone",
+   "ratio": 4.09,
+   "body_ok": false,
+   "large_ok": true
+  },
+  {
+   "text": "earth_green",
+   "background": "white",
+   "ratio": 5.56,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "earth_green",
+   "background": "off_white",
+   "ratio": 5.18,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "earth_green",
+   "background": "stone",
+   "ratio": 4.62,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "tan",
+   "background": "white",
+   "ratio": 3.13,
+   "body_ok": false,
+   "large_ok": true
+  },
+  {
+   "text": "tan",
+   "background": "off_white",
+   "ratio": 2.91,
+   "body_ok": false,
+   "large_ok": false
+  },
+  {
+   "text": "tan",
+   "background": "stone",
+   "ratio": 2.6,
+   "body_ok": false,
+   "large_ok": false
+  },
+  {
+   "text": "muted_grey",
+   "background": "white",
+   "ratio": 3.11,
+   "body_ok": false,
+   "large_ok": true
+  },
+  {
+   "text": "muted_grey",
+   "background": "off_white",
+   "ratio": 2.9,
+   "body_ok": false,
+   "large_ok": false
+  },
+  {
+   "text": "muted_grey",
+   "background": "stone",
+   "ratio": 2.58,
+   "body_ok": false,
+   "large_ok": false
+  },
+  {
+   "text": "grey",
+   "background": "white",
+   "ratio": 1.65,
+   "body_ok": false,
+   "large_ok": false
+  },
+  {
+   "text": "grey",
+   "background": "off_white",
+   "ratio": 1.54,
+   "body_ok": false,
+   "large_ok": false
+  },
+  {
+   "text": "grey",
+   "background": "stone",
+   "ratio": 1.38,
+   "body_ok": false,
+   "large_ok": false
+  },
+  {
+   "text": "white",
+   "background": "warm_charcoal",
+   "ratio": 8.84,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "white",
+   "background": "deep_charcoal",
+   "ratio": 11.15,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "white",
+   "background": "wine",
+   "ratio": 9.09,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "white",
+   "background": "sale_red",
+   "ratio": 4.91,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "white",
+   "background": "earth_green",
+   "ratio": 5.56,
+   "body_ok": true,
+   "large_ok": true
+  },
+  {
+   "text": "white",
+   "background": "tan",
+   "ratio": 3.13,
+   "body_ok": false,
+   "large_ok": true
+  }
+ ],
+ "approved_text_pairings": [
+  "warm_charcoal on white (8.84:1)",
+  "warm_charcoal on off_white (8.24:1)",
+  "warm_charcoal on stone (7.35:1)",
+  "pact_black on white (20.5:1)",
+  "pact_black on off_white (19.11:1)",
+  "pact_black on stone (17.05:1)",
+  "deep_charcoal on white (11.15:1)",
+  "deep_charcoal on off_white (10.39:1)",
+  "deep_charcoal on stone (9.27:1)",
+  "wine on white (9.09:1)",
+  "wine on off_white (8.47:1)",
+  "wine on stone (7.56:1)",
+  "sale_red on white (4.91:1)",
+  "sale_red on off_white (4.58:1)",
+  "earth_green on white (5.56:1)",
+  "earth_green on off_white (5.18:1)",
+  "earth_green on stone (4.62:1)",
+  "white on warm_charcoal (8.84:1)",
+  "white on deep_charcoal (11.15:1)",
+  "white on wine (9.09:1)",
+  "white on sale_red (4.91:1)",
+  "white on earth_green (5.56:1)"
+ ],
+ "large_text_only": [
+  "sale_red on stone (4.09:1)",
+  "tan on white (3.13:1)",
+  "muted_grey on white (3.11:1)",
+  "white on tan (3.13:1)"
+ ],
+ "banned_text_pairings": [
+  "tan on off_white (2.91:1)",
+  "tan on stone (2.6:1)",
+  "muted_grey on off_white (2.9:1)",
+  "muted_grey on stone (2.58:1)",
+  "grey on white (1.65:1)",
+  "grey on off_white (1.54:1)",
+  "grey on stone (1.38:1)"
+ ],
+ "excluded_third_party": {
+  "#3E34D3": "Algolia search widget",
+  "Klaviyo fonts (Nunito Sans, Poppins)": "email sign-up pop-up",
+  "NewtimeR": "Global-e checkout widget",
+  "Open Sans": "legacy stylesheet link",
+  "cloud.typography.com kit": "deactivated"
+ },
+ "type": {
+  "display": {
+   "family": "Juana",
+   "weights": [
+    300,
+    400,
+    600
+   ],
+   "italics": true,
+   "use": "Banners, collection and marketing headings, page titles (cart, checkout, search)",
+   "sizes_seen_rem": [
+    1.25,
+    1.5,
+    1.625,
+    1.728
+   ],
+   "fallback": "Georgia, 'Times New Roman', serif",
+   "license": "commercial (self-hosted by Pact); harness renders with fallback unless licensed",
+   "source": "wearpact.com @font-face"
+  },
+  "body": {
+   "family": "Averta",
+   "weights": [
+    300,
+    400,
+    700,
+    900
+   ],
+   "use": "Body, UI, buttons, forms, navigation",
+   "fallback": "'Helvetica Neue', Arial, sans-serif",
+   "license": "commercial (self-hosted by Pact)",
+   "source": "wearpact.com @font-face; fallback stack copied from site CSS"
+  },
+  "product": {
+   "family": "GT Eesti",
+   "css_name": "GTEesti",
+   "weights": [
+    300,
+    400
+   ],
+   "use": "Product titles (PDP h1, 1.25rem, light), price block, loyalty and account headings",
+   "fallback": "'Helvetica Neue', Arial, sans-serif",
+   "license": "commercial (Grilli Type)",
+   "source": "wearpact.com CSS"
+  },
+  "scale_px": {
+   "email": {
+    "h1": 28,
+    "h2": 22,
+    "body": 16,
+    "legal": 12
+   },
+   "web": {
+    "h1": 40,
+    "h2": 28,
+    "h3": 20,
+    "body": 16,
+    "caption": 13,
+    "legal": 12
+   },
+   "pdp_title": 20,
+   "price": 14,
+   "social_min_headline_on_1080": 48
+  },
+  "buttons": {
+   "radius_px": 6,
+   "case": "sentence case on product pages; uppercase with 2px tracking only in loyalty modules",
+   "padding": "11px 24px"
+  }
+ },
+ "price_display": {
+  "sale_price": "#C8422D (sale_red)",
+  "regular_price_struck": "#94928E, line-through",
+  "note": "Site's struck regular price (#94928E on white) is 3.11:1, below AA for body text; harness requires warm_charcoal (#4D4A43) for any reference price."
+ },
+ "spacing_px": [
+  4,
+  8,
+  12,
+  16,
+  24,
+  32,
+  48,
+  64
+ ],
+ "logo": {
+  "full": "brand/logo-full.svg (black wordmark, 2.63:1)",
+  "mono": "brand/logo-mono.svg (white)",
+  "icon": "brand/logo-icon.svg (square)",
+  "deprecated": "brand/deprecated/logo-legacy.svg (caps 'PACT', decoy)",
+  "min_digital_px": 64,
+  "min_print_mm": 18
+ }
+}

@@ -1,0 +1,27 @@
+# Pact harness manifest (harness.yaml)
+id: retail-pact
+version: 0.3-public-build
+built: 2026-11-22
+segment: retail
+quadrant: restrained x value
+source: public material (see evidence log); partner swap pending
+rule_count: 181
+auto_share: 0.78
+files:
+  brief: brief.md
+  guidelines: guidelines.md
+  rules: rules.json
+  rubric: rubric.md
+  brand: [brand_tokens.json, logo-full.svg (to supply), logo-mono.svg (to supply), logo-icon.svg (to supply)]
+  catalog: [catalog_products.csv (200), catalog_offers.csv (10), catalog_price_history.csv (200 x 12), catalog_reviews.csv (300)]
+  audience: [audience_segments.json, audience_contacts.csv (250, retail-spine-v2 + Pact columns)]
+  shared: [harness/shared/personas.md (GZ, MIL, GX, BB), harness/shared/contacts_spine_v2.csv]
+  library: [library_copy-bank.md (50 lines + boilerplate), library_claims.md (25)]
+  history: [history_golden_wave1.md (6)]
+  traps: [traps.md, traps_offbrand_drafts.json (10 drafts, 36 violations)]
+  tasks: [tasks_wave1.md]
+  fixtures: [fixtures_e3_carts.json, fixtures_e6_order.json, fixtures_s3_comments.json]
+deprecated:
+  - "tagline: Earth's Favorite™ Clothing"
+  - brand/deprecated/logo-legacy.svg
+not_yet_built: [logo files, library/images (60), golden examples for waves 2-3]

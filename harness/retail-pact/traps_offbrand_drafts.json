@@ -1,0 +1,363 @@
+{
+ "note": "Off-brand drafts for B1 (brand edit) and review tasks. T-01..T-06 are twins of the wave 1 golden examples; T-07..T-10 cover other channels. Agents never see expected_violations.",
+ "drafts": [
+  {
+   "id": "T-01",
+   "twin_of": "P1-G1",
+   "task": "P1",
+   "sku": "PM-019",
+   "text": {
+    "title": "Organic Everyday Crew Sock 3-Pack",
+    "description": "These insanely soft socks are 100% organic cotton and hypoallergenic, perfect for sensitive skin! Made in USA and built to last.",
+    "origin": "Made in USA"
+   },
+   "expected_violations": [
+    {
+     "rule": "VOI-01",
+     "severity": "major",
+     "where": "description",
+     "evidence": "insanely"
+    },
+    {
+     "rule": "MSG-07",
+     "severity": "critical",
+     "where": "description",
+     "evidence": "100% organic cotton (material is 78% organic cotton, 20% recycled nylon, 2% elastane)"
+    },
+    {
+     "rule": "LEG-17",
+     "severity": "critical",
+     "where": "description",
+     "evidence": "hypoallergenic, perfect for sensitive skin"
+    },
+    {
+     "rule": "LEG-15",
+     "severity": "critical",
+     "where": "origin",
+     "evidence": "Made in USA (catalog: Made in India)"
+    }
+   ]
+  },
+  {
+   "id": "T-02",
+   "twin_of": "P1-G2",
+   "task": "P1",
+   "sku": "PH-021",
+   "text": {
+    "title": "Organic Bath Towel Set",
+    "description": "Our eco-friendly towels get softer every single wash and dry faster than conventional towels. Six thirsty pieces, proudly Made in USA.",
+    "origin": "Made in USA"
+   },
+   "expected_violations": [
+    {
+     "rule": "VOI-01",
+     "severity": "major",
+     "where": "description",
+     "evidence": "eco-friendly"
+    },
+    {
+     "rule": "MSG-01",
+     "severity": "critical",
+     "where": "description",
+     "evidence": "softer every wash; dry faster than conventional towels (not in claims.md)"
+    },
+    {
+     "rule": "LEG-15",
+     "severity": "critical",
+     "where": "origin",
+     "evidence": "unqualified Made in USA (catalog: cut and sewn in USA from imported fabric)"
+    }
+   ]
+  },
+  {
+   "id": "T-03",
+   "twin_of": "E1-G1",
+   "task": "E1",
+   "segment": "active",
+   "text": {
+    "subject": "40% off EVERYTHING at PACT",
+    "preheader": "Our biggest sale is here",
+    "body": "Hi Dana,\n\n40% off everything, no exclusions. Grab the Fit & Flare Wrap Dress in Oatmeal: MSRP of $98, now just $83.\n\nShop before it's gone.",
+    "cta": "Shop now",
+    "terms": "",
+    "footer": "Unsubscribe"
+   },
+   "expected_violations": [
+    {
+     "rule": "MSG-06",
+     "severity": "critical",
+     "where": "subject, body",
+     "evidence": "40% off everything (offer is up to 40%, discount varies by item)"
+    },
+    {
+     "rule": "LEG-10",
+     "severity": "critical",
+     "where": "body",
+     "evidence": "MSRP of $98 on PW-038, msrp_comparison_allowed = no"
+    },
+    {
+     "rule": "VOI-03",
+     "severity": "major",
+     "where": "subject",
+     "evidence": "PACT"
+    },
+    {
+     "rule": "LEG-11",
+     "severity": "major",
+     "where": "terms",
+     "evidence": "no end date, exclusions or terms"
+    },
+    {
+     "rule": "LEG-01",
+     "severity": "critical",
+     "where": "footer",
+     "evidence": "no physical address"
+    }
+   ]
+  },
+  {
+   "id": "T-04",
+   "twin_of": "E1-G2",
+   "task": "E1",
+   "segment": "lapsed",
+   "text": {
+    "subject": "We miss you! Earth's Favorite deals inside",
+    "preheader": "Waffle sets are 30% off, plus sheets, towels, and more",
+    "body": "Hi there,\n\nCome back to Earth's Favorite™ Clothing. Our Luxe Waffle Set is 30% off this week, and our sheets, towels and quilts are up to 40% off.",
+    "cta": "Come back",
+    "terms": "Up to 40% off sitewide, ends 11:59 pm MT Nov 23.",
+    "footer": "Pact · 4725 Walnut St, Boulder, CO 80301 · Unsubscribe · Privacy"
+   },
+   "expected_violations": [
+    {
+     "rule": "BRD-08",
+     "severity": "major",
+     "where": "subject, body",
+     "evidence": "Earth's Favorite (retired tagline)"
+    },
+    {
+     "rule": "LEG-11",
+     "severity": "major",
+     "where": "body, preheader",
+     "evidence": "references OF-08 waffle set 30% off, which ended Nov 16"
+    },
+    {
+     "rule": "VOI-05",
+     "severity": "minor",
+     "where": "preheader, body",
+     "evidence": "mixed serial comma in one asset: 'towels, and more' (preheader) vs 'towels and quilts' (body)"
+    }
+   ]
+  },
+  {
+   "id": "T-05",
+   "twin_of": "A1-G1",
+   "task": "A1",
+   "ad_group": "organic leggings",
+   "text": {
+    "headlines": [
+     "Best Organic Leggings",
+     "Non-Toxic Leggings for Everyday Wear",
+     "Organic Cotton Leggings",
+     "Organic Cotton Leggings",
+     "Made With Organic Cotton"
+    ],
+    "descriptions": [
+     "The softest leggings on the market, 100% organic cotton and totally chemical-free. Only $20 today, hurry."
+    ]
+   },
+   "expected_violations": [
+    {
+     "rule": "DR-03",
+     "severity": "critical",
+     "where": "headline 1, description 1",
+     "evidence": "Best; softest"
+    },
+    {
+     "rule": "DR-01",
+     "severity": "critical",
+     "where": "headline 2, description 1",
+     "evidence": "headline 36 chars; description over 90 chars"
+    },
+    {
+     "rule": "VOI-01",
+     "severity": "major",
+     "where": "headline 2, description 1",
+     "evidence": "non-toxic; chemical-free"
+    },
+    {
+     "rule": "DR-02",
+     "severity": "major",
+     "where": "headlines 3-4",
+     "evidence": "duplicate headline"
+    },
+    {
+     "rule": "MSG-07",
+     "severity": "critical",
+     "where": "description 1",
+     "evidence": "100% organic cotton (material is 92/8 with elastane)"
+    }
+   ]
+  },
+  {
+   "id": "T-06",
+   "twin_of": "A1-G2",
+   "task": "A1",
+   "ad_group": "organic sheets",
+   "text": {
+    "headlines": [
+     "GOTS-Certified Sateen Sheets",
+     "Room Service Sateen, Made in USA",
+     "95% Less Water Than Cotton"
+    ],
+    "descriptions": [
+     "Certified organic sheets that save water. Carbon neutral and zero emissions."
+    ]
+   },
+   "expected_violations": [
+    {
+     "rule": "MSG-08",
+     "severity": "critical",
+     "where": "headline 1, description 1",
+     "evidence": "certified, but PH-001 in the group is GOTS pending"
+    },
+    {
+     "rule": "LEG-15",
+     "severity": "critical",
+     "where": "headline 2",
+     "evidence": "unqualified Made in USA; most sateen sets are imported"
+    },
+    {
+     "rule": "MSG-10",
+     "severity": "critical",
+     "where": "headline 3",
+     "evidence": "retired 95% water figure, no comparison"
+    },
+    {
+     "rule": "MSG-11",
+     "severity": "critical",
+     "where": "description 1",
+     "evidence": "carbon neutral without offsets; zero emissions"
+    }
+   ]
+  },
+  {
+   "id": "T-07",
+   "task": "S1",
+   "channel": "instagram",
+   "text": {
+    "caption": "obsessed with my new @pact wrap dress, wore it 3 days straight 😍😍😍🔥 link in bio #pact #ootd #organic #fashion #style #cotton #wellness",
+    "context": "Creator post reposted by Pact; creator was paid"
+   },
+   "expected_violations": [
+    {
+     "rule": "LEG-06",
+     "severity": "critical",
+     "where": "caption",
+     "evidence": "paid creator, no #ad or paid partnership label"
+    },
+    {
+     "rule": "VOI-10",
+     "severity": "minor",
+     "where": "caption",
+     "evidence": "4 emoji (max 3)"
+    },
+    {
+     "rule": "SOC-01",
+     "severity": "minor",
+     "where": "caption",
+     "evidence": "7 hashtags, missing #organiccotton"
+    }
+   ]
+  },
+  {
+   "id": "T-08",
+   "task": "M1",
+   "channel": "sms",
+   "text": {
+    "message": "PACT: Black Friday is HERE 🔥 40% off everything ends tonight!!! Shop now: pact.co/bf and pact.co/bf2",
+    "recipient": "C-0131"
+   },
+   "expected_violations": [
+    {
+     "rule": "LEG-02",
+     "severity": "critical",
+     "where": "recipient, message",
+     "evidence": "C-0131 consent is email-only; no 'Reply STOP to opt out'"
+    },
+    {
+     "rule": "EML-08",
+     "severity": "major",
+     "where": "message",
+     "evidence": "two links; emoji in first 20 characters"
+    },
+    {
+     "rule": "MSG-06",
+     "severity": "critical",
+     "where": "message",
+     "evidence": "40% off everything (offer is up to 40%)"
+    }
+   ]
+  },
+  {
+   "id": "T-09",
+   "task": "S3",
+   "channel": "instagram_reply",
+   "text": {
+    "comment_id": "SC-08",
+    "reply": "Yes! Organic cotton is hypoallergenic so it's perfect for eczema. Our dermatologist-approved underwear will help clear it up."
+   },
+   "expected_violations": [
+    {
+     "rule": "LEG-17",
+     "severity": "critical",
+     "where": "reply",
+     "evidence": "eczema and hypoallergenic health claims"
+    },
+    {
+     "rule": "VOI-01",
+     "severity": "major",
+     "where": "reply",
+     "evidence": "hypoallergenic; dermatologist-approved"
+    },
+    {
+     "rule": "SOC-07",
+     "severity": "critical",
+     "where": "reply",
+     "evidence": "claim not in claims.md"
+    }
+   ]
+  },
+  {
+   "id": "T-10",
+   "task": "P1",
+   "sku": "PW-009",
+   "text": {
+    "title": "Organic On The Go-To Legging",
+    "description": "Our best-selling legging in 100% GOTS-certified organic cotton with a squat-proof, moisture-wicking finish. High rise, ankle length.",
+    "fiber_content": "100% GOTS-certified organic cotton",
+    "origin": ""
+   },
+   "expected_violations": [
+    {
+     "rule": "LEG-16",
+     "severity": "critical",
+     "where": "fiber_content",
+     "evidence": "material is blank in catalog; fiber content invented"
+    },
+    {
+     "rule": "WEB-05",
+     "severity": "critical",
+     "where": "description",
+     "evidence": "squat-proof, moisture-wicking finish not in catalog"
+    },
+    {
+     "rule": "LEG-14",
+     "severity": "critical",
+     "where": "origin",
+     "evidence": "origin missing"
+    }
+   ]
+  }
+ ]
+}
